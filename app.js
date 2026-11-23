@@ -193,7 +193,7 @@
     document.querySelectorAll('a[href^="https://t.me/"]').forEach(a=>a.onclick=e=>{if(tg&&tg.initData&&tg.openTelegramLink){e.preventDefault();tg.openTelegramLink(a.href);}});
   }
   async function init() {
-    try {if(tg){tg.ready();tg.expand();tg.setHeaderColor('#0b1220');tg.setBackgroundColor('#0b1220');}}
+    try {if(tg){tg.ready();tg.expand();tg.setHeaderColor('#f7f5ef');tg.setBackgroundColor('#f7f5ef');}}
     catch(e) { /* older Telegram clients still use the standard viewport */ }
     try {S.cat=await (await fetch('catalog.json?v=unified-1')).json();}
     catch(e){$('screen').innerHTML='<div class="empty">تعذّر تحميل الفهرس. أعد فتح التطبيق.</div>';return;}
