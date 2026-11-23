@@ -38,10 +38,10 @@
   }
   function authenticated() { if (S.boot) return true; toast('افتح البوت واضغط ابدأ الدراسة، أو استخدم /login لربط المتصفح.'); return false; }
   async function refresh() {
-    S.boot=await call('bootstrap');
-    S.summary=await call('study.summary');
+    const loaded=await Promise.all([call('bootstrap'),call('study.summary')]);
+    S.boot=loaded[0]; S.summary=loaded[1];
     $('notice').textContent='';
-    $('who').textContent=S.boot.student.name_ar+' · '+S.boot.done_count+' من 37';
+    $('who').innerHTML='<bdi>'+esc(S.boot.student.name_ar)+'</bdi> · <bdi dir="rtl">'+S.boot.done_count+' من 37</bdi>';
     $('dueCount').textContent=S.summary.due.length||'';
   }
   function go(view, id, tab) {
@@ -158,7 +158,7 @@
     if(S.quiz&&S.quiz.doc_id===S.doc){render();return;}
     const id=S.doc;
     try {const q=await call('quiz.get',{doc_id:id});if(S.doc!==id||S.tab!=='quiz')return;S.quiz=q;S.results=null;S.answers=JSON.parse(sessionStorage.getItem('draft:'+S.boot.student.id+':'+id)||'{}');S.marks={};render();}
-    catch(e){$('quizMount').innerHTML='<div class="empty">'+esc(e.message)+' '+button('حاول مرة أخرى','load-quiz')+'</div>';bind();}
+    catch(e){if(S.doc!==id||S.tab!=='quiz'||!$('quizMount'))return;$('quizMount').innerHTML='<div class="empty">'+esc(e.message)+' '+button('حاول مرة أخرى','load-quiz')+'</div>';bind();}
   }
   async function action(name, buttonElement) {
     if(name.startsWith('view:'))return go(name.slice(5));
@@ -199,7 +199,7 @@
     catch(e){$('screen').innerHTML='<div class="empty">تعذّر تحميل الفهرس. أعد فتح التطبيق.</div>';return;}
     try {await refresh();}
     catch(e){$('who').textContent='تصفح المكتبة';$('notice').innerHTML='لحفظ تقدمك ونتائجك افتح من <a href="https://t.me/Deutsch099_bot"><b>بوت الألمانية</b></a> واضغط «ابدأ الدراسة». للمتصفح العادي أرسل <b dir="ltr">/login</b> للبوت وافتح الرابط الشخصي.';}
-    if(S.doc&&doc(S.doc)){S.view='lesson';S.unit=doc(S.doc).lektion;}else if(S.view==='unit')S.view='atlas';
+    if(S.doc&&doc(S.doc)){S.view='lesson';S.unit=doc(S.doc).lektion;}else if(S.view==='unit')S.view='atlas';else if(S.view==='lesson'){S.view='home';S.doc='';}
     render();
     if(S.view==='lesson'&&S.tab==='quiz')loadQuiz();
     else if(S.view==='lesson'&&S.boot)markOpened(S.doc);
