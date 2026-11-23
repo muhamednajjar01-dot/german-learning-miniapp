@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أشياء في العمل — الألوان وأدوات التعريف · Dinge am Arbeitsplatz — Farben und Artikel</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#B06D27; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#B06D27,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L02-T02">← العودة للداشبورد والاختبار</a> · L02-T02</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>أشياء في العمل — الألوان وأدوات التعريف</h1>
+    <h2>Dinge am Arbeitsplatz — Farben und Artikel — Lektion 2, Teil 2</h2>
+    <p class="sub">Bestimmter Artikel, Genus, Plural · Deutsch Online A1, Kapitel 2</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 1</span>
+    <span class="chip">Video 24:54</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L02-S2</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تسمّي 15 شيئًا من محيط العمل بأداتها الصحيحة.</li><li dir="rtl">أن تفرّق بين der/die/das بحسب الجنس ولاحقة الجمع.</li><li dir="rtl">أن تصف شيئًا بلونه: ein roter Stuhl.</li><li dir="rtl">أن تسأل: Wie heißt das auf Deutsch؟</li><li dir="rtl">أن تكتب 5 جمل تصف فيها مكتبك.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=tOjfjS3RgJY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=tOjfjS3RgJY</a></div>
+  <div class="card">
+    <h3>Lektion 2, Teil 2 — Gegenstände und Farben</h3>
+    <p class="meta">24:54 · <a class="link" href="https://www.youtube.com/watch?v=tOjfjS3RgJY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=tOjfjS3RgJY</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">أسماء الأشياء المكتبية مع أدواتها: der, die, das.</li><li dir="rtl">كيف تُنطق أسماء الألوان وتُستخدم كصفة قبل الاسم.</li><li dir="rtl">فرق النطق بين الجمع -e و-̈er.</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">أي أداة تعريف سمعتها مع الكلمة Stuhl؟</li><li dir="rtl">هل الألوان تُذكر قبل الاسم أم بعده؟</li><li dir="rtl">كم مرة سمعت كلمة Tisch?</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">في المكتب <small dir="ltr">Im Büro</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Tisch, -e</td><td lang="ar" dir="rtl" class="ar">الطاولة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Stuhl, die Stühle</td><td lang="ar" dir="rtl" class="ar">الكرسي</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Regal, -e</td><td lang="ar" dir="rtl" class="ar">الرف</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Computer, -</td><td lang="ar" dir="rtl" class="ar">الحاسوب</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Drucker, -</td><td lang="ar" dir="rtl" class="ar">الطابعة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Telefon, -e</td><td lang="ar" dir="rtl" class="ar">الهاتف</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Lampe, -n</td><td lang="ar" dir="rtl" class="ar">المصباح</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Fenster, -</td><td lang="ar" dir="rtl" class="ar">النافذة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Tür, -en</td><td lang="ar" dir="rtl" class="ar">الباب</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Papier, -e</td><td lang="ar" dir="rtl" class="ar">الورق</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Stift, -e</td><td lang="ar" dir="rtl" class="ar">القلم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Heft, -e</td><td lang="ar" dir="rtl" class="ar">الدفتر</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">الألوان <small dir="ltr">Farben</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">rot</td><td lang="ar" dir="rtl" class="ar">أحمر</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">blau</td><td lang="ar" dir="rtl" class="ar">أزرق</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">grün</td><td lang="ar" dir="rtl" class="ar">أخضر</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">gelb</td><td lang="ar" dir="rtl" class="ar">أصفر</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">schwarz</td><td lang="ar" dir="rtl" class="ar">أسود</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">weiß</td><td lang="ar" dir="rtl" class="ar">أبيض</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">grau</td><td lang="ar" dir="rtl" class="ar">رمادي</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">braun</td><td lang="ar" dir="rtl" class="ar">بني</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">صفات وأفعال الوصف <small dir="ltr">Beschreiben</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">groß</td><td lang="ar" dir="rtl" class="ar">كبير</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">klein</td><td lang="ar" dir="rtl" class="ar">صغير</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">neu</td><td lang="ar" dir="rtl" class="ar">جديد</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">alt</td><td lang="ar" dir="rtl" class="ar">قديم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">brauchen</td><td lang="ar" dir="rtl" class="ar">يحتاج</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">haben</td><td lang="ar" dir="rtl" class="ar">يملك</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das ist</td><td lang="ar" dir="rtl" class="ar">هذا هو</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Wie heißt das auf Deutsch?</td><td lang="ar" dir="rtl" class="ar">ما اسم هذا بالألمانية؟</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Das ist ein Tisch. Der Tisch ist braun.</div><div class="gloss" dir="rtl">هذه طاولة. الطاولة بنّية.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Die Lampe ist neu.</div><div class="gloss" dir="rtl">المصباح جديد.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich brauche einen Stift.</div><div class="gloss" dir="rtl">أحتاج قلمًا.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Der Stuhl ist rot, nicht blau.</div><div class="gloss" dir="rtl">الكرسي أحمر، ليس أزرق.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wie heißt das auf Deutsch?</div><div class="gloss" dir="rtl">ما اسم هذا بالألمانية؟</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Das Regal ist groß und grau.</div><div class="gloss" dir="rtl">الرف كبير ورمادي.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Hast du ein Heft? — Ja, ich habe ein Heft.</div><div class="gloss" dir="rtl">هل عندك دفتر؟ — نعم، عندي دفتر.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Die Fenster sind alt.</div><div class="gloss" dir="rtl">النوافذ قديمة.</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">أدوات التعريف der / die / das <small dir="ltr">Bestimmter Artikel</small></h3><p dir="rtl" class="bodyar">لكل اسم ألماني جنس: مذكر der، مؤنث die، محايد das. لا قاعدة مطلقة، لذا تعلّم الاسم مع أداته دائمًا. الجمع يأخذ die في حالة الرفع.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">der</th><th lang="de" dir="ltr">die</th><th lang="de" dir="ltr">das</th><th lang="ar" dir="rtl">الجمع die</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Tisch</td><td lang="de" dir="ltr">die Lampe</td><td lang="de" dir="ltr">das Fenster</td><td lang="de" dir="ltr">die Tische</td></tr><tr><td lang="de" dir="ltr">der Stuhl</td><td lang="de" dir="ltr">die Tür</td><td lang="de" dir="ltr">das Regal</td><td lang="de" dir="ltr">die Stühle</td></tr><tr><td lang="de" dir="ltr">der Computer</td><td lang="de" dir="ltr">die Wand</td><td lang="de" dir="ltr">das Telefon</td><td lang="de" dir="ltr">die Computer</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">احفظ الكلمة مع أداتها: der Stuhl لا Stuhl فقط.</p></div></div><div class="card"><h3 dir="rtl">صيغ الجمع الشائعة <small dir="ltr">Pluralendungen</small></h3><p dir="rtl" class="bodyar">أشهر لواحق الجمع: -e (Tische)، -en (Türen)، -er مع Umlaut (Stühle تأخذ -e مع تحويل u إلى ü)، وبلا لاحقة (Fenster, Computer).</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">المفرد</th><th lang="ar" dir="rtl">الجمع</th><th lang="ar" dir="rtl">اللاحقة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Tisch</td><td lang="de" dir="ltr">die Tische</td><td lang="de" dir="ltr">-e</td></tr><tr><td lang="de" dir="ltr">die Tür</td><td lang="de" dir="ltr">die Türen</td><td lang="de" dir="ltr">-en</td></tr><tr><td lang="de" dir="ltr">der Stuhl</td><td lang="de" dir="ltr">die Stühle</td><td lang="de" dir="ltr">-e + Umlaut</td></tr><tr><td lang="de" dir="ltr">das Fenster</td><td lang="de" dir="ltr">die Fenster</td><td lang="ar" dir="rtl" class="ar">بلا تغيير</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">بعض الأسماء تتحول فيها الصوامت: a→ä, o→ö, u→ü.</p></div></div><div class="card"><h3 dir="rtl">اللون كصفة بعد ein <small dir="ltr">Farbadjektiv nach ein</small></h3><p dir="rtl" class="bodyar">بعد ein/eine يأخذ الوصف نهاية -er للمذكر و-e للمؤنث والمحايد: ein roter Stuhl, eine rote Lampe, ein rotes Heft. أما مع der/die/das فتكون النهاية -e غالبًا.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">مذكر</th><th lang="ar" dir="rtl">مؤنث</th><th lang="ar" dir="rtl">محايد</th></tr></thead><tbody><tr><td lang="de" dir="ltr">ein roter Stuhl</td><td lang="de" dir="ltr">eine rote Lampe</td><td lang="de" dir="ltr">ein rotes Heft</td></tr><tr><td lang="de" dir="ltr">der rote Stuhl</td><td lang="de" dir="ltr">die rote Lampe</td><td lang="de" dir="ltr">das rote Heft</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">خطأ شائع: &quot;ein rot Stuhl&quot; — الصحيح ein roter Stuhl.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Stuhl</td><td lang="ar" dir="rtl" class="ar">شتول</td><td lang="ar" dir="rtl" class="ar">شتول</td></tr><tr><td lang="de" dir="ltr">Tisch</td><td lang="ar" dir="rtl" class="ar">تيش</td><td lang="ar" dir="rtl" class="ar">تيش</td></tr><tr><td lang="de" dir="ltr">grün</td><td lang="ar" dir="rtl" class="ar">جرون</td><td lang="ar" dir="rtl" class="ar">گرُون</td></tr><tr><td lang="de" dir="ltr">Fenster</td><td lang="ar" dir="rtl" class="ar">فنستر</td><td lang="ar" dir="rtl" class="ar">فِنْسْتِر</td></tr><tr><td lang="de" dir="ltr">braun</td><td lang="ar" dir="rtl" class="ar">براون</td><td lang="ar" dir="rtl" class="ar">براون</td></tr><tr><td lang="de" dir="ltr">weiß</td><td lang="ar" dir="rtl" class="ar">فايس</td><td lang="ar" dir="rtl" class="ar">فايس</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Das ist ein Tisch.</div><div class="de" dir="ltr">Der Stuhl ist rot.</div><div class="de" dir="ltr">Die Lampe ist neu.</div><div class="de" dir="ltr">Wie heißt das auf Deutsch?</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Was ist das? <small dir="ltr">تمارين صوتية داخلية (لا يوجد نص فيديو موثّق)</small></h3><p dir="rtl">شاهد دقيقتين، ثم اكتب ثلاثة أسماء أشياء سمعتها مع أداتها.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=tOjfjS3RgJY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=tOjfjS3RgJY</a><ul class="qs"><li dir='rtl'>أي شيء ذُكر أولًا؟</li><li dir='rtl'>ما لون الكرسي المذكور؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — Farben <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع الألوان وضع علامة على ما تسمعه: rot / grün / gelb.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=tOjfjS3RgJY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=tOjfjS3RgJY</a><ul class="qs"><li dir='rtl'>هل سمعت blau؟</li><li dir='rtl'>أي لون تكرر؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: مكتبي <small dir="ltr">Lesen: Mein Arbeitsplatz</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Mein Arbeitsplatz ist klein.</td><td lang="ar" dir="rtl" class="ar">مكتبي صغير.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Der Tisch ist grau und der Stuhl ist schwarz.</td><td lang="ar" dir="rtl" class="ar">الطاولة رمادية والكرسي أسود.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich habe einen Computer und einen Drucker.</td><td lang="ar" dir="rtl" class="ar">لديّ حاسوب وطابعة.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Die Lampe ist neu, aber das Fenster ist alt.</td><td lang="ar" dir="rtl" class="ar">المصباح جديد، لكن النافذة قديمة.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich brauche ein Heft und zwei Stifte.</td><td lang="ar" dir="rtl" class="ar">أحتاج دفترًا وقلمين.</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">ما لون الطاولة؟</p><p class="qa" dir="ltr">Grau.</p></div><div class="qitem"><p dir="rtl" class="qq">هل المصباح قديم؟</p><p class="qa" dir="ltr">Nein, die Lampe ist neu.</p></div><div class="qitem"><p dir="rtl" class="qq">ماذا يحتاج الكاتب؟</p><p class="qa" dir="ltr">Ein Heft und zwei Stifte.</p></div><div class="qitem"><p dir="rtl" class="qq">ما لون الكرسي؟</p><p class="qa" dir="ltr">Schwarz.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: في غرفة العمل</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Was ist das?</td><td lang="de" dir="ltr">Das ist ein Drucker.</td></tr><tr><td lang="de" dir="ltr">Welche Farbe hat der Drucker?</td><td lang="de" dir="ltr">Er ist weiß und grau.</td></tr><tr><td lang="de" dir="ltr">Brauchst du einen Stift?</td><td lang="de" dir="ltr">Ja, ich brauche einen blauen Stift.</td></tr><tr><td lang="de" dir="ltr">Wie heißt das auf Deutsch?</td><td lang="de" dir="ltr">Das heißt Regal.</td></tr><tr><td lang="de" dir="ltr">Danke! Mein Regal ist braun.</td><td lang="de" dir="ltr">Mein Regal ist auch braun.</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">صِف مكتبك في 5 جمل: ثلاثة أشياء وألوانها + ما تحتاجه.</p>
+  <ul><li dir="rtl">أداة صحيحة لكل اسم.</li><li dir="rtl">صفة اللون بنهايتها الصحيحة بعد ein.</li><li dir="rtl">جمع سليم في جملة واحدة على الأقل.</li><li dir="rtl">نطق st وsch وü مقبول.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب 5 جمل تصف فيها غرفتك أو مكتبك.</p><pre class="model">Mein Zimmer ist klein.
+Der Tisch ist braun und der Stuhl ist schwarz.
+Ich habe ein Regal und eine Lampe.
+Die Lampe ist neu.
+Ich brauche ein Heft.</pre><p dir="rtl">اكتب سؤالين: أحدهما عن الاسم والآخر عن اللون.</p><pre class="model">Wie heißt das auf Deutsch?
+Welche Farbe hat der Stuhl?</pre><ul><li dir="rtl">أداة التعريف صحيحة.</li><li dir="rtl">نهاية الصفة مناسبة للجنس.</li><li dir="rtl">حرف كبير في بداية كل جملة.</li><li dir="rtl">علامة استفهام في السؤال.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">ضع أداة التعريف الصحيحة: der / die / das.</span></h3><div class="de" dir="ltr">____ Tisch</div><div class="de" dir="ltr">____ Lampe</div><div class="de" dir="ltr">____ Fenster</div><div class="de" dir="ltr">____ Stühle</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل الكلمة بلونها المعتاد في الدرس.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Stuhl</td><td lang="ar" dir="rtl" class="ar">الكرسي</td></tr><tr><td lang="de" dir="ltr">die Lampe</td><td lang="ar" dir="rtl" class="ar">المصباح</td></tr><tr><td lang="de" dir="ltr">das Regal</td><td lang="ar" dir="rtl" class="ar">الرف</td></tr><tr><td lang="de" dir="ltr">der Drucker</td><td lang="ar" dir="rtl" class="ar">الطابعة</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">ist / Der Stuhl / rot</div><div class="de" dir="ltr">ein / Das ist / Fenster</div><div class="de" dir="ltr">brauche / Ich / einen Stift</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر نهاية الصفة الصحيحة.</span></h3><div class="de" dir="ltr">ein rot____ Stuhl <span class="opts">[ -er | -e | -es ]</span></div><div class="de" dir="ltr">eine blau____ Lampe <span class="opts">[ -er | -e | -es ]</span></div><div class="de" dir="ltr">ein grün____ Heft <span class="opts">[ -er | -e | -es ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">____ Tisch</td><td lang="de" dir="ltr">der</td></tr><tr><td lang="de" dir="ltr">____ Lampe</td><td lang="de" dir="ltr">die</td></tr><tr><td lang="de" dir="ltr">____ Fenster</td><td lang="de" dir="ltr">das</td></tr><tr><td lang="de" dir="ltr">____ Stühle</td><td lang="de" dir="ltr">die</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Stuhl</td><td lang="ar" dir="rtl" class="ar">الكرسي</td></tr><tr><td lang="de" dir="ltr">die Lampe</td><td lang="ar" dir="rtl" class="ar">المصباح</td></tr><tr><td lang="de" dir="ltr">das Regal</td><td lang="ar" dir="rtl" class="ar">الرف</td></tr><tr><td lang="de" dir="ltr">der Drucker</td><td lang="ar" dir="rtl" class="ar">الطابعة</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">ist / Der Stuhl / rot</td><td lang="de" dir="ltr">Der Stuhl ist rot.</td></tr><tr><td lang="de" dir="ltr">ein / Das ist / Fenster</td><td lang="de" dir="ltr">Das ist ein Fenster.</td></tr><tr><td lang="de" dir="ltr">brauche / Ich / einen Stift</td><td lang="de" dir="ltr">Ich brauche einen Stift.</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">ein rot____ Stuhl</td><td lang="de" dir="ltr">-er</td></tr><tr><td lang="de" dir="ltr">eine blau____ Lampe</td><td lang="de" dir="ltr">-e</td></tr><tr><td lang="de" dir="ltr">ein grün____ Heft</td><td lang="de" dir="ltr">-es</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ ein rot Stuhl</div><div class="good" dir="ltr">✅ ein roter Stuhl</div><p dir="rtl">الصفة بعد ein تأخذ -er للمذكر.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ die Tisch</div><div class="good" dir="ltr">✅ der Tisch</div><p dir="rtl">Tisch مذكر.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ das Lampe</div><div class="good" dir="ltr">✅ die Lampe</div><p dir="rtl">Lampe مؤنث.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich brauche ein Stift.</div><div class="good" dir="ltr">✅ Ich brauche einen Stift.</div><p dir="rtl">بعد brauchen نستخدم حالة النصب: einen للمذكر.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Wie heißt das in Deutsch?</div><div class="good" dir="ltr">✅ Wie heißt das auf Deutsch?</div><p dir="rtl">التعبير الثابت هو auf Deutsch.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">أداة Tisch؟</td><td lang="de" dir="ltr">der</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">أداة Lampe؟</td><td lang="de" dir="ltr">die</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">أداة Fenster؟</td><td lang="de" dir="ltr">das</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">جمع der Stuhl؟</td><td lang="de" dir="ltr">die Stühle</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">قل: كرسي أحمر (بعد ein).</td><td lang="de" dir="ltr">ein roter Stuhl</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">قل: مصباح أزرق (بعد eine).</td><td lang="de" dir="ltr">eine blaue Lampe</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">كيف تسأل عن اسم شيء بالألمانية؟</td><td lang="de" dir="ltr">Wie heißt das auf Deutsch?</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">أكمل: Ich brauche ____ Stift.</td><td lang="de" dir="ltr">einen</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">انفِ: Der Stuhl ist blau.</td><td lang="de" dir="ltr">Der Stuhl ist nicht blau.</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">اكتب جملة تصف الرف بلونه.</td><td lang="de" dir="ltr">Das Regal ist braun.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="ar" dir="rtl" class="ar">أدوات التعريف والجمع.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="ar" dir="rtl" class="ar">صفة اللون بعد ein/eine.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">وصف مكتب كامل شفهيًا.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 2 Sequenz 2: Gegenstände am Arbeitsplatz, Farben, Genus von Nomen, bestimmter Artikel, Pluralendungen.<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 2, Teil 2 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=tOjfjS3RgJY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=tOjfjS3RgJY</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">شرح ومفردات وتمارين أصلية أُعدّت لهذا الدرس؛ لا اقتباس نصي من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L02-T02 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

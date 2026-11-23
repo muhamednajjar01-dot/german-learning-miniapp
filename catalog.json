@@ -1,0 +1,2264 @@
+{
+ "schema": "gls.study.v1",
+ "level": "A1.1",
+ "book": {
+  "title": "Menschen A1.1 Kursbuch",
+  "isbn": "978-3-19-361901-3",
+  "publisher": "Hueber Verlag",
+  "toc_source": "official Inhaltsverzeichnis PDF, legacy.hueber.de",
+  "toc_verified_at": "2026-11-16"
+ },
+ "units": [
+  {
+   "id": 1,
+   "modul": 1,
+   "title_de": "Hallo! Ich bin Nicole ...",
+   "topic_de": "Begrüßung, Befinden",
+   "book_page": 9,
+   "grammar": [
+    "Verbkonjugation Singular",
+    "W-Fragen"
+   ],
+   "objectives": [
+    "sich begrüßen und verabschieden",
+    "nach dem Befinden fragen",
+    "sich und andere vorstellen"
+   ],
+   "accent": "#B02739"
+  },
+  {
+   "id": 2,
+   "modul": 1,
+   "title_de": "Ich bin Journalistin.",
+   "topic_de": "Angaben zur Person, Berufe",
+   "book_page": 13,
+   "grammar": [
+    "Verbkonjugation Singular und Plural",
+    "Negation mit nicht"
+   ],
+   "objectives": [
+    "über den Beruf und Persönliches sprechen",
+    "Visitenkarten und Internet-Profil lesen",
+    "einen Steckbrief über sich schreiben"
+   ],
+   "accent": "#9F5C38"
+  },
+  {
+   "id": 3,
+   "modul": 1,
+   "title_de": "Das ist meine Mutter.",
+   "topic_de": "Familie",
+   "book_page": 17,
+   "grammar": [
+    "Ja/Nein-Fragen, ja – nein – doch",
+    "Possessivartikel mein/dein",
+    "Verben mit Vokalwechsel"
+   ],
+   "objectives": [
+    "über die Familie sprechen",
+    "über Sprachkenntnisse sprechen"
+   ],
+   "accent": "#999936"
+  },
+  {
+   "id": 4,
+   "modul": 2,
+   "title_de": "Der Tisch ist schön!",
+   "topic_de": "Einkaufen, Möbel",
+   "book_page": 25,
+   "grammar": [
+    "definiter Artikel der/das/die",
+    "Personalpronomen er/es/sie"
+   ],
+   "objectives": [
+    "nach Preisen fragen und Preise nennen",
+    "etwas bewerten"
+   ],
+   "accent": "#66A524"
+  },
+  {
+   "id": 5,
+   "modul": 2,
+   "title_de": "Was ist das? – Das ist ein F.",
+   "topic_de": "Gegenstände, Produkte",
+   "book_page": 29,
+   "grammar": [
+    "indefiniter Artikel ein/ein/eine",
+    "Negativartikel kein/kein/keine"
+   ],
+   "objectives": [
+    "nach Wörtern fragen und Wörter nennen",
+    "um Wiederholung bitten",
+    "etwas beschreiben",
+    "sich bedanken"
+   ],
+   "accent": "#3A9F38"
+  },
+  {
+   "id": 6,
+   "modul": 2,
+   "title_de": "Ich brauche kein Büro.",
+   "topic_de": "Büro & Technik",
+   "book_page": 33,
+   "grammar": [
+    "Singular – Plural",
+    "Akkusativ"
+   ],
+   "objectives": [
+    "Telefonstrategien",
+    "E-Mail und SMS"
+   ],
+   "accent": "#25A962"
+  },
+  {
+   "id": 7,
+   "modul": 3,
+   "title_de": "Du kannst wirklich toll …!",
+   "topic_de": "Freizeit, Komplimente",
+   "book_page": 41,
+   "grammar": [
+    "Modalverb können",
+    "Satzklammer"
+   ],
+   "objectives": [
+    "Komplimente machen",
+    "über Hobbys und Fähigkeiten sprechen",
+    "um etwas bitten",
+    "sich bedanken"
+   ],
+   "accent": "#389F99"
+  },
+  {
+   "id": 8,
+   "modul": 3,
+   "title_de": "Kein Problem. Ich habe Zeit!",
+   "topic_de": "Freizeit, Verabredungen",
+   "book_page": 45,
+   "grammar": [
+    "Verbposition im Satz",
+    "temporale Präpositionen am, um"
+   ],
+   "objectives": [
+    "sich verabreden",
+    "einen Vorschlag machen und darauf reagieren"
+   ],
+   "accent": "#2774B0"
+  },
+  {
+   "id": 9,
+   "modul": 3,
+   "title_de": "Ich möchte was essen, Onkel Harry.",
+   "topic_de": "Essen, Einladung zu Hause",
+   "book_page": 49,
+   "grammar": [
+    "Konjugation mögen, möchte",
+    "Wortbildung Nomen + Nomen"
+   ],
+   "objectives": [
+    "über Essgewohnheiten sprechen",
+    "Konversation beim Essen"
+   ],
+   "accent": "#38409F"
+  },
+  {
+   "id": 10,
+   "modul": 4,
+   "title_de": "Ich steige jetzt in die U-Bahn ein.",
+   "topic_de": "Reisen, Verkehrsmittel",
+   "book_page": 57,
+   "grammar": [
+    "trennbare Verben"
+   ],
+   "objectives": [
+    "sich informieren",
+    "ein Telefonat beenden"
+   ],
+   "accent": "#5E27B0"
+  },
+  {
+   "id": 11,
+   "modul": 4,
+   "title_de": "Was hast du heute gemacht?",
+   "topic_de": "Tagesablauf, Vergangenes",
+   "book_page": 61,
+   "grammar": [
+    "Perfekt mit haben",
+    "temporale Präpositionen von ... bis, ab"
+   ],
+   "objectives": [
+    "über Vergangenes sprechen"
+   ],
+   "accent": "#94389F"
+  },
+  {
+   "id": 12,
+   "modul": 4,
+   "title_de": "Was ist denn hier passiert?",
+   "topic_de": "Feste, Vergangenes",
+   "book_page": 65,
+   "grammar": [
+    "Perfekt mit sein",
+    "temporale Präposition im"
+   ],
+   "objectives": [
+    "über Feste und Reisen sprechen"
+   ],
+   "accent": "#B0277C"
+  }
+ ],
+ "lessons": [
+  {
+   "idx": 1,
+   "doc_id": "L01-T01",
+   "lektion": 1,
+   "kind": "teaching",
+   "title_de": "Hallo! Ich bin Nicole …",
+   "title_ar": "التحية والتعريف بالنفس",
+   "accent": "#B02739",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 1,
+   "reader": "lessons/L01-T01/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/3",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADA2sDn4j9U5gccU1trwP6IhsyGG7MAALPIAACJ-AhUNz4PabgqNOFPQQ",
+     "sha256": "8b1cbfc25d2955e18a7aba648d00fda31f2a5acf30aa36645b64bb15156b6b73",
+     "bytes": 1249602
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/4",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADBGsDn4k-Pv8wQ7P87L-2pMGtW9-xAALQIAACJ-AhUKczTfk9354IPQQ",
+     "sha256": "cc52efe6a7ea635814b82538733fca316b3924593afb991b7db09fb794d2026e",
+     "bytes": 57756
+    }
+   ],
+   "video_ids": [
+    "-EElWLA7BQ4"
+   ],
+   "video_minutes": 22.0,
+   "book_page": 9
+  },
+  {
+   "idx": 2,
+   "doc_id": "L01-T02",
+   "lektion": 1,
+   "kind": "teaching",
+   "title_de": "Buchstabieren Sie bitte!",
+   "title_ar": "التحية الرسمية · du/Sie · الأبجدية",
+   "accent": "#9F3B38",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 1,
+   "reader": "lessons/L01-T02/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/5",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADBWsDn4u_UftxG3pl3-5SnCfcX9fWAALRIAACJ-AhUKuf7bl8m8TqPQQ",
+     "sha256": "e4d7b7ddc94ff230753602505a0a28a9aa9d204e03592b12b75974a2d1cbec0c",
+     "bytes": 1143989
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/6",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADBmsDn4tTVGGLKT-jFlNwMlvCLaJHAALSIAACJ-AhUDxkcEdI2FY4PQQ",
+     "sha256": "61d675b8cea1b66f58caa0e2d9badc774ab81a55282116352d2c3f37f2bd1aa4",
+     "bytes": 58940
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/7",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADB2sDn4w2JlGv27WTGRWDMOsfKcRfAALTIAACJ-AhUHZloaOllWnwPQQ",
+     "sha256": "a0943bd5ca7045aa7b12892f31584b8592c96340eaf2b28cd99f3cf648ec86a9",
+     "bytes": 664169
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/8",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADCGsDn5DLp30AAfrQ-sVfs_dAkUV-qgAC1CAAAifgIVDzzMVjuKFgIj0E",
+     "sha256": "c9223cae3d6206f3024b1331d736b308ee828c5a717061722aa98f4df8268df8",
+     "bytes": 45077
+    }
+   ],
+   "video_ids": [
+    "c_W_I4zL5VQ",
+    "dhd8cZOAshU"
+   ],
+   "video_minutes": 47.6,
+   "book_page": 9
+  },
+  {
+   "idx": 3,
+   "doc_id": "L01-R",
+   "lektion": 1,
+   "kind": "review",
+   "title_de": "Wiederholung Lektion 1 — Begrüßung und Befinden",
+   "title_ar": "مراجعة الدرس الأول — التحية والسؤال عن الحال",
+   "accent": "#B04127",
+   "package": "",
+   "total": 20,
+   "pass_score": 14,
+   "modul": 1,
+   "reader": "lessons/L01-R/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/9",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADCWsDn5LOdZUN2CVtG1QI54BHCfwxAALVIAACJ-AhUAYhMNBWVZEtPQQ",
+     "sha256": "0be3c16c5edb86de2ae7221534c444fb2d1c19be89b7e00499ebca5060f9b324",
+     "bytes": 1044163
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/10",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADCmsDn5JvQ4rprCXT9ugCM8sZl9uRAALWIAACJ-AhUPo-D9oUrK0AAT0E",
+     "sha256": "0a9fc60cda348e85381c69618cc872177749b58847909d4d5b8e974ac5e284df",
+     "bytes": 48830
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/11",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADC2sDn5Qz0EQl6z6qCvo0tDsCvWYvAALXIAACJ-AhUHm4wF8nDcWtPQQ",
+     "sha256": "60eeb1751d9fc4e2424b2ed71fa641b6358c447a13f27c4c3b3e35b504157768",
+     "bytes": 502914
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/12",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADDGsDn5TaP4YeyNEm2Qb_2LXmiDArAALYIAACJ-AhUNxSuZFNG1JrPQQ",
+     "sha256": "f82b430c836646f9e8fccec9d97e7bda4302ae0c801945c8ac5158dc4e34433c",
+     "bytes": 41100
+    }
+   ],
+   "video_ids": [],
+   "video_minutes": 0.0,
+   "book_page": 9
+  },
+  {
+   "idx": 4,
+   "doc_id": "L02-T01",
+   "lektion": 2,
+   "kind": "teaching",
+   "title_de": "Angaben zur Person — Wer ist das?",
+   "title_ar": "البيانات الشخصية — مَن هذا؟",
+   "accent": "#9F5C38",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 1,
+   "reader": "lessons/L02-T01/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/13",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADDWsDn5dWUP7RkMjUlQw8XT2C9qqcAALZIAACJ-AhUKQ50fYxdLu2PQQ",
+     "sha256": "0e026499722bdef1258aa19f576e9867868a77bdf7281eaa7de2c5003fab3400",
+     "bytes": 1070659
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/14",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADDmsDn5cu-Pb-pc_j4XrRVKL0IgpWAALaIAACJ-AhUDztl_PT3CzuPQQ",
+     "sha256": "3d17e4215dd32f377e5e4ac8a25f8b4a7e43b6fbcc6d8af4e0f9af00dd134012",
+     "bytes": 51893
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/15",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADD2sDn5gGASM1_tfU9sxCEQxOMip7AALbIAACJ-AhUPOcWS9YN0NyPQQ",
+     "sha256": "12e6316af10ce5f7ca5dfc58e5553edc622f3dc40514b87639aba23239328ca0",
+     "bytes": 524049
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/16",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADEGsDn5lQAje_01SUtOBZ3AtjZd0uAALcIAACJ-AhUCO8u6i5k3xcPQQ",
+     "sha256": "95886fcf2864c73cb9a140c5ce9be17e5127304026220a59cf7098d3c7b58cd7",
+     "bytes": 42456
+    }
+   ],
+   "video_ids": [
+    "RGF-Ckgjqo0"
+   ],
+   "video_minutes": 45.0,
+   "book_page": 13
+  },
+  {
+   "idx": 5,
+   "doc_id": "L02-T02",
+   "lektion": 2,
+   "kind": "teaching",
+   "title_de": "Dinge am Arbeitsplatz — Farben und Artikel",
+   "title_ar": "أشياء في العمل — الألوان وأدوات التعريف",
+   "accent": "#B06D27",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 1,
+   "reader": "lessons/L02-T02/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/17",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADEWsDn5saWW379lJgigluMA5lhK2LAALdIAACJ-AhUIxZgvxMeqCQPQQ",
+     "sha256": "1a656013e6f09cebf681f89a52126096111062200432e73f13bfeb68c64c226d",
+     "bytes": 1043549
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/18",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADEmsDn56B-bVM2Rqx68ZbCY3nqgUnAALeIAACJ-AhUIaiMGLqrcH5PQQ",
+     "sha256": "0a80c55393d9501b0311d1c45fc99776e501b61da6214a722839fb83d1140ec8",
+     "bytes": 49694
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/19",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADE2sDn6CC2Gqxz9b4CeowF_9h4MeWAALfIAACJ-AhUDsOug5pC3O-PQQ",
+     "sha256": "f560e8d7f45ce581db62077e48f536563c9f4dce9a160647987b116e03d2afde",
+     "bytes": 511800
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/20",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADFGsDn6D_HnRzIMKWawezIObPhmPgAALgIAACJ-AhUKew6kPskze9PQQ",
+     "sha256": "902451fe67f486b10c786756db1947856105d3d5f912b8df5be625beffc4c019",
+     "bytes": 41534
+    }
+   ],
+   "video_ids": [
+    "tOjfjS3RgJY"
+   ],
+   "video_minutes": 24.9,
+   "book_page": 13
+  },
+  {
+   "idx": 6,
+   "doc_id": "L02-T03",
+   "lektion": 2,
+   "kind": "teaching",
+   "title_de": "Dinge beschreiben und nachfragen",
+   "title_ar": "وصف الأشياء والسؤال عند عدم الفهم",
+   "accent": "#9F7D38",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 1,
+   "reader": "lessons/L02-T03/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/21",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADFWsDn6K4rxJJfNiZExUcCnzDptupAALhIAACJ-AhUANieR0XJWT4PQQ",
+     "sha256": "37f643a09b88ea5fc3056ddce38e3bb551a0b69cd753652b04b1900465fb4ef0",
+     "bytes": 1050452
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/22",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADFmsDn6J1kKkm8ZPkUBzdm4hh35MSAALiIAACJ-AhUJAhRUjKwcfhPQQ",
+     "sha256": "887ccb2b44dafcf70f1f4f0ba96a732951b11f5354695ceb47ff9c99de907a21",
+     "bytes": 50018
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/23",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADF2sDn8bJXKWB--zdhX4v_hgqM-mLAALjIAACJ-AhUHbvM0R7M35MPQQ",
+     "sha256": "0ccc08f0a9711ec78e85a1350656899dc198aec9ab16ed7a32bc6810fd4a3fc3",
+     "bytes": 510433
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/24",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADGGsDn8dYksRL6yZuUCChO_DK0kW3AALkIAACJ-AhUFQajr8FAAENJT0E",
+     "sha256": "ec99b36b5a6792fd164dec044b35bb57380ac12249834640243d1788c3651160",
+     "bytes": 41840
+    }
+   ],
+   "video_ids": [
+    "jC0ixtlkbZY"
+   ],
+   "video_minutes": 25.2,
+   "book_page": 13
+  },
+  {
+   "idx": 7,
+   "doc_id": "L02-R",
+   "lektion": 2,
+   "kind": "review",
+   "title_de": "Wiederholung Lektion 2 — Personen, Dinge, Nachfragen",
+   "title_ar": "مراجعة الدرس الثاني — الأشخاص والأشياء وطلب التوضيح",
+   "accent": "#A99425",
+   "package": "",
+   "total": 20,
+   "pass_score": 14,
+   "modul": 1,
+   "reader": "lessons/L02-R/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/25",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADGWsDn8jbAAHUBsb6yMe78ZR2bnHBMQAC5SAAAifgIVCZuB7dr6-Mfj0E",
+     "sha256": "fb1770a455115c25e84829e1fcfb49be15ed30ded9b94788af3311d715736329",
+     "bytes": 1048233
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/26",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADGmsDn8nUkBfg8GTAhAkpuM7JQaFNAALmIAACJ-AhUGc3fWWMjwQTPQQ",
+     "sha256": "980588c5fb1e76b7d91a4e309e73c52facfb3526be5ba1734e0c7c098097c6af",
+     "bytes": 50537
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/27",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADG2sDn8rqt9vUXM1lxx3-ErcXIlbbAALnIAACJ-AhUOInF59wRSQ-PQQ",
+     "sha256": "e6e6368c52660be8b57a27d1de1698e8454959554b37d66d36e5edcdf138b854",
+     "bytes": 499760
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/28",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADHGsDn8qGaSXev9zZW-bKn7C0JOM3AALoIAACJ-AhUBQ0Op6AIcCDPQQ",
+     "sha256": "81107c738f4fff0bb13abc80361da7b436375a2ba37fc5f1f85f6c81ef31a9bf",
+     "bytes": 41315
+    }
+   ],
+   "video_ids": [],
+   "video_minutes": 0.0,
+   "book_page": 13
+  },
+  {
+   "idx": 8,
+   "doc_id": "L03-T01",
+   "lektion": 3,
+   "kind": "teaching",
+   "title_de": "Das ist meine Familie",
+   "title_ar": "هذه عائلتي",
+   "accent": "#999936",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 1,
+   "reader": "lessons/L03-T01/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/29",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADHWsDn8yi-fHPuJnYfDOTejmMHbCUAALpIAACJ-AhUDcxtaX4ZqpWPQQ",
+     "sha256": "6a4bb4539107c78f1190882175ceec683bfadd6bd371855dc74cf0a9f8959c99",
+     "bytes": 1032684
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/30",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADHmsDn9CWOswFKap-qr7PfLPa19nGAALqIAACJ-AhUAynM6BHrH4bPQQ",
+     "sha256": "bc6888247f9adc9141da44687130c7622f2629b81908b20ed9d2c47c967e463e",
+     "bytes": 48912
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/31",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADH2sDn9GwXWXUgMcwIVdKjo3hk8SJAALrIAACJ-AhULkWGxL5mls2PQQ",
+     "sha256": "c905ae0ffdb9627a68006467336839965ba474ed04225df2ce18ea04064b1cd0",
+     "bytes": 593671
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/32",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADIGsDn9G0Q-5f5ui_Fvt2QAPJOFctAALsIAACJ-AhUDrnJPWFZcA0PQQ",
+     "sha256": "b4e63aafcd70349adb906f3aa40b6d2c852a45c6ed5829d3ea8d61c5b90f8d39",
+     "bytes": 41366
+    }
+   ],
+   "video_ids": [
+    "yI3_cpxetNE"
+   ],
+   "video_minutes": 24.2,
+   "book_page": 17
+  },
+  {
+   "idx": 9,
+   "doc_id": "L03-T02",
+   "lektion": 3,
+   "kind": "teaching",
+   "title_de": "Familie und Berufe — sein, ihr, seine, ihre",
+   "title_ar": "العائلة والمهن — ضمائر الملكية sein/ihr",
+   "accent": "#8A9E23",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 1,
+   "reader": "lessons/L03-T02/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/33",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADIWsDn9Rj_uvdCg6CHw4qcvqoNlB0AALtIAACJ-AhUBF_qj2AvKDVPQQ",
+     "sha256": "205ab02d24c158161bb08d271f0060c5869fe17686864d3608473f9e47f9a40f",
+     "bytes": 1035849
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/34",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADImsDn9QnQeGnbs2XZ0gFMw9XllcXAALuIAACJ-AhUB2m0MeiQaFbPQQ",
+     "sha256": "6b0a335aea6afe77cc013732f8e52727df63ffae0e5b87bf9baf4a7df094d62e",
+     "bytes": 49086
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/35",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADI2sDn9VU_HXuKD1hrzF9zInv1ug_AALvIAACJ-AhUPQAAcY8-mnETD0E",
+     "sha256": "d0df110982ddb1e27653ff16032031753d9c43f9bc21961ba6a76b585c68996d",
+     "bytes": 505440
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/36",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADJGsDn9Z5NI4VEFEHZwwQxfB5vF9jAALwIAACJ-AhUFrb6pUwX7S5PQQ",
+     "sha256": "e69e27929255bce7926e630dd95ad6d76d9b3516b74e90abf0b17a1cd8db548f",
+     "bytes": 41284
+    }
+   ],
+   "video_ids": [
+    "ynarL7M0O3E",
+    "R-nhq9XTF1o"
+   ],
+   "video_minutes": 53.2,
+   "book_page": 17
+  },
+  {
+   "idx": 10,
+   "doc_id": "L03-R",
+   "lektion": 3,
+   "kind": "review",
+   "title_de": "Wiederholung Lektion 3 — Familie, Possessivartikel, Alter",
+   "title_ar": "مراجعة الدرس الثالث — العائلة وضمائر الملكية والعمر",
+   "accent": "#7D9F38",
+   "package": "",
+   "total": 20,
+   "pass_score": 14,
+   "modul": 1,
+   "reader": "lessons/L03-R/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/37",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADJWsDn9iTn7cFPDO5o151JakxQE8sAALxIAACJ-AhUEmbcgldDqHWPQQ",
+     "sha256": "3f76d9019716b243662cca049966c1efb2aebe16eee6d2d26318101b51a2b611",
+     "bytes": 1048804
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/38",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADJmsDn9lewldZQUNwS0jgBpH13NAKAALyIAACJ-AhUDZ1UA5u_Zt_PQQ",
+     "sha256": "a73b54f0f797ee26073b49a5cc94852f4815691e849dbf029e010f2f1972a8ea",
+     "bytes": 50097
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/39",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADJ2sDn9rq9sZEfyK2XHj6U8_CIxCbAALzIAACJ-AhUJgVfkVcDfAOPQQ",
+     "sha256": "13de07cb60dbedc9c5b384268070b52650ea1d8802e3c0c2216008015ca4f564",
+     "bytes": 506467
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/40",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADKGsDn93_kPB49C8iNrij84cKmRfhAAL0IAACJ-AhUBjZQXfTbSDBPQQ",
+     "sha256": "97117746dd70f405f98eec7bf69fc7c127012b745f3999fba1c842bb0293fafa",
+     "bytes": 41389
+    }
+   ],
+   "video_ids": [],
+   "video_minutes": 0.0,
+   "book_page": 17
+  },
+  {
+   "idx": 11,
+   "doc_id": "L04-T01",
+   "lektion": 4,
+   "kind": "teaching",
+   "title_de": "Der Tisch ist schön — Möbel und Zimmer",
+   "title_ar": "الطاولة جميلة — الأثاث والغرف",
+   "accent": "#66A524",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 2,
+   "reader": "lessons/L04-T01/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/41",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADKWsDn9_qMWrqyPFnEQJVBluxXQyWAAL1IAACJ-AhUCt18QLULYhyPQQ",
+     "sha256": "4cbdbff7acd3186923f7b8f9f9c2a8ac9f31d17304df0b55376bd84d340abe41",
+     "bytes": 1035000
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/42",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADKmsDn99x2s7pim7baQrvIQ6rIxEJAAL2IAACJ-AhUPFUMJdJw3UfPQQ",
+     "sha256": "00173704f260293b7e1c3b1ff69b69631779c418dfe5e2d72f039ac216cbc3fb",
+     "bytes": 48931
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/43",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADK2sDoAQM--ojH_dsMG0ZqJHGaxKDAAL3IAACJ-AhUM8QyP8zC_kQPQQ",
+     "sha256": "5134f5bfe538ebdbdde6256af4cdd74e8d59bf490edddeb20005440418aaabca",
+     "bytes": 505346
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/44",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADLGsDoAQFAAGzQitDX1avjrA6pGCHSAAC-CAAAifgIVAbvDeAyTpu_j0E",
+     "sha256": "664d71857dfc4a184d28ec7d1fa82371b34f5d5c824cd25980a8f98699dc73d2",
+     "bytes": 41272
+    }
+   ],
+   "video_ids": [
+    "s8LjoxzA9dw"
+   ],
+   "video_minutes": 30.2,
+   "book_page": 25
+  },
+  {
+   "idx": 12,
+   "doc_id": "L04-T02",
+   "lektion": 4,
+   "kind": "teaching",
+   "title_de": "Einkaufen — Was kostet das?",
+   "title_ar": "التسوّق — كم يكلّف هذا؟",
+   "accent": "#5C9F38",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 2,
+   "reader": "lessons/L04-T02/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/45",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADLWsDoAYUNGrvjEUEeeWMTA43TYP7AAL5IAACJ-AhUDwtGa0uMvx7PQQ",
+     "sha256": "0f1f10e3aba2ad7439ba562582540b320fcae590243fc15b2f648defb72fb750",
+     "bytes": 1042785
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/46",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADLmsDoAaWbDqqtBk8jvjONpmTEoTyAAL6IAACJ-AhUKfyn65OJuI9PQQ",
+     "sha256": "30307ff936f415c1f75289cdb533334623f2f8c2d9df74ac11d080a860e037a1",
+     "bytes": 49008
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/47",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADL2sDoAc6h0RjgK--hnqLbMWtQvoQAAL7IAACJ-AhUJAuw6p9SXRJPQQ",
+     "sha256": "e8cd3752ae18ae2dd7e654023c591ae74700df6991eaa974a49ff1aa4d379d8e",
+     "bytes": 510576
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/48",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADMGsDoAgyFufED3yTWngR9TQqjTCbAAL8IAACJ-AhUJ0t9I8TXh6_PQQ",
+     "sha256": "200f29c762fe574e5bd2ad414a1e2c45cc5d36805e7a18f599215dd55f269c80",
+     "bytes": 41464
+    }
+   ],
+   "video_ids": [
+    "NJhMjdq6fNQ",
+    "Mkr2yZEEdPQ"
+   ],
+   "video_minutes": 49.7,
+   "book_page": 25
+  },
+  {
+   "idx": 13,
+   "doc_id": "L04-R",
+   "lektion": 4,
+   "kind": "review",
+   "title_de": "Wiederholung Lektion 4 — Möbel, Einkaufen, Akkusativ",
+   "title_ar": "مراجعة الدرس الرابع — الأثاث والتسوّق وحالة النصب",
+   "accent": "#3EA925",
+   "package": "",
+   "total": 20,
+   "pass_score": 14,
+   "modul": 2,
+   "reader": "lessons/L04-R/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/49",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADMWsDoAqdNSsS9rpW7jleJC5BoqNKAAL9IAACJ-AhUIo-3_ujmPagPQQ",
+     "sha256": "ded6a1073277e2cd9bad129f499ee1b23e64ab687acc5fc227ac4394e1f11996",
+     "bytes": 1046482
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/50",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADMmsDoA1oAAHDXG3r8k7CpEixa2dsSgAC_iAAAifgIVDt7LMHlsa9_j0E",
+     "sha256": "52e769c54f841c60e48d1e9f198277f6cb8d48762d38192e5fef2119aba9fba4",
+     "bytes": 49620
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/51",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADM2sDoA4N91PCljK2x7eUdo1QfSKzAAL_IAACJ-AhULRnEiBxalyJPQQ",
+     "sha256": "ecf6b5b594ea14ee8c003b53c27035df8417b710da37f12a5a58109e3f7b112a",
+     "bytes": 502229
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/52",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADNGsDoA88zbjEczV7bZi4DcjQp7CnAAMhAAIn4CFQSkYFlBupPRo9BA",
+     "sha256": "16784118088b2f8889d03d440a907ed2fa772e59dad4a535853e842781a95fc9",
+     "bytes": 41350
+    }
+   ],
+   "video_ids": [],
+   "video_minutes": 0.0,
+   "book_page": 25
+  },
+  {
+   "idx": 14,
+   "doc_id": "L05-T01",
+   "lektion": 5,
+   "kind": "teaching",
+   "title_de": "Was ist das? — Alltagsgegenstände",
+   "title_ar": "ما هذا؟ — أشياء الحياة اليومية",
+   "accent": "#3A9F38",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 2,
+   "reader": "lessons/L05-T01/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/53",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADNWsDoBE-mPSmMAS4Rk0zASJP3ITNAAIBIQACJ-AhULWNSwKCj9bnPQQ",
+     "sha256": "17f8eaef29358a8bb4623c065e2cbbb3a941c6636fc992ee5ae1fbf1e9c07ad6",
+     "bytes": 1034555
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/54",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADNmsDoBLN-UB0yzQFhKpZ_r40PCgDAAICIQACJ-AhULC3UV0OFBfePQQ",
+     "sha256": "f027d66342f6980ac8f2ac5d517c522370c2f36057fa8bc11ce4f77d6ea2391b",
+     "bytes": 48926
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/55",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADN2sDoBPi55bg3z0xNK8ufoXc80bZAAIDIQACJ-AhUISzSJeBlZJmPQQ",
+     "sha256": "7e79d385604a739283dcc9f727ae0e152c98ddc44487f061f661814c07e156e3",
+     "bytes": 508079
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/56",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADOGsDoBOGOyQS6RlMicMc1ZWygR7jAAIEIQACJ-AhUCOw13HPKJSBPQQ",
+     "sha256": "17b7c8a4551228fdd189e9b400cd99cf653c7b5f104310d0374ac004f9e7751a",
+     "bytes": 41381
+    }
+   ],
+   "video_ids": [
+    "aqdtJPbKLLc"
+   ],
+   "video_minutes": 22.1,
+   "book_page": 29
+  },
+  {
+   "idx": 15,
+   "doc_id": "L05-T02",
+   "lektion": 5,
+   "kind": "teaching",
+   "title_de": "Produkte — Material, Herkunft, Qualität",
+   "title_ar": "المنتجات — المادة والمنشأ والجودة",
+   "accent": "#26AB38",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 2,
+   "reader": "lessons/L05-T02/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/57",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADOWsDoBVkEDgbrWAQhQQjMnVB9D7VAAIFIQACJ-AhUETJ_LVhXMZrPQQ",
+     "sha256": "5013f65f90b2accb90e8103da23f04ca8e67c5f7ec40593fde0b27306c88c8c7",
+     "bytes": 1039497
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/58",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADOmsDoBbJKdkWvjn_NwyAovG-xdJhAAIGIQACJ-AhUK_5jsYnEIWlPQQ",
+     "sha256": "0d5c151dcd93244139ea0fc778789dc560df6d9837da862a608f21065e213f02",
+     "bytes": 48827
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/59",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADO2sDoBfJMzbhy5DFvH8isWioAvEaAAIHIQACJ-AhUEd76JEtaeBwPQQ",
+     "sha256": "9902680305d985b129625660446fa9dc88b20a0f4c32e834eece11b4a5c7466c",
+     "bytes": 510470
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/60",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADPGsDoBh7ynSIsII6WraYJMg6QCo2AAIIIQACJ-AhUB1KnWiymnDuPQQ",
+     "sha256": "539321c286f018a7a959a9f3a57aea43ecf67aaedcda1ccd08f505c89698f75f",
+     "bytes": 41344
+    }
+   ],
+   "video_ids": [
+    "HJKNPuR5xCk",
+    "YwqhAByfaFw"
+   ],
+   "video_minutes": 46.7,
+   "book_page": 29
+  },
+  {
+   "idx": 16,
+   "doc_id": "L05-R",
+   "lektion": 5,
+   "kind": "review",
+   "title_de": "Wiederholung Lektion 5 — Gegenstände, Produkte, Herkunft",
+   "title_ar": "مراجعة الدرس الخامس — الأشياء والمنتجات والمنشأ",
+   "accent": "#389F56",
+   "package": "",
+   "total": 20,
+   "pass_score": 14,
+   "modul": 2,
+   "reader": "lessons/L05-R/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/61",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADPWsDoBoq-ihKSxZZdvpnD2O46skWAAIJIQACJ-AhULIMi2hGixWJPQQ",
+     "sha256": "d63691aacbfa2772ef7a88cf305e39cef5d4f66b30483e18682044155dfbe3f4",
+     "bytes": 1041994
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/62",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADPmsDoBvLyOYvFGT69YZwlyIyQgjmAAIKIQACJ-AhUHMq1rdG0Bc3PQQ",
+     "sha256": "955efda2b0cf2594f3a98f7204ec05d6149cadfc7a90cc8247b6fb07aa6af48d",
+     "bytes": 49363
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/63",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADP2sDoEAbGLeatY_3MsGl4lRkNCRiAAILIQACJ-AhUNVxUu3fz6c1PQQ",
+     "sha256": "2d42eea787eaeb60e4a04823c98f3184c615153253a4e751efd594e454957234",
+     "bytes": 501890
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/64",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADQGsDoEDMMaQqlbgU6HgLF1KaGn-tAAIMIQACJ-AhUGitXY27jZ0XPQQ",
+     "sha256": "8b5c8e87b2da66e5830dc76526f0d906333b50e4cfdcba87f6b64551b714d9be",
+     "bytes": 41345
+    }
+   ],
+   "video_ids": [],
+   "video_minutes": 0.0,
+   "book_page": 29
+  },
+  {
+   "idx": 17,
+   "doc_id": "L06-T01",
+   "lektion": 6,
+   "kind": "teaching",
+   "title_de": "Ich brauche kein Büro — Arbeitsplatz und Geräte",
+   "title_ar": "لا أحتاج مكتبًا — مكان العمل والأجهزة",
+   "accent": "#25A962",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 2,
+   "reader": "lessons/L06-T01/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/65",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADQWsDoELFldfe-uDwZmoUWl9RpOF_AAINIQACJ-AhUGjNUB2trEsjPQQ",
+     "sha256": "f17bcf59f5c7936de1e232f292fc53a7323706aa5d71eebdd7e173478ec18a51",
+     "bytes": 1042966
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/66",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADQmsDoELN_Vy_sIOY5trbXqpAmsm6AAIOIQACJ-AhUAFf8LBavTMZPQQ",
+     "sha256": "62f34a9262187abdb0301ebd4eb5f694e453e86f485e83b9d4f60b92bc850a8d",
+     "bytes": 49201
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/67",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADQ2sDoEOnipGoZdm1NMXVSd0Jv9GcAAIPIQACJ-AhUOx3bhie_hElPQQ",
+     "sha256": "3f6f7160767d1fcb4044945a2bd27c475adb558ceb45b6cd5125cfe37470f635",
+     "bytes": 506206
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/68",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADRGsDoEQr2hitGpkzlzRdwGwVdJpyAAIQIQACJ-AhUD1Zhs4JHzvTPQQ",
+     "sha256": "16846350fb5eaa1dcfafd9f09cd5c03df15a60e96fc5cd632fe399fac88de2e4",
+     "bytes": 41511
+    }
+   ],
+   "video_ids": [
+    "tjdgp2fBc4g"
+   ],
+   "video_minutes": 26.2,
+   "book_page": 33
+  },
+  {
+   "idx": 18,
+   "doc_id": "L06-T02",
+   "lektion": 6,
+   "kind": "teaching",
+   "title_de": "Technik im Alltag — Plural und Defekte",
+   "title_ar": "التقنية في الحياة اليومية — الجمع والأعطال",
+   "accent": "#389F78",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 2,
+   "reader": "lessons/L06-T02/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/69",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADRWsDoEaasQdo2lMfgm95v-Axr0nJAAIRIQACJ-AhUHcgkFNB57AfPQQ",
+     "sha256": "cc8648337db235706d71d75904cd956edb033f066354836da96def8259ee1373",
+     "bytes": 1039707
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/70",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADRmsDoEkmDEkwglMhuSqfD6tEYdSTAAISIQACJ-AhUHvr5TjAK-9FPQQ",
+     "sha256": "b8cdbd0dd2565c5f5b41f861b313c31668e83df373057f0303d61a0646980afb",
+     "bytes": 49035
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/71",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADR2sDoEpG39MD60b_iNdNKaRdUNEVAAITIQACJ-AhUDf_1HOHde1QPQQ",
+     "sha256": "d5ec416ba871c901a92eae7e47e9355ccb66232fe57f6446f1833e082f3a5a4b",
+     "bytes": 507087
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/72",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADSGsDoEvKdfYAAesJKp4qt6rgPK9pxQACFCEAAifgIVCj9IcnIm821j0E",
+     "sha256": "0f85b2fe66c01f2a27673ac7c9be68a7cc7ea5383876c15a98780742ce400e88",
+     "bytes": 41523
+    }
+   ],
+   "video_ids": [
+    "g64jFRCA5DQ",
+    "aAUXFIsrFQg"
+   ],
+   "video_minutes": 43.6,
+   "book_page": 33
+  },
+  {
+   "idx": 19,
+   "doc_id": "L06-R",
+   "lektion": 6,
+   "kind": "review",
+   "title_de": "Wiederholung Lektion 6 — Büro, Technik, Negation",
+   "title_ar": "مراجعة الدرس السادس — المكتب والتقنية والنفي",
+   "accent": "#24A68A",
+   "package": "",
+   "total": 20,
+   "pass_score": 14,
+   "modul": 2,
+   "reader": "lessons/L06-R/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/73",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADSWsDoE5w1UvV-vB93WUTI7TgnYnTAAIVIQACJ-AhUGOuK6Bhi_rgPQQ",
+     "sha256": "36edb1a0724e67ea7a191afe3c93065b8fd962b72ac84696c1b09fe960e83795",
+     "bytes": 1041402
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/74",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADSmsDoE4UN2BaZP6cLT3lL7t5env7AAIWIQACJ-AhULtTBbsjb0M8PQQ",
+     "sha256": "e762b9829afbfefdbef0ac0213050c92427800f8074abed9f54894951b2bbc28",
+     "bytes": 49178
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/75",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADS2sDoE-Z7TtO-fZPTHPNs2WFVdLeAAIXIQACJ-AhUIrkeVQuIODFPQQ",
+     "sha256": "2bc8d73418476242691a0cf391aabde97906d104cd025c57ad4c26ae58e06c82",
+     "bytes": 502006
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/76",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADTGsDoFB4bap8pjVBRa6E94KVpaaxAAIYIQACJ-AhUMydf0h1crpvPQQ",
+     "sha256": "86cb8ebd82bb80445cd1313ae1d77c0cee94a4ac5d7a3de9c3a7349b1167dbf0",
+     "bytes": 41241
+    }
+   ],
+   "video_ids": [],
+   "video_minutes": 0.0,
+   "book_page": 33
+  },
+  {
+   "idx": 20,
+   "doc_id": "L07-T01",
+   "lektion": 7,
+   "kind": "teaching",
+   "title_de": "Was machst du gern? — Hobbys",
+   "title_ar": "ماذا تحب أن تفعل؟ — الهوايات",
+   "accent": "#389F99",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 3,
+   "reader": "lessons/L07-T01/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/77",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADTWsDoFHZTUHqc10jznx9y8CIDP-QAAIZIQACJ-AhUBkJLGQktclSPQQ",
+     "sha256": "04e7643409533068c419557e0a7fc0108f2a54b418b9beeda17b1e830650d3f1",
+     "bytes": 1035067
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/78",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADTmsDoFKvzxNS3pHoUCMd7G-f-OzIAAIaIQACJ-AhUEgF72y7ea2dPQQ",
+     "sha256": "f87a382286e2dc563f15953f1c1f7dd4bd05b4139a5f408f02decd93a67b7c02",
+     "bytes": 48840
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/79",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADT2sDoFPpdHcIyDt7PurWvFSCRkMkAAIbIQACJ-AhUPXh_VYJZdROPQQ",
+     "sha256": "52bc0df922b577c614e8ebc5d24e4bc222e2a8b9a5dcc31ca11183b1ee0a8f82",
+     "bytes": 510866
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/80",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADUGsDoFZ1CpLLkRBF6gABsfKXpVS47gACHCEAAifgIVByVkzBEndOxT0E",
+     "sha256": "8abb5939c67b54efd4a0ee73bd44cd66bb939512fa0146a507c5dc279ce6788d",
+     "bytes": 41410
+    }
+   ],
+   "video_ids": [
+    "4ROO6A7JIAU"
+   ],
+   "video_minutes": 29.1,
+   "book_page": 41
+  },
+  {
+   "idx": 21,
+   "doc_id": "L07-T02",
+   "lektion": 7,
+   "kind": "teaching",
+   "title_de": "Du kannst wirklich toll singen — Komplimente",
+   "title_ar": "أنت تغني رائعًا فعلًا — المجاملات",
+   "accent": "#27A1B0",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 3,
+   "reader": "lessons/L07-T02/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/81",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADUWsDoFgVPWXvOzdi3A4ua3n2ImgmAAIdIQACJ-AhUMKnlka7S9XYPQQ",
+     "sha256": "a109bcaadfca98d8d4537d1ad4441a603621d24c626f689207a2dfa1782c26be",
+     "bytes": 1028761
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/82",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADUmsDoFkf1Q_VP0pkJamsZNyzxGf9AAIeIQACJ-AhUP0a35ZjjaGqPQQ",
+     "sha256": "9964f46cc0ba7e5949375ecc1c40a08cd33241d5e28c90400db2556d9cbe8240",
+     "bytes": 48284
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/83",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADU2sDoH1Ela9izyrhUDBdLcIa1uJWAAIfIQACJ-AhUJJeam-5_nQMPQQ",
+     "sha256": "b8c06059b8d41f7ba9b995a4017aed5092ac576043daa4708256875991e47656",
+     "bytes": 501540
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/84",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADVGsDoH3JLWezV7WC105ZMLbKM0JDAAIgIQACJ-AhUBfmJcXvFWbkPQQ",
+     "sha256": "d2fbd40874eef0c4b8cc0e0bd49fa813a209c006cc36468aa839732de5d00048",
+     "bytes": 41175
+    }
+   ],
+   "video_ids": [
+    "rLJw_lPRSgg"
+   ],
+   "video_minutes": 27.4,
+   "book_page": 41
+  },
+  {
+   "idx": 22,
+   "doc_id": "L07-R",
+   "lektion": 7,
+   "kind": "review",
+   "title_de": "Wiederholung Lektion 7 — Hobbys, gern, können",
+   "title_ar": "مراجعة الدرس السابع — الهوايات وgern وkönnen",
+   "accent": "#38839F",
+   "package": "",
+   "total": 20,
+   "pass_score": 14,
+   "modul": 3,
+   "reader": "lessons/L07-R/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/85",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADVWsDoH9I4vdOCaooF9R0utqQ_2_jAAIhIQACJ-AhUIdcng1cBMh5PQQ",
+     "sha256": "89207f4040c0fcbb702504ac5bb4c2673b1b0e075f5dc7bb0498a302fab9ca1f",
+     "bytes": 1038708
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/86",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADVmsDoH9IVoY9lP78YnaSIw6FLc4_AAIiIQACJ-AhUDD_YmRGiw8KPQQ",
+     "sha256": "c137aeb14af718a49462e8de8a2881fd5599b22830044a271701708627df5041",
+     "bytes": 49169
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/87",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADV2sDoICLvBcQ-u8Dsfm21zI7eyDMAAIjIQACJ-AhUGao6dD9FxOzPQQ",
+     "sha256": "26a1be80f4be52f0fe647e4d280542d5cc12a85129f1780fa9acb694f1876bdb",
+     "bytes": 502141
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/88",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADWGsDoIFdG8FqVppDTg1UKjGwWq6sAAIkIQACJ-AhUGCcz7BXdbBtPQQ",
+     "sha256": "ee44302929bb027d372af86a6b29d89892e0c3ee097a7d42a864a282c8c48c4f",
+     "bytes": 41210
+    }
+   ],
+   "video_ids": [],
+   "video_minutes": 0.0,
+   "book_page": 41
+  },
+  {
+   "idx": 23,
+   "doc_id": "L08-T01",
+   "lektion": 8,
+   "kind": "teaching",
+   "title_de": "Hast du Zeit? — Verabredungen",
+   "title_ar": "هل لديك وقت؟ — المواعيد",
+   "accent": "#2774B0",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 3,
+   "reader": "lessons/L08-T01/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/89",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADWWsDoII5d1_eaudJ42USW-hFOmNKAAIlIQACJ-AhUBIfQXoAARkdoT0E",
+     "sha256": "b8684f41dcc8f68d8b31ead3875551098f89fa6c0bb0c8a53062622c1d436f5b",
+     "bytes": 1033162
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/90",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADWmsDoIYeh7JhynfAHDgf2uNAhiYzAAImIQACJ-AhUPoS2F3WmEbwPQQ",
+     "sha256": "53950946723e58548d329e977b8c8e2e72b6e3a2e3b3b25358ac06a34fb3a791",
+     "bytes": 48446
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/91",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADW2sDoIeLVpSb4wcXR2fePet1yIDgAAInIQACJ-AhULI-iVPplYhGPQQ",
+     "sha256": "8dbe31773a0ba09611632265749d6fb9100c7cd68732829fe811678b0a59c5c4",
+     "bytes": 507411
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/92",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADXGsDoIjdOGW1t8AOYeMZ9yW1ed1wAAIoIQACJ-AhUH0g8riBIcWsPQQ",
+     "sha256": "72b4a45f8e253459107d829ea99de33a432ce88ebb6daae00db86c54a77e8442",
+     "bytes": 41293
+    }
+   ],
+   "video_ids": [
+    "2dQ6CYDNcFA"
+   ],
+   "video_minutes": 30.6,
+   "book_page": 45
+  },
+  {
+   "idx": 24,
+   "doc_id": "L08-T02",
+   "lektion": 8,
+   "kind": "teaching",
+   "title_de": "Einladung — Kommst du mit?",
+   "title_ar": "الدعوة — هل تأتي معنا؟",
+   "accent": "#38619F",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 3,
+   "reader": "lessons/L08-T02/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/93",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADXWsDoIpxkggqtOUVoGxAiBGBZi0zAAIpIQACJ-AhUFiiCJIS116HPQQ",
+     "sha256": "860e5709d141d8895b5bbf4c546157245ddb96716017e6ddfe71cdb8760d6032",
+     "bytes": 1033543
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/94",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADXmsDoIuYQZ2gOSc8oiNjbcRdzdtpAAIqIQACJ-AhUGr-MMX6Ix1uPQQ",
+     "sha256": "d3bda8aaba7824da5e5d377935396aee3613bd2811a6a9787ff3a4839eedc8b3",
+     "bytes": 48751
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/95",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADX2sDoIx4j_UIfQ2zxZ6wCrXomfNXAAIrIQACJ-AhUKDx07jcVPwkPQQ",
+     "sha256": "f2cc665fb66a954766fe05858758f1ba12710b413970d7d4a128e0831f21143a",
+     "bytes": 510297
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/96",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADYGsDoIwAAQEd8HN6jncYWRSzJuLd-gACLCEAAifgIVAD6fM_SeIYoz0E",
+     "sha256": "b1ec309970cf2c78629e3f3de802ce69d62bff909a74f6a8a9550cdb27aee776",
+     "bytes": 41495
+    }
+   ],
+   "video_ids": [
+    "yM88p8O9SKA",
+    "M_BqygNuo_k"
+   ],
+   "video_minutes": 47.9,
+   "book_page": 45
+  },
+  {
+   "idx": 25,
+   "doc_id": "L08-R",
+   "lektion": 8,
+   "kind": "review",
+   "title_de": "Wiederholung Lektion 8 — Zeit, Termine, Einladungen",
+   "title_ar": "مراجعة الدرس الثامن — الوقت والمواعيد والدعوات",
+   "accent": "#2748B0",
+   "package": "",
+   "total": 20,
+   "pass_score": 14,
+   "modul": 3,
+   "reader": "lessons/L08-R/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/97",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADYWsDoI71cMWB_oRB194nxJHuY-MyAAItIQACJ-AhUDZjv7KdLCZFPQQ",
+     "sha256": "7fabd068e480ba2f4dc55921fdd1b08d3615eaa03c1d7453e24354dce2aa1f60",
+     "bytes": 1043404
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/98",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADYmsDoI4rnNyibz2IKnv844E_xD0mAAIuIQACJ-AhUF1iZh5ayCMRPQQ",
+     "sha256": "df9fa9783ee15d42419641e963a61cf186ffee972cb54f7f6d19e030843c7f5c",
+     "bytes": 49090
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/99",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADY2sDoJPedBmRrFSAZIY5JLBvxB4KAAIvIQACJ-AhUGrYuvQFKb9kPQQ",
+     "sha256": "c1b0f2a83a3f1cacea650d0213e19df2bdd0fb350cf66a26ce05184965b9320d",
+     "bytes": 504732
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/100",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADZGsDoJOdqHDaKsoVigMnGmDgOR3rAAIwIQACJ-AhUGqJqBlSNW8iPQQ",
+     "sha256": "ce62dd55201233dbc0b1a38967297b890e3f73310f0b62779eb856f179da866b",
+     "bytes": 41276
+    }
+   ],
+   "video_ids": [],
+   "video_minutes": 0.0,
+   "book_page": 45
+  },
+  {
+   "idx": 26,
+   "doc_id": "L09-T01",
+   "lektion": 9,
+   "kind": "teaching",
+   "title_de": "Ich möchte etwas essen — Mahlzeiten",
+   "title_ar": "أريد أن آكل شيئًا — الوجبات",
+   "accent": "#38409F",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 3,
+   "reader": "lessons/L09-T01/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/101",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADZWsDoJWCoAWRHp2Lb-ofU4SXrrvWAAIxIQACJ-AhUA06OhXYae1_PQQ",
+     "sha256": "7590907864f0e8a53721ed168b2aecdd741ff538aa0f44e7f78c3a0c8c4bff58",
+     "bytes": 1047386
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/102",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADZmsDoJUYD8mCH37uY7LVrldvR3AQAAIyIQACJ-AhUB1O5WTp4XgAAT0E",
+     "sha256": "9eb11fb69d766a12e09f472bd55f526c118e7a140f7a451cb6aac17e13bfa032",
+     "bytes": 48957
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/103",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADZ2sDoLm9gR4R_WcjauN-8YFKIYovAAIzIQACJ-AhUAM7vUE4J1tZPQQ",
+     "sha256": "9cd6c4359f78812d02a566135f8b719a89943a601d213fbab7c80c0faa7fe4cd",
+     "bytes": 508152
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/104",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADaGsDoLqcvH00adYvNkIqUlwQEGyYAAI0IQACJ-AhUFLv-bDtZhApPQQ",
+     "sha256": "b8c0e1f3c56bff61fbfa267b2368d986741a8677f5d8d0cb73d8822b30231c26",
+     "bytes": 41424
+    }
+   ],
+   "video_ids": [
+    "xENVA_Smcag"
+   ],
+   "video_minutes": 24.4,
+   "book_page": 49
+  },
+  {
+   "idx": 27,
+   "doc_id": "L09-T02",
+   "lektion": 9,
+   "kind": "teaching",
+   "title_de": "Im Restaurant — bestellen und bezahlen",
+   "title_ar": "في المطعم — الطلب والدفع",
+   "accent": "#3227B0",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 3,
+   "reader": "lessons/L09-T02/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/105",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADaWsDoLzSjgvIDJODwFTR0M57pTTnAAI1IQACJ-AhULjrZktJbs1-PQQ",
+     "sha256": "5d007d0b44b764e4a00610e1d104dbcf987af2ed34d73e146f3585c5b0895786",
+     "bytes": 1032471
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/106",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADamsDoLy1zxAlOqrdjYG_9KskqboDAAI2IQACJ-AhUErqCuBdr9PJPQQ",
+     "sha256": "959f88413773a4ed33b20db5c105d9b47b1269875116a22ede8f91c2bf6b4dde",
+     "bytes": 48397
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/107",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADa2sDoL3rQaqMMeQhYulxnRXKjty7AAI3IQACJ-AhUFMumfAE8RKePQQ",
+     "sha256": "fc4168b0cecff27ecf326919d268555283d31e60df7d80c08fc9fbed42bd9fdf",
+     "bytes": 502272
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/108",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADbGsDoL6VgGONZjznzJ6L3b6Nk8t0AAI4IQACJ-AhUNybPEQT0WgjPQQ",
+     "sha256": "0eae7dc12271df6b646ba0a53ba730572a571384ba6807d430b21870c62ec921",
+     "bytes": 41301
+    }
+   ],
+   "video_ids": [
+    "5sC-X6I0gzM"
+   ],
+   "video_minutes": 22.8,
+   "book_page": 49
+  },
+  {
+   "idx": 28,
+   "doc_id": "L09-R",
+   "lektion": 9,
+   "kind": "review",
+   "title_de": "Wiederholung Lektion 9 — Essen, Restaurant, Rechnung",
+   "title_ar": "مراجعة الدرس التاسع — الطعام والمطعم والحساب",
+   "accent": "#51389F",
+   "package": "",
+   "total": 20,
+   "pass_score": 14,
+   "modul": 3,
+   "reader": "lessons/L09-R/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/109",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADbWsDoL_2L0-QEcFUfJY-a12MkpuzAAI5IQACJ-AhUOKYO7vT5jk5PQQ",
+     "sha256": "37779b87dfbe05f722b0464c662a2f7eaf7dbc4600afba697b6c5f330f0ccdaa",
+     "bytes": 1040332
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/110",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADbmsDoMPgeO1mKeafMvgQMAG6lJYuAAI6IQACJ-AhUHzD7r90yFDQPQQ",
+     "sha256": "e78646a62e4da80d2b6c563199f7f74d06cf4ae27cc158f878942b2a0f74cc6a",
+     "bytes": 49015
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/111",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADb2sDoMRZPlQzStQmYYOXK18muT5SAAI7IQACJ-AhUK7dbnUFl_R6PQQ",
+     "sha256": "72b2ef50089414f383fa72e4210718dd75131f709a44de363d2063a1abf99478",
+     "bytes": 501145
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/112",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADcGsDoMRhaOAPfg64MB0ZGTwyyUuAAAI8IQACJ-AhUFZOc_Om7Us2PQQ",
+     "sha256": "0b7e62700f565e9b7e94c79f3bde29e73ee41e42dc6791a569415ba165d23b7c",
+     "bytes": 41255
+    }
+   ],
+   "video_ids": [],
+   "video_minutes": 0.0,
+   "book_page": 49
+  },
+  {
+   "idx": 29,
+   "doc_id": "L10-T01",
+   "lektion": 10,
+   "kind": "teaching",
+   "title_de": "Ich steige in die U-Bahn ein — Verkehrsmittel",
+   "title_ar": "أركب المترو — وسائل النقل",
+   "accent": "#5E27B0",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 4,
+   "reader": "lessons/L10-T01/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/113",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADcWsDoMczaafV6xVyU89xqIMcapeuAAI9IQACJ-AhUARbJk4oAreePQQ",
+     "sha256": "94f952c20d575b0d4d63fef71c056ee9a947a8aa37681d651de8eccc61506c11",
+     "bytes": 1031666
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/114",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADcmsDoMfH4nM8DeiCCsXUau-bVk-jAAI-IQACJ-AhUNL7tURb60ZnPQQ",
+     "sha256": "1d348bb16bce06a2a4a76ea78e4cb5e266e3b2dc2e99f03fa6ea7a9d022d66b1",
+     "bytes": 48536
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/115",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADc2sDoMjQyr9HaPnX7sQR6MQFGt7RAAI_IQACJ-AhULKiqLhYbvbkPQQ",
+     "sha256": "d7884b78069941c6cf3ea1e4961b54827a4431b10c88695e776a342915020a27",
+     "bytes": 508410
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/116",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADdGsDoMiZHmATGuKyqlN8CQtvUC-QAAJAIQACJ-AhUA9wRCCJ-zNLPQQ",
+     "sha256": "a6218b9015935a3672bd1f7bd3cc5626dd91948a9eb879e1a513055d0d06e733",
+     "bytes": 41333
+    }
+   ],
+   "video_ids": [
+    "_7LvfVD4ids"
+   ],
+   "video_minutes": 29.7,
+   "book_page": 57
+  },
+  {
+   "idx": 30,
+   "doc_id": "L10-T02",
+   "lektion": 10,
+   "kind": "teaching",
+   "title_de": "Wir fahren weg — Reisen und Hotel",
+   "title_ar": "نسافر — السفر والفندق",
+   "accent": "#72389F",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 4,
+   "reader": "lessons/L10-T02/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/117",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADdWsDoMrn9uy-ma9OUsEyjFpSh_JcAAJBIQACJ-AhUKtkdaUmj-VYPQQ",
+     "sha256": "4a9bb78d3e0bef62a2d2a79c64035effc652f106c52e38cd158098397adf6f1b",
+     "bytes": 1034424
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/118",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADdmsDoMuWY-R1CLr_xtVvQb_hKXJcAAJCIQACJ-AhUI3R4z_eC0xTPQQ",
+     "sha256": "fd89dc555a30ebe220424d67a24983ee72737cb35b3a500259ef2c9bdb43745f",
+     "bytes": 48267
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/119",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADd2sDoMyCdt0v_r0hh3Tgu-zbbfjoAAJDIQACJ-AhUIjyunowb-VTPQQ",
+     "sha256": "5c92cf2a99163179f9621cdf46347a224a3fa7edf3e35366fac551cbf0ef4cde",
+     "bytes": 504590
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/120",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADeGsDoM-tvqdX32j8byANLEanSHdvAAJEIQACJ-AhUAHL_ubZ_gc8PQQ",
+     "sha256": "f3fe4009afed1ce411558a52fdd939ccb808b0bac667f70ad1f6d44cb976c67e",
+     "bytes": 41195
+    }
+   ],
+   "video_ids": [
+    "RscFhO-93PM"
+   ],
+   "video_minutes": 27.9,
+   "book_page": 57
+  },
+  {
+   "idx": 31,
+   "doc_id": "L10-R",
+   "lektion": 10,
+   "kind": "review",
+   "title_de": "Wiederholung Lektion 10 — Verkehr, Reise, Hotel",
+   "title_ar": "مراجعة الدرس العاشر — النقل والسفر والفندق",
+   "accent": "#8B27B0",
+   "package": "",
+   "total": 20,
+   "pass_score": 14,
+   "modul": 4,
+   "reader": "lessons/L10-R/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/121",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADeWsDoNExd4C_RchuvQZZewABVkOlvgACRSEAAifgIVBVAAFz5WP2u_w9BA",
+     "sha256": "63910d55971af6ff0423ab88cb6909caa7c2069093fdf66ec211e47b871e5974",
+     "bytes": 1040350
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/122",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADemsDoNF6P4ug3ml5mTVV_phhL9TkAAJGIQACJ-AhUMiKR4uRS4EePQQ",
+     "sha256": "048d95b8b1476efc3d5565f1e51f9262ac21e807ba4ab1996df051eeef650754",
+     "bytes": 49135
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/123",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADe2sDoPgpcy4MYXvpRkFlj2SGVO7zAAJHIQACJ-AhUMc7egLhI_njPQQ",
+     "sha256": "348bc1dbd26a0d92a3c56c4ae70922c25a8a870c8da36eedb137dad01e961c92",
+     "bytes": 500660
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/124",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADfGsDoPg_uRprySSjei3h9KhPmKUXAAJIIQACJ-AhUJKjYTiFdiBcPQQ",
+     "sha256": "d9cc217c77405f6d52a755c71217a7ea9d3400594dc136868d8f3358ac7f9054",
+     "bytes": 41201
+    }
+   ],
+   "video_ids": [],
+   "video_minutes": 0.0,
+   "book_page": 57
+  },
+  {
+   "idx": 32,
+   "doc_id": "L11-T01",
+   "lektion": 11,
+   "kind": "teaching",
+   "title_de": "Mein Tag — Tagesablauf und Perfekt",
+   "title_ar": "يومي — الروتين اليومي والماضي",
+   "accent": "#94389F",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 4,
+   "reader": "lessons/L11-T01/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/125",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADfWsDoPrhHWLaCSKopcNDNdlRvv19AAJJIQACJ-AhUJsfsjz7mMeJPQQ",
+     "sha256": "f90b7fa5448f06bf01a63fe249f06822dba3743e08f1d1f63144f8c5f3a26403",
+     "bytes": 1034555
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/126",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADfmsDoPvsnnmp4AaudkcUAxHMW9WvAAJKIQACJ-AhUDdbcl0LOyLRPQQ",
+     "sha256": "9f279e91165fcd93f13bdb03de5f66d4bc8b685eadeed7a7dcee43af6ad864d8",
+     "bytes": 48400
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/127",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADf2sDoPy5j6T_zOahdmX0HrY0uTQPAAJLIQACJ-AhUPEI931xLOKSPQQ",
+     "sha256": "87ef86c5d8dfe63bcd8732887d5f103c26faaa9b655f8c754ae6a12d2f5f16cb",
+     "bytes": 500794
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/128",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADgGsDoP-nFMhr9QmMNeV9M7VTkXgjAAJMIQACJ-AhUGRUEsvUrJwoPQQ",
+     "sha256": "14e96e1a2f903c4a5147e0b37b0ad134e595ddea0d42b0c0e3971a4b29838331",
+     "bytes": 41215
+    }
+   ],
+   "video_ids": [
+    "IdIyQsOiQBY"
+   ],
+   "video_minutes": 26.1,
+   "book_page": 61
+  },
+  {
+   "idx": 33,
+   "doc_id": "L11-T02",
+   "lektion": 11,
+   "kind": "teaching",
+   "title_de": "Gestern war ich unterwegs — Perfekt mit sein",
+   "title_ar": "أمس كنت في الخارج — الماضي مع sein",
+   "accent": "#B027A8",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 4,
+   "reader": "lessons/L11-T02/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/129",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADgWsDoQFEBdf-owL-EK2sl7sPAmPXAAJNIQACJ-AhUK8nxCQI888wPQQ",
+     "sha256": "c1a8bc7f797fe3cdb253eb413c5d165feda2828bb5ff2a778465f3f2f1abc7bb",
+     "bytes": 1028398
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/130",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADgmsDoQH3B8nv82WRLHQUo3Do02XzAAJOIQACJ-AhUOMOYWFMrAlWPQQ",
+     "sha256": "aca94d0ad52fb998f27f6066897552263d64e10b87281110c11dbf9dca5a0a95",
+     "bytes": 48225
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/131",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADg2sDoQK78Wx8Fs8j3rcjM1VazRf-AAJPIQACJ-AhUCrcGqMWd82cPQQ",
+     "sha256": "2312bfeffbee0d13d60e59e30420fb3daec152271a1bbb805196aa22bfbce921",
+     "bytes": 498102
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/132",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADhGsDoQOZJjykVvDZYlH_7PuWXZa0AAJQIQACJ-AhUDKrVHk7YjWqPQQ",
+     "sha256": "2c2ce3759b43158575143de4d4806ab22657d268c060573e39494be7b46dd1ae",
+     "bytes": 40966
+    }
+   ],
+   "video_ids": [
+    "atnxPQ_blko"
+   ],
+   "video_minutes": 35.9,
+   "book_page": 61
+  },
+  {
+   "idx": 34,
+   "doc_id": "L11-R",
+   "lektion": 11,
+   "kind": "review",
+   "title_de": "Wiederholung Lektion 11 — Tagesablauf und Perfekt",
+   "title_ar": "مراجعة الدرس الحادي عشر — الروتين والماضي",
+   "accent": "#9F3888",
+   "package": "",
+   "total": 20,
+   "pass_score": 14,
+   "modul": 4,
+   "reader": "lessons/L11-R/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/133",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADhWsDoQV6ok-OFoJ-rcta2MvM72Z0AAJRIQACJ-AhUGInsXS-K_gxPQQ",
+     "sha256": "820c0d5cb7ac320d1ed1b4f4f629aec371dba3d6fb1de2399fc1277e9aab53a7",
+     "bytes": 1043822
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/134",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADhmsDoQbkm3NutDU_0YKT8Pd6AAEbMAACUiEAAifgIVCXgCkjCBlIyj0E",
+     "sha256": "334a8235e727d795d9cb184248c83ee5961f6b5d22bb823a96a218ba092f5657",
+     "bytes": 49133
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/135",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADh2sDoQdsOeBwOlOoEJ4zySJCuntzAAJTIQACJ-AhUAzBkDCm1escPQQ",
+     "sha256": "951e2114c69aaffd971d839352dc6bb9748a879b3c90bd873a3150da5c33ad93",
+     "bytes": 504120
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/136",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADiGsDoQfXpPDCtLwPcyAZ8uCFxRb7AAJUIQACJ-AhUHhWCmT6JPQZPQQ",
+     "sha256": "8339cbd377faa50b7c28e4f7aefed701fec3d43c3a3223291a74bab43d250c25",
+     "bytes": 41300
+    }
+   ],
+   "video_ids": [],
+   "video_minutes": 0.0,
+   "book_page": 61
+  },
+  {
+   "idx": 35,
+   "doc_id": "L12-T01",
+   "lektion": 12,
+   "kind": "teaching",
+   "title_de": "Was ist denn hier passiert? — Feste feiern",
+   "title_ar": "ماذا حدث هنا؟ — الاحتفال بالأعياد",
+   "accent": "#B0277C",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 4,
+   "reader": "lessons/L12-T01/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/137",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADiWsDoQlAIYpvGvxje80-OFnAzZyYAAJVIQACJ-AhUJl_V9lPugRrPQQ",
+     "sha256": "e10d0c52d4c91ef2b980ada32846462e4abbd3b0c4529c4eb3ccc664a08c0c08",
+     "bytes": 1034323
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/138",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADimsDoQ047x--hfSYkM251NY9arzRAAJWIQACJ-AhUK7cqsOR9R9gPQQ",
+     "sha256": "766781312f6a7a13e15551a7cc44ffa2bfcdf7259259d457c87f2920cd3d634f",
+     "bytes": 48298
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/139",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADi2sDoQ4Zjqj7-iqZ7HPVFuv9VniQAAJXIQACJ-AhUHVnHzsISvf5PQQ",
+     "sha256": "155cea1262a975d1cd79a2057f2b43b06e34fa65f57f0335b1549f5173052843",
+     "bytes": 504406
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/140",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADjGsDoQ5xuFKg1jlWTP2nLmxAMH_2AAJYIQACJ-AhUDnOcHouU-8YPQQ",
+     "sha256": "b25bed7991cc6a2fbd5b5ad70c659632a4dc041e4577978c43a830ef11ac10f2",
+     "bytes": 41113
+    }
+   ],
+   "video_ids": [
+    "VoBuV-sPdvw",
+    "rfGi3hG0tHQ"
+   ],
+   "video_minutes": 36.3,
+   "book_page": 65
+  },
+  {
+   "idx": 36,
+   "doc_id": "L12-T03",
+   "lektion": 12,
+   "kind": "teaching",
+   "title_de": "Der Sommer war schön — Erlebnisse erzählen",
+   "title_ar": "كان الصيف جميلًا — سرد التجارب",
+   "accent": "#9F3867",
+   "package": "",
+   "total": 10,
+   "pass_score": 7,
+   "modul": 4,
+   "reader": "lessons/L12-T03/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/141",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADjWsDoRH888zAw8dc7Gjbohxuw8COAAJZIQACJ-AhUCGVZ9avxtUjPQQ",
+     "sha256": "82d93e4dbaaa96983ed3f413e532984b8057295ff6810d3cb4b3a8e0eaafcea0",
+     "bytes": 1029945
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/142",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADjmsDoRGa0Fc0-Ej_BphKEs6p4_tQAAJaIQACJ-AhULSps2yoJJvmPQQ",
+     "sha256": "9f01f94b56eb62dbf03fe6fdd6fb879220befaaf99209a188437d2b85a5dae57",
+     "bytes": 48251
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/143",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADj2sDoTX-KAODUCeIwPB4oyREAAEd5AACWyEAAifgIVBSN4y-Yws89T0E",
+     "sha256": "099b7e16b9d01ab4d72829e09909bc69de76ef1d72d55dd8888a22bfb9a6f569",
+     "bytes": 503153
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/144",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADkGsDoTbH2b9lPGoWPODnNg3HIwXGAAJcIQACJ-AhUKO2uU2bF6hTPQQ",
+     "sha256": "443643676475fc0b5112e92118ca7e4dd13cb454fabbae2bd7468a1e9cf50628",
+     "bytes": 41120
+    }
+   ],
+   "video_ids": [
+    "c4WcKrlbz2U"
+   ],
+   "video_minutes": 28.9,
+   "book_page": 65
+  },
+  {
+   "idx": 37,
+   "doc_id": "L12-R",
+   "lektion": 12,
+   "kind": "review",
+   "title_de": "Wiederholung Lektion 12 — Feste und Erlebnisse",
+   "title_ar": "مراجعة الدرس الثاني عشر — الأعياد والتجارب",
+   "accent": "#B0274F",
+   "package": "",
+   "total": 20,
+   "pass_score": 14,
+   "modul": 4,
+   "reader": "lessons/L12-R/index.html",
+   "files": [
+    {
+     "variant": "pdf_a",
+     "label": "PDF A",
+     "url": "https://t.me/c/4380252581/145",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADkWsDoTiIFbK6UwZSS2hfDsrr_OzgAAJdIQACJ-AhUK2EuQEz9tnWPQQ",
+     "sha256": "6e598f8c82b7d62275e02bd14b1fc8aecc23afe98cebe73d581c07e501eaede1",
+     "bytes": 1040791
+    },
+    {
+     "variant": "docx_a",
+     "label": "DOCX A",
+     "url": "https://t.me/c/4380252581/146",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADkmsDoTh1cyqK9-CFsHB7nh6pwg6jAAJeIQACJ-AhUPRYy6a5v3GMPQQ",
+     "sha256": "e74680ba072667f025c51e92b6585cd154e774f270a4eecaabf2892b64569f7d",
+     "bytes": 49257
+    },
+    {
+     "variant": "pdf_c",
+     "label": "PDF C",
+     "url": "https://t.me/c/4380252581/147",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADk2sDoTnqx7UZYk7rc5xBdbMMLGSBAAJfIQACJ-AhUBxB34_OZwmtPQQ",
+     "sha256": "c471a6c9f5495efa5bc29ef01a95af4001f5e7790ee375d6ec37574a6a6fe823",
+     "bytes": 503117
+    },
+    {
+     "variant": "docx_c",
+     "label": "DOCX C",
+     "url": "https://t.me/c/4380252581/148",
+     "file_id": "BQACAgQAAyEGAAMBBRVZpQADlGsDoTmrvfPFOBUIM3XtLt9l17s3AAJgIQACJ-AhUNfgAkypUcwsPQQ",
+     "sha256": "466a2b0b3691845cbf60eb126bef001fae8c933276426ff81331ee597121ba5b",
+     "bytes": 41297
+    }
+   ],
+   "video_ids": [],
+   "video_minutes": 0.0,
+   "book_page": 65
+  }
+ ],
+ "books": [
+  {
+   "key": "kursbuch:0",
+   "kind": "kursbuch",
+   "label": "كتاب الطالب Menschen A1.1 · PDF 1–25",
+   "file_id": "BQACAgQAAyEGAAMBBRVZpQADomsEcffjnRsbw9PAFV8Qmb69MepdAALucAACJ-ApUNClB7tLTttxPQQ",
+   "message_id": 162,
+   "url": "https://t.me/c/4380252581/162",
+   "pages_from": 1,
+   "pages_to": 25,
+   "total_pages": 106,
+   "sha256": "e6a9a9a581e863b0742645627c03742106b9867e5cab112a697e03227bb6f795"
+  },
+  {
+   "key": "kursbuch:25",
+   "kind": "kursbuch",
+   "label": "كتاب الطالب Menschen A1.1 · PDF 26–50",
+   "file_id": "BQACAgQAAyEGAAMBBRVZpQADo2sEchFZVdSE9d_2WvL8ig89TMZiAALwcAACJ-ApUP7yUPXGfjTaPQQ",
+   "message_id": 163,
+   "url": "https://t.me/c/4380252581/163",
+   "pages_from": 26,
+   "pages_to": 50,
+   "total_pages": 106,
+   "sha256": "c476dcaa7ee2d2698528e3db07aefbfbfa17c5423f8de888a9cf517af66d9acd"
+  },
+  {
+   "key": "kursbuch:50",
+   "kind": "kursbuch",
+   "label": "كتاب الطالب Menschen A1.1 · PDF 51–75",
+   "file_id": "BQACAgQAAyEGAAMBBRVZpQADpGsEci-wsUPzOIoQ_rntbEgg4IOuAALxcAACJ-ApUIrpvjwr8Y_jPQQ",
+   "message_id": 164,
+   "url": "https://t.me/c/4380252581/164",
+   "pages_from": 51,
+   "pages_to": 75,
+   "total_pages": 106,
+   "sha256": "907aa22f07a0e45b2d43bd8182b1c06f97c88ab01b56a1b7d37fcc413348a46c"
+  },
+  {
+   "key": "kursbuch:75",
+   "kind": "kursbuch",
+   "label": "كتاب الطالب Menschen A1.1 · PDF 76–100",
+   "file_id": "BQACAgQAAyEGAAMBBRVZpQADpWsEckCPwuoNsvAQooPLpKWHqcx7AALycAACJ-ApUIGZbWJsmK_mPQQ",
+   "message_id": 165,
+   "url": "https://t.me/c/4380252581/165",
+   "pages_from": 76,
+   "pages_to": 100,
+   "total_pages": 106,
+   "sha256": "b99721795b3324c8662bbb91e14373c71dcf27b62f87842dd133ff4d3bdc624c"
+  },
+  {
+   "key": "kursbuch:100",
+   "kind": "kursbuch",
+   "label": "كتاب الطالب Menschen A1.1 · PDF 101–106",
+   "file_id": "BQACAgQAAyEGAAMBBRVZpQADpmsEckkUAAEeyWklkRlv93xZ3YjqSwAC83AAAifgKVATBxlx1l0s1T0E",
+   "message_id": 166,
+   "url": "https://t.me/c/4380252581/166",
+   "pages_from": 101,
+   "pages_to": 106,
+   "total_pages": 106,
+   "sha256": "1fd0ac0011cf587b0e8be370eb5a5eccd570729f7b8b0cfefedac31e32693069"
+  },
+  {
+   "key": "arbeitsbuch:0",
+   "kind": "arbeitsbuch",
+   "label": "كتاب التدريبات Menschen A1.1 · PDF 1–25",
+   "file_id": "BQACAgQAAyEGAAMBBRVZpQADp2sEclxuOMl0U_0kfzIG1kqynHBvAAL1cAACJ-ApUL-0ZL9xbkkqPQQ",
+   "message_id": 167,
+   "url": "https://t.me/c/4380252581/167",
+   "pages_from": 1,
+   "pages_to": 25,
+   "total_pages": 110,
+   "sha256": "f5435cb0b38338eeadf3ea3d0d6396d1d699f72b460a91ba5a57984ade3dc97a"
+  },
+  {
+   "key": "arbeitsbuch:25",
+   "kind": "arbeitsbuch",
+   "label": "كتاب التدريبات Menschen A1.1 · PDF 26–50",
+   "file_id": "BQACAgQAAyEGAAMBBRVZpQADqGsEcm8LwuBb9TLtDQgyNXgfu1WZAAL2cAACJ-ApUH9UjlbGGXA0PQQ",
+   "message_id": 168,
+   "url": "https://t.me/c/4380252581/168",
+   "pages_from": 26,
+   "pages_to": 50,
+   "total_pages": 110,
+   "sha256": "f0be7451410c2e17ffa5b9c8c20c592dee8f89fd54e93a9c3feafe6a801707ac"
+  },
+  {
+   "key": "arbeitsbuch:50",
+   "kind": "arbeitsbuch",
+   "label": "كتاب التدريبات Menschen A1.1 · PDF 51–75",
+   "file_id": "BQACAgQAAyEGAAMBBRVZpQADqWsEcoGFZQlZhch4AjA4lDZ7PtwMAAL3cAACJ-ApUC-wgvHt6j5VPQQ",
+   "message_id": 169,
+   "url": "https://t.me/c/4380252581/169",
+   "pages_from": 51,
+   "pages_to": 75,
+   "total_pages": 110,
+   "sha256": "40837b4bfe4249334f31ac95bd0185c1b45b6f7c43971650e5cbc75de263590e"
+  },
+  {
+   "key": "arbeitsbuch:75",
+   "kind": "arbeitsbuch",
+   "label": "كتاب التدريبات Menschen A1.1 · PDF 76–100",
+   "file_id": "BQACAgQAAyEGAAMBBRVZpQADqmsEcpRvb9x2SH6UoJhmtu4YMgT_AAL4cAACJ-ApUNBj2hXTOUzqPQQ",
+   "message_id": 170,
+   "url": "https://t.me/c/4380252581/170",
+   "pages_from": 76,
+   "pages_to": 100,
+   "total_pages": 110,
+   "sha256": "fc7b75bf8d0afb83d01c10e689859f9773a570cb73359493575aec615267a0c6"
+  },
+  {
+   "key": "arbeitsbuch:100",
+   "kind": "arbeitsbuch",
+   "label": "كتاب التدريبات Menschen A1.1 · PDF 101–110",
+   "file_id": "BQACAgQAAyEGAAMBBRVZpQADq2sEcqIVjFbkqtFi0CAj07K1NeHaAAL5cAACJ-ApUL-1_5Shc5UgPQQ",
+   "message_id": 171,
+   "url": "https://t.me/c/4380252581/171",
+   "pages_from": 101,
+   "pages_to": 110,
+   "total_pages": 110,
+   "sha256": "ff7851c4ddbad42f8b5a27d99d1e6e2186cf10a42a5a3a4a853a847610d88caf"
+  }
+ ],
+ "source_videos": 32,
+ "sessions": 37,
+ "version": "unified-2026-11-23"
+}

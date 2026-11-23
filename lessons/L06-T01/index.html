@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لا أحتاج مكتبًا — مكان العمل والأجهزة · Ich brauche kein Büro — Arbeitsplatz und Geräte</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#25A962; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#25A962,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L06-T01">← العودة للداشبورد والاختبار</a> · L06-T01</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>لا أحتاج مكتبًا — مكان العمل والأجهزة</h1>
+    <h2>Ich brauche kein Büro — Arbeitsplatz und Geräte — Lektion 6, Teil 1</h2>
+    <p class="sub">brauchen + Akkusativ, kein/keine, Geräte · A1, Kapitel 2</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 2</span>
+    <span class="chip">Video 26:12</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L06-S1</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تسمّي 12 جهازًا/أداة مكتبية.</li><li dir="rtl">أن تستخدم brauchen + النصب.</li><li dir="rtl">أن تنفي الحاجة بـ kein/keine.</li><li dir="rtl">أن تفرّق بين kein وnicht مع الأشياء.</li><li dir="rtl">أن تصف مكتبك وما تحتاجه.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=tjdgp2fBc4g" target="_blank" rel="noopener">https://www.youtube.com/watch?v=tjdgp2fBc4g</a></div>
+  <div class="card">
+    <h3>Lektion 6, Teil 1 — Büro und Technik</h3>
+    <p class="meta">26:12 · <a class="link" href="https://www.youtube.com/watch?v=tjdgp2fBc4g" target="_blank" rel="noopener">https://www.youtube.com/watch?v=tjdgp2fBc4g</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">كيف يعبّر المتحدث عن حاجته: Ich brauche einen Drucker.</li><li dir="rtl">النفي: Ich brauche keinen Drucker.</li><li dir="rtl">أسماء الأجهزة المكتبية مع أداتها.</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">ما أول جهاز ذكره المتحدث؟</li><li dir="rtl">هل قال kein أم nicht مع Schreibtisch؟</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">أجهزة المكتب <small dir="ltr">Bürogeräte</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Schreibtisch, -e</td><td lang="ar" dir="rtl" class="ar">مكتب العمل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Drucker, -</td><td lang="ar" dir="rtl" class="ar">الطابعة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Kopierer, -</td><td lang="ar" dir="rtl" class="ar">آلة التصوير</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Bildschirm, -e</td><td lang="ar" dir="rtl" class="ar">الشاشة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Laptop, -s</td><td lang="ar" dir="rtl" class="ar">الحاسوب المحمول</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Tastatur, -en</td><td lang="ar" dir="rtl" class="ar">لوحة المفاتيح</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Maus, die Mäuse</td><td lang="ar" dir="rtl" class="ar">الفأرة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Kabel, -</td><td lang="ar" dir="rtl" class="ar">الكابل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Ladekabel, -</td><td lang="ar" dir="rtl" class="ar">كابل الشحن</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Ordner, -</td><td lang="ar" dir="rtl" class="ar">الملف/المجلد</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Beamer, -</td><td lang="ar" dir="rtl" class="ar">جهاز العرض</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Headset, -s</td><td lang="ar" dir="rtl" class="ar">سماعة الرأس</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">أفعال المكتب <small dir="ltr">Tätigkeiten</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">brauchen</td><td lang="ar" dir="rtl" class="ar">يحتاج</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">drucken</td><td lang="ar" dir="rtl" class="ar">يطبع</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">kopieren</td><td lang="ar" dir="rtl" class="ar">ينسخ</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">speichern</td><td lang="ar" dir="rtl" class="ar">يحفظ</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">senden</td><td lang="ar" dir="rtl" class="ar">يرسل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">öffnen</td><td lang="ar" dir="rtl" class="ar">يفتح</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">schließen</td><td lang="ar" dir="rtl" class="ar">يغلق</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">funktionieren</td><td lang="ar" dir="rtl" class="ar">يعمل (الجهاز)</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">صفات <small dir="ltr">Adjektive</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">wichtig</td><td lang="ar" dir="rtl" class="ar">مهم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">kaputt</td><td lang="ar" dir="rtl" class="ar">معطّل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">neu</td><td lang="ar" dir="rtl" class="ar">جديد</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">alt</td><td lang="ar" dir="rtl" class="ar">قديم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">schnell</td><td lang="ar" dir="rtl" class="ar">سريع</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">langsam</td><td lang="ar" dir="rtl" class="ar">بطيء</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Ich brauche einen Drucker.</div><div class="gloss" dir="rtl">أحتاج طابعة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich brauche keinen Kopierer.</div><div class="gloss" dir="rtl">لا أحتاج آلة تصوير.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Der Laptop ist kaputt.</div><div class="gloss" dir="rtl">الحاسوب المحمول معطّل.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Hast du ein Kabel? — Ja, ich habe ein Kabel.</div><div class="gloss" dir="rtl">هل لديك كابل؟ — نعم، لديّ كابل.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Die Tastatur funktioniert nicht.</div><div class="gloss" dir="rtl">لوحة المفاتيح لا تعمل.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich brauche kein Büro, ich arbeite zu Hause.</div><div class="gloss" dir="rtl">لا أحتاج مكتبًا، أعمل في المنزل.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Der Bildschirm ist neu und schnell.</div><div class="gloss" dir="rtl">الشاشة جديدة وسريعة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir brauchen einen Beamer für die Präsentation.</div><div class="gloss" dir="rtl">نحتاج جهاز عرض للعرض التقديمي.</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">brauchen + النصب <small dir="ltr">brauchen + Nomen</small></h3><p dir="rtl" class="bodyar">brauchen يأخذ اسمًا في النصب: Ich brauche einen Drucker. المذكر: einen/den، المؤنث والمحايد والجمع بلا تغيير.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الجنس</th><th lang="ar" dir="rtl">مثال</th><th lang="ar" dir="rtl">الأداة</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">مذكر</td><td lang="de" dir="ltr">Ich brauche einen Drucker.</td><td lang="de" dir="ltr">einen</td></tr><tr><td lang="ar" dir="rtl" class="ar">مؤنث</td><td lang="de" dir="ltr">Ich brauche eine Tastatur.</td><td lang="de" dir="ltr">eine</td></tr><tr><td lang="ar" dir="rtl" class="ar">محايد</td><td lang="de" dir="ltr">Ich brauche ein Kabel.</td><td lang="de" dir="ltr">ein</td></tr><tr><td lang="ar" dir="rtl" class="ar">جمع</td><td lang="de" dir="ltr">Ich brauche keine Ordner.</td><td lang="de" dir="ltr">keine</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">brauchen لا يأخذ zu + مصدر في المستوى A1؛ يأخذ اسمًا.</p></div></div><div class="card"><h3 dir="rtl">kein أم nicht <small dir="ltr">kein oder nicht am Arbeitsplatz</small></h3><p dir="rtl" class="bodyar">kein/keine تنفي الاسم النكرة (مع brauchen/haben). nicht تنفي الفعل أو الصفة أو الاسم المعرّف.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الجملة المثبتة</th><th lang="ar" dir="rtl">النفي</th><th lang="ar" dir="rtl">السبب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich brauche einen Drucker.</td><td lang="de" dir="ltr">Ich brauche keinen Drucker.</td><td lang="ar" dir="rtl" class="ar">نكرة مذكر</td></tr><tr><td lang="de" dir="ltr">Der Drucker funktioniert.</td><td lang="de" dir="ltr">Der Drucker funktioniert nicht.</td><td lang="ar" dir="rtl" class="ar">نفي الفعل</td></tr><tr><td lang="de" dir="ltr">Das ist der Kopierer.</td><td lang="de" dir="ltr">Das ist nicht der Kopierer.</td><td lang="ar" dir="rtl" class="ar">اسم معرّف</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">الخطأ الشائع: Ich brauche nicht einen Drucker.</p></div></div><div class="card"><h3 dir="rtl">أدوات الأجهزة <small dir="ltr">Artikel der Geräte lernen</small></h3><p dir="rtl" class="bodyar">معظم أسماء الأجهزة لا تُستنتج قاعدتها، فتُحفظ مع الأداة: der Drucker، die Tastatur، das Kabel. احفظ الاسم + الأداة + الجمع معًا.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">der</th><th lang="de" dir="ltr">die</th><th lang="de" dir="ltr">das</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Drucker</td><td lang="de" dir="ltr">die Tastatur</td><td lang="de" dir="ltr">das Kabel</td></tr><tr><td lang="de" dir="ltr">der Bildschirm</td><td lang="de" dir="ltr">die Maus</td><td lang="de" dir="ltr">das Headset</td></tr><tr><td lang="de" dir="ltr">der Laptop</td><td lang="de" dir="ltr">die Maus (Pl. Mäuse)</td><td lang="de" dir="ltr">das Ladekabel</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">Maus جمعها Mäuse مع Umlaut.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Büro</td><td lang="ar" dir="rtl" class="ar">بورو</td><td lang="ar" dir="rtl" class="ar">بُورو</td></tr><tr><td lang="de" dir="ltr">Drucker</td><td lang="ar" dir="rtl" class="ar">دروكر</td><td lang="ar" dir="rtl" class="ar">دْرُوكَر</td></tr><tr><td lang="de" dir="ltr">Tastatur</td><td lang="ar" dir="rtl" class="ar">تاستاتور</td><td lang="ar" dir="rtl" class="ar">تاستاتُور</td></tr><tr><td lang="de" dir="ltr">Bildschirm</td><td lang="ar" dir="rtl" class="ar">بيلدشيرم</td><td lang="ar" dir="rtl" class="ar">بِيلْدشِيرم</td></tr><tr><td lang="de" dir="ltr">Kabel</td><td lang="ar" dir="rtl" class="ar">كابل</td><td lang="ar" dir="rtl" class="ar">كابِل</td></tr><tr><td lang="de" dir="ltr">funktionieren</td><td lang="ar" dir="rtl" class="ar">فونكتسيونيرن</td><td lang="ar" dir="rtl" class="ar">فُونْكتْسيُونِيرِن</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Ich brauche einen Drucker.</div><div class="de" dir="ltr">Ich brauche keinen Kopierer.</div><div class="de" dir="ltr">Der Laptop ist kaputt.</div><div class="de" dir="ltr">Die Tastatur funktioniert nicht.</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Im Büro <small dir="ltr">تمارين صوتية داخلية (لا نص فيديو موثّق)</small></h3><p dir="rtl">اسمع واكتب ثلاثة أجهزة ذُكرت واحتياجها.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=tjdgp2fBc4g" target="_blank" rel="noopener">https://www.youtube.com/watch?v=tjdgp2fBc4g</a><ul class="qs"><li dir='rtl'>أي جهاز لا يحتاجه المتحدث؟</li><li dir='rtl'>ما الجهاز المعطّل؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — Was brauchen Sie? <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع أربع جمل وسجّل: يحتاج أم لا يحتاج؟</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=tjdgp2fBc4g" target="_blank" rel="noopener">https://www.youtube.com/watch?v=tjdgp2fBc4g</a><ul class="qs"><li dir='rtl'>كم مرة سمعت keinen؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: مكان عملي <small dir="ltr">Lesen: Mein Arbeitsplatz</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich arbeite zu Hause. Ich brauche kein Büro.</td><td lang="ar" dir="rtl" class="ar">أعمل في المنزل. لا أحتاج مكتبًا.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Mein Schreibtisch ist klein, aber praktisch.</td><td lang="ar" dir="rtl" class="ar">مكتبي صغير لكنه عملي.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich habe einen Laptop und einen Bildschirm.</td><td lang="ar" dir="rtl" class="ar">لديّ حاسوب محمول وشاشة.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Der Drucker ist alt und langsam.</td><td lang="ar" dir="rtl" class="ar">الطابعة قديمة وبطيئة.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich brauche einen neuen Drucker.</td><td lang="ar" dir="rtl" class="ar">أحتاج طابعة جديدة.</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">أين يعمل الكاتب؟</p><p class="qa" dir="ltr">Zu Hause.</p></div><div class="qitem"><p dir="rtl" class="qq">هل يحتاج مكتبًا؟</p><p class="qa" dir="ltr">Nein, er braucht kein Büro.</p></div><div class="qitem"><p dir="rtl" class="qq">كيف الطابعة؟</p><p class="qa" dir="ltr">Alt und langsam.</p></div><div class="qitem"><p dir="rtl" class="qq">ماذا يحتاج؟</p><p class="qa" dir="ltr">Einen neuen Drucker.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: تجهيز مكتب</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Was brauchst du für die Arbeit?</td><td lang="de" dir="ltr">Ich brauche einen Laptop und einen Bildschirm.</td></tr><tr><td lang="de" dir="ltr">Brauchst du einen Drucker?</td><td lang="de" dir="ltr">Nein, ich brauche keinen Drucker.</td></tr><tr><td lang="de" dir="ltr">Und eine Tastatur?</td><td lang="de" dir="ltr">Ja, meine Tastatur ist kaputt.</td></tr><tr><td lang="de" dir="ltr">Hier ist eine Tastatur.</td><td lang="de" dir="ltr">Danke! Funktioniert sie?</td></tr><tr><td lang="de" dir="ltr">Ja, sie funktioniert gut.</td><td lang="de" dir="ltr">Super, danke!</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">اذكر 5 أشياء تحتاجها للعمل و2 لا تحتاجها.</p>
+  <ul><li dir="rtl">einen/keinen صحيحة.</li><li dir="rtl">kein مع النكرة وnicht مع الفعل.</li><li dir="rtl">أدوات الأجهزة صحيحة.</li><li dir="rtl">نطق Büro وDrucker مقبول.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب 5 جمل عن مكتبك واحتياجاتك.</p><pre class="model">Ich arbeite zu Hause.
+Ich brauche kein Büro.
+Ich habe einen Laptop und einen Bildschirm.
+Meine Tastatur ist alt.
+Ich brauche eine neue Tastatur.</pre><p dir="rtl">اكتب جملتي نفي: واحدة بـ kein وواحدة بـ nicht.</p><pre class="model">Ich brauche keinen Kopierer.
+Der Drucker funktioniert nicht.</pre><ul><li dir="rtl">النصب بعد brauchen صحيح.</li><li dir="rtl">kein/nicht في المكان الصحيح.</li><li dir="rtl">خمس جمل كاملة.</li><li dir="rtl">علامات ترقيم سليمة.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">أكمل بالأداة الصحيحة بعد brauchen.</span></h3><div class="de" dir="ltr">Ich brauche ____ Drucker.</div><div class="de" dir="ltr">Ich brauche ____ Tastatur.</div><div class="de" dir="ltr">Ich brauche ____ Kopierer. (نفي)</div><div class="de" dir="ltr">Ich brauche ____ Kabel. (نفي)</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل الجهاز بمعناه.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Bildschirm</td><td lang="ar" dir="rtl" class="ar">الشاشة</td></tr><tr><td lang="de" dir="ltr">die Tastatur</td><td lang="ar" dir="rtl" class="ar">لوحة المفاتيح</td></tr><tr><td lang="de" dir="ltr">das Kabel</td><td lang="ar" dir="rtl" class="ar">الكابل</td></tr><tr><td lang="de" dir="ltr">der Beamer</td><td lang="ar" dir="rtl" class="ar">جهاز العرض</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">einen / Ich brauche / Drucker</div><div class="de" dir="ltr">nicht / Der Laptop / funktioniert</div><div class="de" dir="ltr">kein / Ich brauche / Büro</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">Ich brauche ____ Kopierer. <span class="opts">[ kein | keinen | nicht ]</span></div><div class="de" dir="ltr">Die Maus funktioniert ____. <span class="opts">[ kein | keine | nicht ]</span></div><div class="de" dir="ltr">Das ist ____ der Drucker. <span class="opts">[ kein | keine | nicht ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich brauche ____ Drucker.</td><td lang="de" dir="ltr">einen</td></tr><tr><td lang="de" dir="ltr">Ich brauche ____ Tastatur.</td><td lang="de" dir="ltr">eine</td></tr><tr><td lang="ar" dir="rtl" class="ar">Ich brauche ____ Kopierer. (نفي)</td><td lang="de" dir="ltr">keinen</td></tr><tr><td lang="ar" dir="rtl" class="ar">Ich brauche ____ Kabel. (نفي)</td><td lang="de" dir="ltr">kein</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Bildschirm</td><td lang="ar" dir="rtl" class="ar">الشاشة</td></tr><tr><td lang="de" dir="ltr">die Tastatur</td><td lang="ar" dir="rtl" class="ar">لوحة المفاتيح</td></tr><tr><td lang="de" dir="ltr">das Kabel</td><td lang="ar" dir="rtl" class="ar">الكابل</td></tr><tr><td lang="de" dir="ltr">der Beamer</td><td lang="ar" dir="rtl" class="ar">جهاز العرض</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">einen / Ich brauche / Drucker</td><td lang="de" dir="ltr">Ich brauche einen Drucker.</td></tr><tr><td lang="de" dir="ltr">nicht / Der Laptop / funktioniert</td><td lang="de" dir="ltr">Der Laptop funktioniert nicht.</td></tr><tr><td lang="de" dir="ltr">kein / Ich brauche / Büro</td><td lang="de" dir="ltr">Ich brauche kein Büro.</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich brauche ____ Kopierer.</td><td lang="de" dir="ltr">keinen</td></tr><tr><td lang="de" dir="ltr">Die Maus funktioniert ____.</td><td lang="de" dir="ltr">nicht</td></tr><tr><td lang="de" dir="ltr">Das ist ____ der Drucker.</td><td lang="de" dir="ltr">nicht</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ Ich brauche ein Drucker.</div><div class="good" dir="ltr">✅ Ich brauche einen Drucker.</div><p dir="rtl">مذكر نصب → einen.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich brauche nicht einen Drucker.</div><div class="good" dir="ltr">✅ Ich brauche keinen Drucker.</div><p dir="rtl">النكرة تُنفى بـ kein.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Der Drucker funktioniert kein.</div><div class="good" dir="ltr">✅ Der Drucker funktioniert nicht.</div><p dir="rtl">نفي الفعل بـ nicht.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ die Tastatur (بأداة مذكر)</div><div class="good" dir="ltr">✅ die Tastatur</div><p dir="rtl">Tastatur مؤنث.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich brauche ein Büro nicht.</div><div class="good" dir="ltr">✅ Ich brauche kein Büro.</div><p dir="rtl">النكرة → kein.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">قل: أحتاج طابعة.</td><td lang="de" dir="ltr">Ich brauche einen Drucker.</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">قل: لا أحتاج آلة تصوير.</td><td lang="de" dir="ltr">Ich brauche keinen Kopierer.</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">قل: لا أحتاج مكتبًا.</td><td lang="de" dir="ltr">Ich brauche kein Büro.</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">قل: الحاسوب معطّل.</td><td lang="de" dir="ltr">Der Laptop ist kaputt.</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">قل: لوحة المفاتيح لا تعمل.</td><td lang="de" dir="ltr">Die Tastatur funktioniert nicht.</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">أداة Tastatur؟</td><td lang="de" dir="ltr">die</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">أداة Kabel؟</td><td lang="de" dir="ltr">das</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">اسأل: هل لديك كابل؟</td><td lang="de" dir="ltr">Hast du ein Kabel?</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">اكتب جملة عن شاشة جديدة.</td><td lang="de" dir="ltr">Der Bildschirm ist neu.</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">انفِ: Der Drucker ist neu.</td><td lang="de" dir="ltr">Der Drucker ist nicht neu.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="ar" dir="rtl" class="ar">brauchen + النصب.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="ar" dir="rtl" class="ar">kein/nicht مع الأجهزة.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">وصف مكتب كامل + احتياجات.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 2 Sequenz 2 (Gegenstände am Arbeitsplatz, Bürobedarf) und Kapitel 2 Sequenz 1 (Negation mit nicht).<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 6, Teil 1 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=tjdgp2fBc4g" target="_blank" rel="noopener">https://www.youtube.com/watch?v=tjdgp2fBc4g</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">مادة أصلية؛ لا اقتباس نصي من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L06-T01 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

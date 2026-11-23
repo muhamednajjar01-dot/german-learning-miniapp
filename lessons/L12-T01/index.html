@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ماذا حدث هنا؟ — الاحتفال بالأعياد · Was ist denn hier passiert? — Feste feiern</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#B0277C; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#B0277C,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L12-T01">← العودة للداشبورد والاختبار</a> · L12-T01</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>ماذا حدث هنا؟ — الاحتفال بالأعياد</h1>
+    <h2>Was ist denn hier passiert? — Feste feiern — Lektion 12, Teil 1</h2>
+    <p class="sub">Feste, Perfekt, Fragen zur Vergangenheit · A1, Kapitel 9 + 15</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 4</span>
+    <span class="chip">Video 36:18</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L12-S1</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تسمّي 10 مفردات احتفال.</li><li dir="rtl">أن تسأل عن حدث ماضٍ.</li><li dir="rtl">أن تحكي حفلة في الماضي.</li><li dir="rtl">أن تدعو وتقبل بأدب.</li><li dir="rtl">أن تكتب دعوة احتفال قصيرة.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=VoBuV-sPdvw" target="_blank" rel="noopener">https://www.youtube.com/watch?v=VoBuV-sPdvw</a></div>
+  <div class="card">
+    <h3>Lektion 12, Teile 1–2 — Feste und Feiern</h3>
+    <p class="meta">36:18 · <a class="link" href="https://www.youtube.com/watch?v=VoBuV-sPdvw" target="_blank" rel="noopener">https://www.youtube.com/watch?v=VoBuV-sPdvw</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">مفردات الاحتفال: Geburtstag, Party, Geschenk, einladen.</li><li dir="rtl">السؤال عن الماضي: Was ist passiert?</li><li dir="rtl">Perfekt في سياق الاحتفال.</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">ما المناسبة التي يحتفل بها المتحدث؟</li><li dir="rtl">هل استخدم Perfekt أم Präsens؟</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">احتفال <small dir="ltr">Feste</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Geburtstag, -e</td><td lang="ar" dir="rtl" class="ar">عيد الميلاد</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Party, -s</td><td lang="ar" dir="rtl" class="ar">الحفلة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Geschenk, -e</td><td lang="ar" dir="rtl" class="ar">الهدية</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Gast, die Gäste</td><td lang="ar" dir="rtl" class="ar">الضيف</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Torte, -n</td><td lang="ar" dir="rtl" class="ar">الكعكة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Kuchen</td><td lang="ar" dir="rtl" class="ar">الكعك</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Musik</td><td lang="ar" dir="rtl" class="ar">الموسيقى</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Fest, -e</td><td lang="ar" dir="rtl" class="ar">العيد/المهرجان</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">feiern</td><td lang="ar" dir="rtl" class="ar">يحتفل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">schenken</td><td lang="ar" dir="rtl" class="ar">يهدي</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">أفعال الماضي <small dir="ltr">Vergangenheit</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">passieren</td><td lang="ar" dir="rtl" class="ar">يحدث</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">tanzen → getanzt</td><td lang="ar" dir="rtl" class="ar">يرقص → رقص</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">singen → gesungen</td><td lang="ar" dir="rtl" class="ar">يغني → غنّى</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">trinken → getrunken</td><td lang="ar" dir="rtl" class="ar">يشرب → شرب</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">essen → gegessen</td><td lang="ar" dir="rtl" class="ar">يأكل → أكل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">kommen → gekommen</td><td lang="ar" dir="rtl" class="ar">يأتي → أتى</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">عبارات <small dir="ltr">Redemittel</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Was ist passiert?</td><td lang="ar" dir="rtl" class="ar">ماذا حدث؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ich habe Geburtstag.</td><td lang="ar" dir="rtl" class="ar">عيد ميلادي.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Kommst du zur Party?</td><td lang="ar" dir="rtl" class="ar">هل تأتي إلى الحفلة؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Herzlichen Glückwunsch!</td><td lang="ar" dir="rtl" class="ar">تهانينا!</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Alles Gute!</td><td lang="ar" dir="rtl" class="ar">كل التوفيق!</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Es war toll!</td><td lang="ar" dir="rtl" class="ar">كان رائعًا!</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Ich habe am Samstag Geburtstag.</div><div class="gloss" dir="rtl">عيد ميلادي يوم السبت.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir feiern eine Party.</div><div class="gloss" dir="rtl">نقيم حفلة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Kommst du zur Party?</div><div class="gloss" dir="rtl">هل تأتي إلى الحفلة؟</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Was ist denn hier passiert?</div><div class="gloss" dir="rtl">ماذا حدث هنا؟</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir haben getanzt und gesungen.</div><div class="gloss" dir="rtl">رقصنا وغنّينا.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Sie hat mir ein Geschenk gegeben.</div><div class="gloss" dir="rtl">أعطتني هدية.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Es war toll!</div><div class="gloss" dir="rtl">كان رائعًا!</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Herzlichen Glückwunsch zum Geburtstag!</div><div class="gloss" dir="rtl">تهانينا بعيد الميلاد!</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">السؤال عن الماضي <small dir="ltr">Fragen im Perfekt</small></h3><p dir="rtl" class="bodyar">للسؤال عن حدث: Was ist passiert? أو Was hast du gemacht? الفعل المساعد في الموضع الثاني، والPartizip في النهاية.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الجواب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Was ist passiert?</td><td lang="de" dir="ltr">Wir haben gefeiert.</td></tr><tr><td lang="de" dir="ltr">Was hast du gemacht?</td><td lang="de" dir="ltr">Ich habe getanzt.</td></tr><tr><td lang="de" dir="ltr">Wo bist du gewesen?</td><td lang="de" dir="ltr">Ich bin bei Freunden gewesen.</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">passieren يأخذ sein: Was ist passiert?</p></div></div><div class="card"><h3 dir="rtl">الاحتفال <small dir="ltr">Feste feiern</small></h3><p dir="rtl" class="bodyar">أفعال الاحتفال: feiern، schenken، einladen. مع einladen: Ich lade dich ein (فعل منفصل).</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الفعل</th><th lang="ar" dir="rtl">مثال</th></tr></thead><tbody><tr><td lang="de" dir="ltr">feiern</td><td lang="de" dir="ltr">Wir feiern Geburtstag.</td></tr><tr><td lang="de" dir="ltr">schenken</td><td lang="de" dir="ltr">Ich schenke ihr Blumen.</td></tr><tr><td lang="de" dir="ltr">einladen</td><td lang="de" dir="ltr">Ich lade dich ein.</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">einladen منفصل: lade … ein.</p></div></div><div class="card"><h3 dir="rtl">تهانٍ <small dir="ltr">Perfekt üben</small></h3><p dir="rtl" class="bodyar">عبارات التهنئة ثابتة: Herzlichen Glückwunsch! Alles Gute! Viel Spaß!</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">المناسبة</th><th lang="ar" dir="rtl">العبارة</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">عيد ميلاد</td><td lang="de" dir="ltr">Herzlichen Glückwunsch!</td></tr><tr><td lang="ar" dir="rtl" class="ar">نجاح</td><td lang="de" dir="ltr">Alles Gute!</td></tr><tr><td lang="ar" dir="rtl" class="ar">حفلة</td><td lang="de" dir="ltr">Viel Spaß!</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">هذه عبارات لا تُصرّف.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Geburtstag</td><td lang="ar" dir="rtl" class="ar">غبورتستاك</td><td lang="ar" dir="rtl" class="ar">گِبُورْتْسْتاك</td></tr><tr><td lang="de" dir="ltr">Geschenk</td><td lang="ar" dir="rtl" class="ar">غشينك</td><td lang="ar" dir="rtl" class="ar">گِشِينْك</td></tr><tr><td lang="de" dir="ltr">feiern</td><td lang="ar" dir="rtl" class="ar">فايرن</td><td lang="ar" dir="rtl" class="ar">فايْرِن</td></tr><tr><td lang="de" dir="ltr">Torte</td><td lang="ar" dir="rtl" class="ar">تورتِه</td><td lang="ar" dir="rtl" class="ar">تُورْتِه</td></tr><tr><td lang="de" dir="ltr">Glückwunsch</td><td lang="ar" dir="rtl" class="ar">غلوكونش</td><td lang="ar" dir="rtl" class="ar">گْلُوكْڤُونْش</td></tr><tr><td lang="de" dir="ltr">passiert</td><td lang="ar" dir="rtl" class="ar">باسيرت</td><td lang="ar" dir="rtl" class="ar">باسِيرْت</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Ich habe Geburtstag.</div><div class="de" dir="ltr">Kommst du zur Party?</div><div class="de" dir="ltr">Was ist passiert?</div><div class="de" dir="ltr">Herzlichen Glückwunsch!</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Eine Party <small dir="ltr">تمارين صوتية داخلية (لا نص فيديو موثّق)</small></h3><p dir="rtl">اسمع واكتب ما حدث في الحفلة.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=VoBuV-sPdvw" target="_blank" rel="noopener">https://www.youtube.com/watch?v=VoBuV-sPdvw</a><ul class="qs"><li dir='rtl'>هل رقصوا؟</li><li dir='rtl'>ماذا أكلوا؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — Einladung <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع الدعوة واكتب اليوم والساعة.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=VoBuV-sPdvw" target="_blank" rel="noopener">https://www.youtube.com/watch?v=VoBuV-sPdvw</a><ul class="qs"><li dir='rtl'>هل قبل المتحدث؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: حفلة عيد ميلاد <small dir="ltr">Lesen: Eine Geburtstagsparty</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Am Samstag habe ich Geburtstag.</td><td lang="ar" dir="rtl" class="ar">يوم السبت عيد ميلادي.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Wir feiern eine Party zu Hause.</td><td lang="ar" dir="rtl" class="ar">نقيم حفلة في المنزل.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Meine Freunde kommen um 19 Uhr.</td><td lang="ar" dir="rtl" class="ar">أصدقائي يأتون الساعة 19.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Wir haben getanzt und gesungen.</td><td lang="ar" dir="rtl" class="ar">رقصنا وغنّينا.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Es war toll!</td><td lang="ar" dir="rtl" class="ar">كان رائعًا!</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">متى عيد الميلاد؟</p><p class="qa" dir="ltr">Am Samstag.</p></div><div class="qitem"><p dir="rtl" class="qq">أين الحفلة؟</p><p class="qa" dir="ltr">Zu Hause.</p></div><div class="qitem"><p dir="rtl" class="qq">متى يأتي الأصدقاء؟</p><p class="qa" dir="ltr">Um 19 Uhr.</p></div><div class="qitem"><p dir="rtl" class="qq">كيف كانت الحفلة؟</p><p class="qa" dir="ltr">Es war toll.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: دعوة</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich habe am Samstag Geburtstag. Kommst du?</td><td lang="de" dir="ltr">Ja, gern! Um wie viel Uhr?</td></tr><tr><td lang="de" dir="ltr">Um 19 Uhr bei mir.</td><td lang="de" dir="ltr">Soll ich etwas mitbringen?</td></tr><tr><td lang="de" dir="ltr">Nur gute Laune!</td><td lang="de" dir="ltr">Alles Gute! Bis Samstag!</td></tr><tr><td lang="de" dir="ltr">Danke!</td><td lang="de" dir="ltr">Was ist denn hier passiert?</td></tr><tr><td lang="de" dir="ltr">Wir haben schon dekoriert!</td><td lang="de" dir="ltr">Es sieht toll aus!</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">ادعُ صديقًا لحفلة: المناسبة، الوقت، المكان، سؤال عن الحضور.</p>
+  <ul><li dir="rtl">Perfekt صحيح.</li><li dir="rtl">einladen/feiern صحيحة.</li><li dir="rtl">عبارة تهنئة.</li><li dir="rtl">أدب.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب دعوة حفلة 4 أسطر.</p><pre class="model">Hallo! Ich habe am Samstag Geburtstag.
+Wir feiern zu Hause um 19 Uhr.
+Kommst du zur Party?
+Ich freue mich!</pre><p dir="rtl">اكتب 3 جمل عما حدث في الحفلة.</p><pre class="model">Wir haben getanzt.
+Wir haben Kuchen gegessen.
+Es war toll!</pre><ul><li dir="rtl">دعوة واضحة.</li><li dir="rtl">Perfekt صحيح.</li><li dir="rtl">أربعة أسطر.</li><li dir="rtl">علامات ترقيم سليمة.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">أكمل بالمساعد الصحيح.</span></h3><div class="de" dir="ltr">Was ____ passiert?</div><div class="de" dir="ltr">Wir ____ getanzt.</div><div class="de" dir="ltr">Ich ____ Geburtstag.</div><div class="de" dir="ltr">Sie ____ gekommen.</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل الكلمة بمعناها.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Geburtstag</td><td lang="ar" dir="rtl" class="ar">عيد الميلاد</td></tr><tr><td lang="de" dir="ltr">das Geschenk</td><td lang="ar" dir="rtl" class="ar">الهدية</td></tr><tr><td lang="de" dir="ltr">die Torte</td><td lang="ar" dir="rtl" class="ar">الكعكة</td></tr><tr><td lang="de" dir="ltr">der Gast</td><td lang="ar" dir="rtl" class="ar">الضيف</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">passiert / Was ist / hier</div><div class="de" dir="ltr">zur Party / Kommst du</div><div class="de" dir="ltr">getanzt / Wir haben</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">Wir ____ gefeiert. <span class="opts">[ haben | sind | ist ]</span></div><div class="de" dir="ltr">Sie ____ gekommen. <span class="opts">[ hat | ist | habe ]</span></div><div class="de" dir="ltr">____ Glückwunsch! <span class="opts">[ Herzlichen | Herzlich | Herzliche ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Was ____ passiert?</td><td lang="de" dir="ltr">ist</td></tr><tr><td lang="de" dir="ltr">Wir ____ getanzt.</td><td lang="de" dir="ltr">haben</td></tr><tr><td lang="de" dir="ltr">Ich ____ Geburtstag.</td><td lang="de" dir="ltr">habe</td></tr><tr><td lang="de" dir="ltr">Sie ____ gekommen.</td><td lang="de" dir="ltr">ist</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Geburtstag</td><td lang="ar" dir="rtl" class="ar">عيد الميلاد</td></tr><tr><td lang="de" dir="ltr">das Geschenk</td><td lang="ar" dir="rtl" class="ar">الهدية</td></tr><tr><td lang="de" dir="ltr">die Torte</td><td lang="ar" dir="rtl" class="ar">الكعكة</td></tr><tr><td lang="de" dir="ltr">der Gast</td><td lang="ar" dir="rtl" class="ar">الضيف</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">passiert / Was ist / hier</td><td lang="de" dir="ltr">Was ist hier passiert?</td></tr><tr><td lang="de" dir="ltr">zur Party / Kommst du</td><td lang="de" dir="ltr">Kommst du zur Party?</td></tr><tr><td lang="de" dir="ltr">getanzt / Wir haben</td><td lang="de" dir="ltr">Wir haben getanzt.</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Wir ____ gefeiert.</td><td lang="de" dir="ltr">haben</td></tr><tr><td lang="de" dir="ltr">Sie ____ gekommen.</td><td lang="de" dir="ltr">ist</td></tr><tr><td lang="de" dir="ltr">____ Glückwunsch!</td><td lang="de" dir="ltr">Herzlichen</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ Was hat passiert?</div><div class="good" dir="ltr">✅ Was ist passiert?</div><p dir="rtl">passieren يأخذ sein.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich habe gekommen.</div><div class="good" dir="ltr">✅ Ich bin gekommen.</div><p dir="rtl">kommen → sein.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Wir haben getanzt haben.</div><div class="good" dir="ltr">✅ Wir haben getanzt.</div><p dir="rtl">مساعد واحد.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Kommst du zu Party?</div><div class="good" dir="ltr">✅ Kommst du zur Party?</div><p dir="rtl">zu + der = zur.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich lade dich ein lade.</div><div class="good" dir="ltr">✅ Ich lade dich ein.</div><p dir="rtl">ein في النهاية فقط.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">قل: عيد ميلادي يوم السبت.</td><td lang="de" dir="ltr">Ich habe am Samstag Geburtstag.</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">قل: هل تأتي إلى الحفلة؟</td><td lang="de" dir="ltr">Kommst du zur Party?</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">اسأل: ماذا حدث؟</td><td lang="de" dir="ltr">Was ist passiert?</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">قل: رقصنا وغنّينا.</td><td lang="de" dir="ltr">Wir haben getanzt und gesungen.</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">قل: كان رائعًا.</td><td lang="de" dir="ltr">Es war toll!</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">قل: تهانينا!</td><td lang="de" dir="ltr">Herzlichen Glückwunsch!</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">قل: كل التوفيق.</td><td lang="de" dir="ltr">Alles Gute!</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">قل: أعطتني هدية.</td><td lang="de" dir="ltr">Sie hat mir ein Geschenk gegeben.</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">انفِ: Wir haben gefeiert.</td><td lang="de" dir="ltr">Wir haben nicht gefeiert.</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">اكتب جملة عن الكعكة.</td><td lang="de" dir="ltr">Die Torte war lecker.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="ar" dir="rtl" class="ar">مفردات الاحتفال.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="de" dir="ltr">Passiert/Perfekt.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">حكاية حفلة كاملة.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 9 + 15 (Feste, Feiern, Perfekt).<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 12, Teile 1–2 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=VoBuV-sPdvw" target="_blank" rel="noopener">https://www.youtube.com/watch?v=VoBuV-sPdvw</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">مادة أصلية؛ لا اقتباس من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L12-T01 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

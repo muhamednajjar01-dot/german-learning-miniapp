@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>كان الصيف جميلًا — سرد التجارب · Der Sommer war schön — Erlebnisse erzählen</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#9F3867; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#9F3867,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L12-T03">← العودة للداشبورد والاختبار</a> · L12-T03</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>كان الصيف جميلًا — سرد التجارب</h1>
+    <h2>Der Sommer war schön — Erlebnisse erzählen — Lektion 12, Teil 3</h2>
+    <p class="sub">Perfekt, Erlebnisse, Bewertung · A1, Kapitel 15</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 4</span>
+    <span class="chip">Video 28:54</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L12-S2</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تسرد تجربة صيفية في الماضي.</li><li dir="rtl">أن تقيّم التجربة بصفات.</li><li dir="rtl">أن تفرّق بين war وbin.</li><li dir="rtl">أن تستخدم Glück gehabt.</li><li dir="rtl">أن تكتب فقرة 5 جمل عن رحلة.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=c4WcKrlbz2U" target="_blank" rel="noopener">https://www.youtube.com/watch?v=c4WcKrlbz2U</a></div>
+  <div class="card">
+    <h3>Lektion 12, Teil 3 — Erlebnisse und Glück</h3>
+    <p class="meta">28:54 · <a class="link" href="https://www.youtube.com/watch?v=c4WcKrlbz2U" target="_blank" rel="noopener">https://www.youtube.com/watch?v=c4WcKrlbz2U</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">سرد تجربة: Ich bin gereist, ich habe gesehen.</li><li dir="rtl">التقييم: Es war schön/super/anstrengend.</li><li dir="rtl">Glück gehabt = حالفني الحظ.</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">أين قضى المتحدث الصيف؟</li><li dir="rtl">هل استخدم war أم ist؟</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">تجارب <small dir="ltr">Erlebnisse</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">das Erlebnis, -se</td><td lang="ar" dir="rtl" class="ar">التجربة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Reise, -n</td><td lang="ar" dir="rtl" class="ar">الرحلة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Sommer</td><td lang="ar" dir="rtl" class="ar">الصيف</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Strand, die Strände</td><td lang="ar" dir="rtl" class="ar">الشاطئ</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Meer, -e</td><td lang="ar" dir="rtl" class="ar">البحر</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Berge (Pl.)</td><td lang="ar" dir="rtl" class="ar">الجبال</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Wetter</td><td lang="ar" dir="rtl" class="ar">الطقس</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Sonne</td><td lang="ar" dir="rtl" class="ar">الشمس</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">تقييم <small dir="ltr">Bewertung</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">schön</td><td lang="ar" dir="rtl" class="ar">جميل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">super</td><td lang="ar" dir="rtl" class="ar">رائع</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">toll</td><td lang="ar" dir="rtl" class="ar">ممتاز</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">anstrengend</td><td lang="ar" dir="rtl" class="ar">مرهق</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">langweilig</td><td lang="ar" dir="rtl" class="ar">ممل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">interessant</td><td lang="ar" dir="rtl" class="ar">مثير للاهتمام</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Glück gehabt</td><td lang="ar" dir="rtl" class="ar">حالفني الحظ</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">leider</td><td lang="ar" dir="rtl" class="ar">للأسف</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">أفعال <small dir="ltr">Verben</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">sehen → gesehen</td><td lang="ar" dir="rtl" class="ar">يرى → رأى</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">treffen → getroffen</td><td lang="ar" dir="rtl" class="ar">يلتقي → التقى</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">schwimmen → geschwommen</td><td lang="ar" dir="rtl" class="ar">يسبح → سبح</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">bleiben → geblieben</td><td lang="ar" dir="rtl" class="ar">يبقى → بقي</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">fahren → gefahren</td><td lang="ar" dir="rtl" class="ar">يسافر → سافر</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">sein → war</td><td lang="ar" dir="rtl" class="ar">يكون → كان</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Im Sommer bin ich ans Meer gefahren.</div><div class="gloss" dir="rtl">في الصيف سافرت إلى البحر.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Das Wetter war super.</div><div class="gloss" dir="rtl">كان الطقس رائعًا.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich habe viele Freunde getroffen.</div><div class="gloss" dir="rtl">التقيت بأصدقاء كثيرين.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir sind jeden Tag geschwommen.</div><div class="gloss" dir="rtl">سبحنا كل يوم.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Es war anstrengend, aber schön.</div><div class="gloss" dir="rtl">كان مرهقًا لكنه جميل.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir haben Glück gehabt.</div><div class="gloss" dir="rtl">حالفنا الحظ.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Leider war die Reise kurz.</div><div class="gloss" dir="rtl">للأسف كانت الرحلة قصيرة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wo warst du im Sommer?</div><div class="gloss" dir="rtl">أين كنت في الصيف؟</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">war وhatte <small dir="ltr">war und hatte</small></h3><p dir="rtl" class="bodyar">الماضي البسيط لـ sein هو war: ich war, du warst, er war, wir waren. ولـ haben: hatte. تُستخدم للوصف والخلفية.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الضمير</th><th lang="de" dir="ltr">sein →</th><th lang="de" dir="ltr">haben →</th></tr></thead><tbody><tr><td lang="de" dir="ltr">ich</td><td lang="de" dir="ltr">war</td><td lang="de" dir="ltr">hatte</td></tr><tr><td lang="de" dir="ltr">du</td><td lang="de" dir="ltr">warst</td><td lang="de" dir="ltr">hattest</td></tr><tr><td lang="de" dir="ltr">er/sie</td><td lang="de" dir="ltr">war</td><td lang="de" dir="ltr">hatte</td></tr><tr><td lang="de" dir="ltr">wir</td><td lang="de" dir="ltr">waren</td><td lang="de" dir="ltr">hatten</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">الوصف: Das Wetter war schön.</p></div></div><div class="card"><h3 dir="rtl">سرد التجربة <small dir="ltr">Perfekt üben</small></h3><p dir="rtl" class="bodyar">للسرد: Perfekt للأحداث (bin gefahren, habe gesehen) وwar/hatte للخلفية والتقييم.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الوظيفة</th><th lang="ar" dir="rtl">مثال</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">خلفية</td><td lang="de" dir="ltr">Das Wetter war super.</td></tr><tr><td lang="ar" dir="rtl" class="ar">حدث</td><td lang="de" dir="ltr">Ich bin ans Meer gefahren.</td></tr><tr><td lang="ar" dir="rtl" class="ar">تقييم</td><td lang="de" dir="ltr">Es war toll.</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">امزج الزمنين في فقرة واحدة.</p></div></div><div class="card"><h3 dir="rtl">التقييم <small dir="ltr">Feste feiern</small></h3><p dir="rtl" class="bodyar">بعد war نستخدم صفة بلا نهاية: Es war schön. لا نقول schönes.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الصحيح</th><th lang="ar" dir="rtl">الخطأ</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Es war schön.</td><td lang="de" dir="ltr">Es war schönes.</td></tr><tr><td lang="de" dir="ltr">Die Reise war toll.</td><td lang="de" dir="ltr">Die Reise war tolles.</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">الصفة بعد sein بلا نهاية.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Erlebnis</td><td lang="ar" dir="rtl" class="ar">إيرليبنس</td><td lang="ar" dir="rtl" class="ar">إيرْلِيِبْنِس</td></tr><tr><td lang="de" dir="ltr">Strand</td><td lang="ar" dir="rtl" class="ar">شتراند</td><td lang="ar" dir="rtl" class="ar">شْتْرانْد</td></tr><tr><td lang="de" dir="ltr">Meer</td><td lang="ar" dir="rtl" class="ar">مير</td><td lang="ar" dir="rtl" class="ar">مِير</td></tr><tr><td lang="de" dir="ltr">anstrengend</td><td lang="ar" dir="rtl" class="ar">أنشترينغند</td><td lang="ar" dir="rtl" class="ar">أَنْشْتْرِينْگِنْد</td></tr><tr><td lang="de" dir="ltr">Glück</td><td lang="ar" dir="rtl" class="ar">غليوك</td><td lang="ar" dir="rtl" class="ar">گْلُوك</td></tr><tr><td lang="de" dir="ltr">Wetter</td><td lang="ar" dir="rtl" class="ar">فيتر</td><td lang="ar" dir="rtl" class="ar">ڤِيتَر</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Im Sommer bin ich ans Meer gefahren.</div><div class="de" dir="ltr">Das Wetter war super.</div><div class="de" dir="ltr">Wir haben Glück gehabt.</div><div class="de" dir="ltr">Es war schön.</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Sommerurlaub <small dir="ltr">تمارين صوتية داخلية (لا نص فيديو موثّق)</small></h3><p dir="rtl">اسمع واكتب مكان الرحلة وتقييمها.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=c4WcKrlbz2U" target="_blank" rel="noopener">https://www.youtube.com/watch?v=c4WcKrlbz2U</a><ul class="qs"><li dir='rtl'>كيف كان الطقس؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — Erlebnis <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع ثلاثة أحداث واكتبها في Perfekt.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=c4WcKrlbz2U" target="_blank" rel="noopener">https://www.youtube.com/watch?v=c4WcKrlbz2U</a><ul class="qs"><li dir='rtl'>هل سبحوا؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: صيفي <small dir="ltr">Lesen: Mein Sommer</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Im Sommer bin ich nach Italien gefahren.</td><td lang="ar" dir="rtl" class="ar">في الصيف سافرت إلى إيطاليا.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Das Wetter war sehr schön.</td><td lang="ar" dir="rtl" class="ar">كان الطقس جميلًا جدًا.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich bin jeden Tag geschwommen.</td><td lang="ar" dir="rtl" class="ar">سبحت كل يوم.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Wir haben viele Freunde getroffen.</td><td lang="ar" dir="rtl" class="ar">التقينا بأصدقاء كثيرين.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Leider war die Reise kurz.</td><td lang="ar" dir="rtl" class="ar">للأسف كانت الرحلة قصيرة.</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">إلى أين سافر؟</p><p class="qa" dir="ltr">Nach Italien.</p></div><div class="qitem"><p dir="rtl" class="qq">كيف كان الطقس؟</p><p class="qa" dir="ltr">Sehr schön.</p></div><div class="qitem"><p dir="rtl" class="qq">ماذا فعل كل يوم؟</p><p class="qa" dir="ltr">Er ist geschwommen.</p></div><div class="qitem"><p dir="rtl" class="qq">هل كانت الرحلة طويلة؟</p><p class="qa" dir="ltr">Nein, leider kurz.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: كيف كان صيفك؟</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Wo warst du im Sommer?</td><td lang="de" dir="ltr">Ich war in Italien.</td></tr><tr><td lang="de" dir="ltr">Wie war das Wetter?</td><td lang="de" dir="ltr">Super! Die Sonne war jeden Tag da.</td></tr><tr><td lang="de" dir="ltr">Was hast du gemacht?</td><td lang="de" dir="ltr">Ich bin geschwommen und habe Freunde getroffen.</td></tr><tr><td lang="de" dir="ltr">War es anstrengend?</td><td lang="de" dir="ltr">Ein bisschen, aber schön.</td></tr><tr><td lang="de" dir="ltr">Toll! Ich hatte auch Glück.</td><td lang="de" dir="ltr">Schön!</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">احكِ تجربة صيفية: مكان، طقس، نشاطان، تقييم.</p>
+  <ul><li dir="rtl">war/hatte صحيحة.</li><li dir="rtl">Perfekt صحيح.</li><li dir="rtl">صفة بلا نهاية بعد war.</li><li dir="rtl">نطق مقبول.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب 5 جمل عن صيفك.</p><pre class="model">Im Sommer bin ich ans Meer gefahren.
+Das Wetter war super.
+Ich bin jeden Tag geschwommen.
+Wir haben Freunde getroffen.
+Es war schön, aber kurz.</pre><p dir="rtl">اكتب تقييمين: واحد إيجابي وواحد سلبي.</p><pre class="model">Die Reise war toll.
+Der Strand war leider langweilig.</pre><ul><li dir="rtl">war + صفة بلا نهاية.</li><li dir="rtl">Perfekt صحيح.</li><li dir="rtl">خمس جمل كاملة.</li><li dir="rtl">علامات ترقيم سليمة.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">أكمل بـ war أو hatte.</span></h3><div class="de" dir="ltr">Das Wetter ____ super.</div><div class="de" dir="ltr">Ich ____ Glück.</div><div class="de" dir="ltr">Wir ____ in Italien.</div><div class="de" dir="ltr">Sie ____ keine Zeit.</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل الفعل بـPartizip.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">sehen</td><td lang="de" dir="ltr">gesehen</td></tr><tr><td lang="de" dir="ltr">treffen</td><td lang="de" dir="ltr">getroffen</td></tr><tr><td lang="de" dir="ltr">schwimmen</td><td lang="de" dir="ltr">geschwommen</td></tr><tr><td lang="de" dir="ltr">bleiben</td><td lang="de" dir="ltr">geblieben</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">ans Meer / Ich bin / gefahren</div><div class="de" dir="ltr">super / Das Wetter / war</div><div class="de" dir="ltr">Glück / Wir haben / gehabt</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">Wir ____ in Italien. <span class="opts">[ waren | hatten | sind ]</span></div><div class="de" dir="ltr">Es war ____. <span class="opts">[ schön | schönes | schöne ]</span></div><div class="de" dir="ltr">Ich bin ____ Meer gefahren. <span class="opts">[ ans | am | im ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Das Wetter ____ super.</td><td lang="de" dir="ltr">war</td></tr><tr><td lang="de" dir="ltr">Ich ____ Glück.</td><td lang="de" dir="ltr">hatte</td></tr><tr><td lang="de" dir="ltr">Wir ____ in Italien.</td><td lang="de" dir="ltr">waren</td></tr><tr><td lang="de" dir="ltr">Sie ____ keine Zeit.</td><td lang="de" dir="ltr">hatte</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">sehen</td><td lang="de" dir="ltr">gesehen</td></tr><tr><td lang="de" dir="ltr">treffen</td><td lang="de" dir="ltr">getroffen</td></tr><tr><td lang="de" dir="ltr">schwimmen</td><td lang="de" dir="ltr">geschwommen</td></tr><tr><td lang="de" dir="ltr">bleiben</td><td lang="de" dir="ltr">geblieben</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">ans Meer / Ich bin / gefahren</td><td lang="de" dir="ltr">Ich bin ans Meer gefahren.</td></tr><tr><td lang="de" dir="ltr">super / Das Wetter / war</td><td lang="de" dir="ltr">Das Wetter war super.</td></tr><tr><td lang="de" dir="ltr">Glück / Wir haben / gehabt</td><td lang="de" dir="ltr">Wir haben Glück gehabt.</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Wir ____ in Italien.</td><td lang="de" dir="ltr">waren</td></tr><tr><td lang="de" dir="ltr">Es war ____.</td><td lang="de" dir="ltr">schön</td></tr><tr><td lang="de" dir="ltr">Ich bin ____ Meer gefahren.</td><td lang="de" dir="ltr">ans</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ Das Wetter war schönes.</div><div class="good" dir="ltr">✅ Das Wetter war schön.</div><p dir="rtl">الصفة بعد sein بلا نهاية.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich habe ans Meer gefahren.</div><div class="good" dir="ltr">✅ Ich bin ans Meer gefahren.</div><p dir="rtl">fahren → sein.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Wir waren Glück.</div><div class="good" dir="ltr">✅ Wir hatten Glück.</div><p dir="rtl">Glück مع haben.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich bin in Italien gewesen bin.</div><div class="good" dir="ltr">✅ Ich bin in Italien gewesen.</div><p dir="rtl">مساعد واحد.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ im Meer gefahren</div><div class="good" dir="ltr">✅ ans Meer gefahren</div><p dir="rtl">الاتجاه ans Meer.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">قل: كان الطقس رائعًا.</td><td lang="de" dir="ltr">Das Wetter war super.</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">قل: سافرت إلى البحر.</td><td lang="de" dir="ltr">Ich bin ans Meer gefahren.</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">قل: سبحت كل يوم.</td><td lang="de" dir="ltr">Ich bin jeden Tag geschwommen.</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">قل: التقينا بأصدقاء.</td><td lang="de" dir="ltr">Wir haben Freunde getroffen.</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">قل: حالفنا الحظ.</td><td lang="de" dir="ltr">Wir haben Glück gehabt.</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">قل: كانت الرحلة جميلة.</td><td lang="de" dir="ltr">Die Reise war schön.</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">اسأل: أين كنت في الصيف؟</td><td lang="de" dir="ltr">Wo warst du im Sommer?</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">قل: كان مرهقًا.</td><td lang="de" dir="ltr">Es war anstrengend.</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">انفِ: Es war langweilig.</td><td lang="de" dir="ltr">Es war nicht langweilig.</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">اكتب جملة عن الشمس.</td><td lang="de" dir="ltr">Die Sonne war da.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="de" dir="ltr">war/hatte.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="ar" dir="rtl" class="ar">سرد تجربة.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">فقرة صيف كاملة.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 15 (Glück gehabt): Erlebnisse, Bewertung, Perfekt.<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 12, Teil 3 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=c4WcKrlbz2U" target="_blank" rel="noopener">https://www.youtube.com/watch?v=c4WcKrlbz2U</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">مادة أصلية؛ لا اقتباس من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L12-T03 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

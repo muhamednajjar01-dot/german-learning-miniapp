@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>العائلة والمهن — ضمائر الملكية sein/ihr · Familie und Berufe — sein, ihr, seine, ihre</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#8A9E23; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#8A9E23,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L03-T02">← العودة للداشبورد والاختبار</a> · L03-T02</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>العائلة والمهن — ضمائر الملكية sein/ihr</h1>
+    <h2>Familie und Berufe — sein, ihr, seine, ihre — Lektion 3, Teil 2</h2>
+    <p class="sub">Possessivartikel der 3. Person, Alter, Familienstand · A1, Kapitel 13</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 1</span>
+    <span class="chip">Video 53:12</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L03-S2</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تستخدم sein/seine وihr/ihre للحديث عن ملكية الآخرين.</li><li dir="rtl">أن تذكر العمر والحالة المدنية بجمل صحيحة.</li><li dir="rtl">أن تصف عائلة شخص ثالث في 4 جمل.</li><li dir="rtl">أن تفرّق بين sein (ملكه) وihr (ملكها).</li><li dir="rtl">أن تكتب فقرة قصيرة عن صديق وعائلته.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=ynarL7M0O3E" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ynarL7M0O3E</a></div>
+  <div class="card">
+    <h3>Lektion 3, Teile 2–3 — Familie, Berufe, Lebenssituation</h3>
+    <p class="meta">53:12 · <a class="link" href="https://www.youtube.com/watch?v=ynarL7M0O3E" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ynarL7M0O3E</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">كيف يتحدث المتحدث عن عائلة شخص آخر: sein Bruder / ihre Schwester.</li><li dir="rtl">ذكر العمر: Er ist 20 Jahre alt.</li><li dir="rtl">الفرق بين sein (له) وihr (لها).</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">هل استخدم المتحدث sein أم ihr مع Schwester؟</li><li dir="rtl">كم عمر الشخص المذكور؟</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">ملكية الغائب <small dir="ltr">Possessiv 3. Person</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">sein Vater / seine Mutter</td><td lang="ar" dir="rtl" class="ar">والده / والدته</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">ihr Vater / ihre Mutter</td><td lang="ar" dir="rtl" class="ar">والدها / والدتها</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">seine Eltern</td><td lang="ar" dir="rtl" class="ar">والداه</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">ihre Eltern</td><td lang="ar" dir="rtl" class="ar">والداها</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">sein Bruder</td><td lang="ar" dir="rtl" class="ar">أخوه</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">ihr Bruder</td><td lang="ar" dir="rtl" class="ar">أخوها</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">seine Schwester</td><td lang="ar" dir="rtl" class="ar">أخته</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">ihre Schwester</td><td lang="ar" dir="rtl" class="ar">أختها</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">العمر والحالة <small dir="ltr">Alter und Familienstand</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Wie alt ist er?</td><td lang="ar" dir="rtl" class="ar">كم عمره؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Er ist 20 Jahre alt.</td><td lang="ar" dir="rtl" class="ar">عمره 20 سنة.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">verheiratet</td><td lang="ar" dir="rtl" class="ar">متزوج</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">ledig</td><td lang="ar" dir="rtl" class="ar">أعزب</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">geschieden</td><td lang="ar" dir="rtl" class="ar">مطلَّق</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Geschwister</td><td lang="ar" dir="rtl" class="ar">الأشقاء</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Beruf, -e</td><td lang="ar" dir="rtl" class="ar">المهنة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">von Beruf</td><td lang="ar" dir="rtl" class="ar">بحسب المهنة</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">أفعال <small dir="ltr">Verben</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">arbeiten</td><td lang="ar" dir="rtl" class="ar">يعمل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">leben</td><td lang="ar" dir="rtl" class="ar">يعيش</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">heißen</td><td lang="ar" dir="rtl" class="ar">يُسمّى</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">sein</td><td lang="ar" dir="rtl" class="ar">يكون</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">haben</td><td lang="ar" dir="rtl" class="ar">يملك</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">besuchen</td><td lang="ar" dir="rtl" class="ar">يزور</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Das ist Karim. Sein Vater ist Arzt.</div><div class="gloss" dir="rtl">هذا كريم. والده طبيب.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Das ist Lina. Ihre Mutter ist Lehrerin.</div><div class="gloss" dir="rtl">هذه لينا. والدتها معلّمة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Seine Eltern wohnen in Berlin.</div><div class="gloss" dir="rtl">والداه يسكنان في برلين.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ihre Schwester ist verheiratet.</div><div class="gloss" dir="rtl">أختها متزوجة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wie alt ist sein Bruder? — Er ist 15.</div><div class="gloss" dir="rtl">كم عمر أخيه؟ — عمره 15.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Er hat keine Geschwister.</div><div class="gloss" dir="rtl">ليس لديه أشقاء.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Sie arbeitet als Ärztin.</div><div class="gloss" dir="rtl">هي تعمل طبيبة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Sein Beruf ist Lehrer.</div><div class="gloss" dir="rtl">مهنتُه معلّم.</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">sein (له) وihr (لها) <small dir="ltr">sein vs. ihr</small></h3><p dir="rtl" class="bodyar">sein لملكية المذكر (هو)، وihr لملكية المؤنث (هي). كلاهما يأخذ نهاية -e مع المؤنث والجمع.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">المالك</th><th lang="ar" dir="rtl">مذكر/محايد</th><th lang="ar" dir="rtl">مؤنث</th><th lang="ar" dir="rtl">جمع</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">هو (er)</td><td lang="de" dir="ltr">sein Vater</td><td lang="de" dir="ltr">seine Mutter</td><td lang="de" dir="ltr">seine Eltern</td></tr><tr><td lang="ar" dir="rtl" class="ar">هي (sie)</td><td lang="de" dir="ltr">ihr Vater</td><td lang="de" dir="ltr">ihre Mutter</td><td lang="de" dir="ltr">ihre Eltern</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">خطأ شائع: &quot;ihr Mutter&quot; بمعنى أمه — الصحيح seine Mutter (للمذكر) أو ihre Mutter (للمؤنث).</p></div></div><div class="card"><h3 dir="rtl">العمر: Jahre alt <small dir="ltr">Alter ausdrücken</small></h3><p dir="rtl" class="bodyar">الصيغة الثابتة: Er/Sie ist + رقم + Jahre alt. للسؤال: Wie alt ist er/sie? ولا نقول &quot;Er hat 20 Jahre&quot;.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الجواب</th><th lang="ar" dir="rtl">خطأ شائع</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Wie alt ist er?</td><td lang="de" dir="ltr">Er ist 20 Jahre alt.</td><td lang="de" dir="ltr">Er hat 20 Jahre.</td></tr><tr><td lang="de" dir="ltr">Wie alt ist sie?</td><td lang="de" dir="ltr">Sie ist 18 Jahre alt.</td><td lang="de" dir="ltr">Sie hat 18.</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">alt صفة تأتي في النهاية.</p></div></div><div class="card"><h3 dir="rtl">المهنة: arbeiten als / von Beruf sein <small dir="ltr">Beruf ausdrücken</small></h3><p dir="rtl" class="bodyar">طريقتان: Er ist Lehrer von Beruf. / Er arbeitet als Lehrer. مع المؤنث: Sie arbeitet als Lehrerin.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الصيغة</th><th lang="ar" dir="rtl">مثال</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">ist … von Beruf</td><td lang="de" dir="ltr">Sie ist Ärztin von Beruf.</td><td lang="ar" dir="rtl" class="ar">بلا أداة</td></tr><tr><td lang="de" dir="ltr">arbeitet als</td><td lang="de" dir="ltr">Er arbeitet als Ingenieur.</td><td lang="ar" dir="rtl" class="ar">als + مهنة</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">لا نستخدم a/an الإنجليزية؛ الألمانية تحذف الأداة مع المهنة.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">seine</td><td lang="ar" dir="rtl" class="ar">زاينِه</td><td lang="ar" dir="rtl" class="ar">زاينِه</td></tr><tr><td lang="de" dir="ltr">ihre</td><td lang="ar" dir="rtl" class="ar">إيرِه</td><td lang="ar" dir="rtl" class="ar">إيرِه</td></tr><tr><td lang="de" dir="ltr">Jahre</td><td lang="ar" dir="rtl" class="ar">يارِه</td><td lang="ar" dir="rtl" class="ar">يارِه</td></tr><tr><td lang="de" dir="ltr">verheiratet</td><td lang="ar" dir="rtl" class="ar">فرهايراتِت</td><td lang="ar" dir="rtl" class="ar">فِرهايْراتِت</td></tr><tr><td lang="de" dir="ltr">geschieden</td><td lang="ar" dir="rtl" class="ar">گشيدِن</td><td lang="ar" dir="rtl" class="ar">گِشِيدِن</td></tr><tr><td lang="de" dir="ltr">Beruf</td><td lang="ar" dir="rtl" class="ar">بروف</td><td lang="ar" dir="rtl" class="ar">بِرُوف</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Sein Vater ist Arzt.</div><div class="de" dir="ltr">Ihre Mutter ist Lehrerin.</div><div class="de" dir="ltr">Er ist 20 Jahre alt.</div><div class="de" dir="ltr">Sie arbeitet als Ärztin.</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Drei Personen <small dir="ltr">تمارين صوتية داخلية (لا نص فيديو موثّق)</small></h3><p dir="rtl">اسمع ثلاث جمل وحدّد: هل الملكية لذكر أم لأنثى؟</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=ynarL7M0O3E" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ynarL7M0O3E</a><ul class="qs"><li dir='rtl'>في الجملة الأولى: sein أم ihr؟</li><li dir='rtl'>كم عمر الشخص الثاني؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — Berufe <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع المهن واكتبها مع أداة المؤنث/المذكر.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=ynarL7M0O3E" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ynarL7M0O3E</a><ul class="qs"><li dir='rtl'>أي مهنة ذُكرت مرتين؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: عائلتان <small dir="ltr">Lesen: Zwei Familien</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">A</td><td lang="de" dir="ltr">Das ist Ahmed. Sein Vater ist Ingenieur.</td><td lang="ar" dir="rtl" class="ar">هذا أحمد. والده مهندس.</td></tr><tr><td lang="de" dir="ltr">A</td><td lang="de" dir="ltr">Seine Mutter arbeitet als Verkäuferin.</td><td lang="ar" dir="rtl" class="ar">والدته تعمل بائعة.</td></tr><tr><td lang="de" dir="ltr">A</td><td lang="de" dir="ltr">Er hat zwei Schwestern.</td><td lang="ar" dir="rtl" class="ar">لديه أختان.</td></tr><tr><td lang="de" dir="ltr">B</td><td lang="de" dir="ltr">Das ist Mona. Ihr Vater ist Arzt.</td><td lang="ar" dir="rtl" class="ar">هذه منى. والدها طبيب.</td></tr><tr><td lang="de" dir="ltr">B</td><td lang="de" dir="ltr">Ihre Mutter ist zu Hause.</td><td lang="ar" dir="rtl" class="ar">والدتها في المنزل.</td></tr><tr><td lang="de" dir="ltr">B</td><td lang="de" dir="ltr">Sie ist ledig und hat keine Kinder.</td><td lang="ar" dir="rtl" class="ar">هي عزباء وليس لديها أطفال.</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">ما مهنة والد أحمد؟</p><p class="qa" dir="ltr">Ingenieur.</p></div><div class="qitem"><p dir="rtl" class="qq">كم أختًا لأحمد؟</p><p class="qa" dir="ltr">Zwei Schwestern.</p></div><div class="qitem"><p dir="rtl" class="qq">ما مهنة والد منى؟</p><p class="qa" dir="ltr">Arzt.</p></div><div class="qitem"><p dir="rtl" class="qq">هل منى متزوجة؟</p><p class="qa" dir="ltr">Nein, sie ist ledig.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: عائلة صديق</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Wer ist das auf dem Foto?</td><td lang="de" dir="ltr">Das ist mein Freund Karim.</td></tr><tr><td lang="de" dir="ltr">Was ist sein Beruf?</td><td lang="de" dir="ltr">Er ist Student. Sein Vater ist Arzt.</td></tr><tr><td lang="de" dir="ltr">Und seine Mutter?</td><td lang="de" dir="ltr">Sie arbeitet als Lehrerin.</td></tr><tr><td lang="de" dir="ltr">Hat er Geschwister?</td><td lang="de" dir="ltr">Ja, eine Schwester. Sie ist 16.</td></tr><tr><td lang="de" dir="ltr">Danke! Und deine Familie?</td><td lang="de" dir="ltr">Meine Familie ist groß.</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">صِف عائلة صديق في 4 جمل باستخدام sein/seine.</p>
+  <ul><li dir="rtl">sein/seine صحيحة للمذكر.</li><li dir="rtl">ihr/ihre صحيحة للمؤنث.</li><li dir="rtl">صيغة العمر Jahre alt.</li><li dir="rtl">المهنة بلا أداة نكرة.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب فقرة 5 جمل عن صديق وعائلته.</p><pre class="model">Mein Freund heißt Omar.
+Sein Vater ist Lehrer.
+Seine Mutter arbeitet als Ärztin.
+Er hat eine Schwester.
+Seine Schwester ist 14 Jahre alt.</pre><p dir="rtl">حوّل الجمل الثلاث إلى ملكية مؤنث (ihr/ihre).</p><pre class="model">Ihr Vater ist Lehrer.
+Ihre Mutter arbeitet als Ärztin.
+Ihre Schwester ist 14 Jahre alt.</pre><ul><li dir="rtl">التمييز الصحيح بين sein وihr.</li><li dir="rtl">نهاية -e مع المؤنث والجمع.</li><li dir="rtl">صيغة العمر صحيحة.</li><li dir="rtl">علامات ترقيم سليمة.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">ضع sein/seine أو ihr/ihre بحسب المالك بين القوسين.</span></h3><div class="de" dir="ltr">Das ist Ali. ____ Vater ist Arzt. (Ali)</div><div class="de" dir="ltr">Das ist Mona. ____ Mutter ist Lehrerin. (Mona)</div><div class="de" dir="ltr">Ali und ____ Schwester wohnen in Berlin. (Ali)</div><div class="de" dir="ltr">Mona und ____ Bruder sind Studenten. (Mona)</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل الصيغة بمعناها.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">sein Bruder</td><td lang="ar" dir="rtl" class="ar">أخوه</td></tr><tr><td lang="de" dir="ltr">ihr Bruder</td><td lang="ar" dir="rtl" class="ar">أخوها</td></tr><tr><td lang="de" dir="ltr">seine Eltern</td><td lang="ar" dir="rtl" class="ar">والداه</td></tr><tr><td lang="de" dir="ltr">ihre Eltern</td><td lang="ar" dir="rtl" class="ar">والداها</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">ist / Sein Vater / Ingenieur</div><div class="de" dir="ltr">alt / ist / Sie / 20 Jahre</div><div class="de" dir="ltr">als / arbeitet / Er / Lehrer</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">Das ist Lina. ____ Schwester ist 16. <span class="opts">[ Seine | Ihre ]</span></div><div class="de" dir="ltr">Das ist Karim. ____ Mutter ist Ärztin. <span class="opts">[ Seine | Ihre ]</span></div><div class="de" dir="ltr">Wie alt ist ____ Bruder? (Karim) <span class="opts">[ sein | ihr ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Das ist Ali. ____ Vater ist Arzt. (Ali)</td><td lang="de" dir="ltr">Sein</td></tr><tr><td lang="de" dir="ltr">Das ist Mona. ____ Mutter ist Lehrerin. (Mona)</td><td lang="de" dir="ltr">Ihre</td></tr><tr><td lang="de" dir="ltr">Ali und ____ Schwester wohnen in Berlin. (Ali)</td><td lang="de" dir="ltr">seine</td></tr><tr><td lang="de" dir="ltr">Mona und ____ Bruder sind Studenten. (Mona)</td><td lang="de" dir="ltr">ihr</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">sein Bruder</td><td lang="ar" dir="rtl" class="ar">أخوه</td></tr><tr><td lang="de" dir="ltr">ihr Bruder</td><td lang="ar" dir="rtl" class="ar">أخوها</td></tr><tr><td lang="de" dir="ltr">seine Eltern</td><td lang="ar" dir="rtl" class="ar">والداه</td></tr><tr><td lang="de" dir="ltr">ihre Eltern</td><td lang="ar" dir="rtl" class="ar">والداها</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">ist / Sein Vater / Ingenieur</td><td lang="de" dir="ltr">Sein Vater ist Ingenieur.</td></tr><tr><td lang="de" dir="ltr">alt / ist / Sie / 20 Jahre</td><td lang="de" dir="ltr">Sie ist 20 Jahre alt.</td></tr><tr><td lang="de" dir="ltr">als / arbeitet / Er / Lehrer</td><td lang="de" dir="ltr">Er arbeitet als Lehrer.</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Das ist Lina. ____ Schwester ist 16.</td><td lang="de" dir="ltr">Ihre</td></tr><tr><td lang="de" dir="ltr">Das ist Karim. ____ Mutter ist Ärztin.</td><td lang="de" dir="ltr">Seine</td></tr><tr><td lang="de" dir="ltr">Wie alt ist ____ Bruder? (Karim)</td><td lang="de" dir="ltr">sein</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ Karim und ihr Vater</div><div class="good" dir="ltr">✅ Karim und sein Vater</div><p dir="rtl">كريم مذكر → sein.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Sie hat 20 Jahre.</div><div class="good" dir="ltr">✅ Sie ist 20 Jahre alt.</div><p dir="rtl">العمر بـ sein لا haben.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Er ist ein Lehrer.</div><div class="good" dir="ltr">✅ Er ist Lehrer.</div><p dir="rtl">المهن بلا أداة نكرة.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ihre Mutter ist Lehrerin. (عن كريم)</div><div class="good" dir="ltr">✅ Seine Mutter ist Lehrerin.</div><p dir="rtl">كريم مذكر → seine.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Er arbeitet wie Lehrer.</div><div class="good" dir="ltr">✅ Er arbeitet als Lehrer.</div><p dir="rtl">als للمهنة لا wie.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">ملكية المذكر: ____ Vater</td><td lang="de" dir="ltr">sein</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">ملكية المؤنث: ____ Mutter</td><td lang="de" dir="ltr">ihre</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">قل: عمره 20 سنة.</td><td lang="de" dir="ltr">Er ist 20 Jahre alt.</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">قل: هي تعمل طبيبة.</td><td lang="de" dir="ltr">Sie arbeitet als Ärztin.</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">قل: والده مهندس.</td><td lang="de" dir="ltr">Sein Vater ist Ingenieur.</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">قل: والدتها معلّمة.</td><td lang="de" dir="ltr">Ihre Mutter ist Lehrerin.</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">اسأل عن عمر أخيه.</td><td lang="de" dir="ltr">Wie alt ist sein Bruder?</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">انفِ: Er hat Geschwister.</td><td lang="de" dir="ltr">Er hat keine Geschwister.</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">ترتيب: als / arbeitet / sie / Lehrerin</td><td lang="de" dir="ltr">Sie arbeitet als Lehrerin.</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">صف أخت صديقك بجملة.</td><td lang="de" dir="ltr">Seine Schwester ist 16 Jahre alt.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="ar" dir="rtl" class="ar">sein/ihr مع أفراد العائلة.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="ar" dir="rtl" class="ar">العمر والمهنة في جمل.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">وصف عائلة ثالث شفهيًا.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 13: Familie und Freunde; Possessivartikel 3. Person, Berufsangaben.<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 3, Teile 2–3 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=ynarL7M0O3E" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ynarL7M0O3E</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">مادة أصلية؛ لا اقتباس من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L03-T02 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

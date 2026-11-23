@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نسافر — السفر والفندق · Wir fahren weg — Reisen und Hotel</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#72389F; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#72389F,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L10-T02">← العودة للداشبورد والاختبار</a> · L10-T02</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>نسافر — السفر والفندق</h1>
+    <h2>Wir fahren weg — Reisen und Hotel — Lektion 10, Teil 2</h2>
+    <p class="sub">nach/in, übernachten, buchen · A1, Kapitel 17</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 4</span>
+    <span class="chip">Video 27:54</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L10-S2</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تستخدم nach/in للوجهات.</li><li dir="rtl">أن تحجز غرفة فندق.</li><li dir="rtl">أن تسأل عن السعر والمدة.</li><li dir="rtl">أن تسمّي 8 مفردات سفر.</li><li dir="rtl">أن تكتب خطة رحلة قصيرة.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=RscFhO-93PM" target="_blank" rel="noopener">https://www.youtube.com/watch?v=RscFhO-93PM</a></div>
+  <div class="card">
+    <h3>Lektion 10, Teil 2 — Reise und Unterkunft</h3>
+    <p class="meta">27:54 · <a class="link" href="https://www.youtube.com/watch?v=RscFhO-93PM" target="_blank" rel="noopener">https://www.youtube.com/watch?v=RscFhO-93PM</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">السفر إلى بلد/مدينة: nach Berlin، in die Schweiz.</li><li dir="rtl">حجز غرفة: ein Zimmer buchen.</li><li dir="rtl">الإقامة: übernachten, die Übernachtung.</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">إلى أين يسافر المتحدث؟</li><li dir="rtl">هل قال nach أم in die Schweiz؟</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">سفر <small dir="ltr">Reisen</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">die Reise, -n</td><td lang="ar" dir="rtl" class="ar">الرحلة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Urlaub, -e</td><td lang="ar" dir="rtl" class="ar">العطلة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Hotel, -s</td><td lang="ar" dir="rtl" class="ar">الفندق</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Zimmer, -</td><td lang="ar" dir="rtl" class="ar">الغرفة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Übernachtung, -en</td><td lang="ar" dir="rtl" class="ar">المبيت</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Koffer, -</td><td lang="ar" dir="rtl" class="ar">الحقيبة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Pass, die Pässe</td><td lang="ar" dir="rtl" class="ar">جواز السفر</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Rezeption</td><td lang="ar" dir="rtl" class="ar">الاستقبال</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">أفعال <small dir="ltr">Verben</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">reisen</td><td lang="ar" dir="rtl" class="ar">يسافر</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">fahren</td><td lang="ar" dir="rtl" class="ar">يذهب بمركبة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">fliegen</td><td lang="ar" dir="rtl" class="ar">يطير</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">buchen</td><td lang="ar" dir="rtl" class="ar">يحجز</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">übernachten</td><td lang="ar" dir="rtl" class="ar">يبيت</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">bleiben</td><td lang="ar" dir="rtl" class="ar">يبقى</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">abfahren</td><td lang="ar" dir="rtl" class="ar">ينطلق</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">ankommen</td><td lang="ar" dir="rtl" class="ar">يصل</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">عبارات <small dir="ltr">Redemittel</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich fahre nach Berlin.</td><td lang="ar" dir="rtl" class="ar">أسافر إلى برلين.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ich fliege in die Türkei.</td><td lang="ar" dir="rtl" class="ar">أطير إلى تركيا.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ich möchte ein Zimmer buchen.</td><td lang="ar" dir="rtl" class="ar">أريد حجز غرفة.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Wie viel kostet die Übernachtung?</td><td lang="ar" dir="rtl" class="ar">كم يكلّف المبيت؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Wie lange bleiben Sie?</td><td lang="ar" dir="rtl" class="ar">كم مدة بقائكم؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Für zwei Nächte.</td><td lang="ar" dir="rtl" class="ar">لليلتين.</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Ich fahre im Sommer nach Deutschland.</div><div class="gloss" dir="rtl">أسافر في الصيف إلى ألمانيا.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir fliegen in die Schweiz.</div><div class="gloss" dir="rtl">نطير إلى سويسرا.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich möchte ein Zimmer buchen.</div><div class="gloss" dir="rtl">أريد حجز غرفة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wie viel kostet die Übernachtung?</div><div class="gloss" dir="rtl">كم يكلّف المبيت؟</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir bleiben drei Nächte.</div><div class="gloss" dir="rtl">نبقى ثلاث ليالٍ.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Der Zug fährt um 8 Uhr ab.</div><div class="gloss" dir="rtl">القطار ينطلق الساعة 8.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir kommen um 14 Uhr an.</div><div class="gloss" dir="rtl">نصل الساعة 14.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Der Koffer ist schwer.</div><div class="gloss" dir="rtl">الحقيبة ثقيلة.</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">nach أم in <small dir="ltr">Reisen mit nach</small></h3><p dir="rtl" class="bodyar">مع المدن والبلدان بلا أداة نستخدم nach: nach Berlin، nach Ägypten. مع البلدان التي تحتاج أداة نستخدم in + النصب: in die Schweiz، in die Türkei.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الوجهة</th><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">مثال</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">مدينة</td><td lang="de" dir="ltr">nach</td><td lang="de" dir="ltr">nach Berlin</td></tr><tr><td lang="ar" dir="rtl" class="ar">بلد بلا أداة</td><td lang="de" dir="ltr">nach</td><td lang="de" dir="ltr">nach Ägypten</td></tr><tr><td lang="ar" dir="rtl" class="ar">بلد بأداة</td><td lang="de" dir="ltr">in + Akk.</td><td lang="de" dir="ltr">in die Schweiz</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">لا نقول nach die Schweiz.</p></div></div><div class="card"><h3 dir="rtl">الحجز في الفندق <small dir="ltr">Hotel und Zimmer</small></h3><p dir="rtl" class="bodyar">الحجز: Ich möchte ein Zimmer buchen. السؤال عن المدة: Wie lange bleiben Sie? الجواب: Für zwei Nächte. السؤال عن السعر: Wie viel kostet die Übernachtung?</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموقف</th><th lang="ar" dir="rtl">العبارة</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">حجز</td><td lang="de" dir="ltr">Ich möchte ein Zimmer buchen.</td></tr><tr><td lang="ar" dir="rtl" class="ar">مدة</td><td lang="de" dir="ltr">Für zwei Nächte.</td></tr><tr><td lang="ar" dir="rtl" class="ar">سعر</td><td lang="de" dir="ltr">Wie viel kostet die Übernachtung?</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">Nacht جمعها Nächte مع Umlaut.</p></div></div><div class="card"><h3 dir="rtl">أفعال الوصول <small dir="ltr">Die Reise</small></h3><p dir="rtl" class="bodyar">ankommen (يصل) وabfahren (ينطلق) أفعال منفصلة: Ich komme um 14 Uhr an. Der Zug fährt um 8 Uhr ab.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">المصدر</th><th lang="ar" dir="rtl">الجملة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">ankommen</td><td lang="de" dir="ltr">Ich komme um 14 Uhr an.</td></tr><tr><td lang="de" dir="ltr">abfahren</td><td lang="de" dir="ltr">Der Zug fährt um 8 Uhr ab.</td></tr><tr><td lang="de" dir="ltr">einsteigen</td><td lang="de" dir="ltr">Wir steigen am Bahnhof ein.</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">البادئة في النهاية.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Reise</td><td lang="ar" dir="rtl" class="ar">رايزه</td><td lang="ar" dir="rtl" class="ar">رايْزِه</td></tr><tr><td lang="de" dir="ltr">Urlaub</td><td lang="ar" dir="rtl" class="ar">أورلاوب</td><td lang="ar" dir="rtl" class="ar">أُورْلاوب</td></tr><tr><td lang="de" dir="ltr">Übernachtung</td><td lang="ar" dir="rtl" class="ar">أوبرناختونغ</td><td lang="ar" dir="rtl" class="ar">أُوبرْناخْتُونْگ</td></tr><tr><td lang="de" dir="ltr">buchen</td><td lang="ar" dir="rtl" class="ar">بوخن</td><td lang="ar" dir="rtl" class="ar">بُوخِن</td></tr><tr><td lang="de" dir="ltr">Koffer</td><td lang="ar" dir="rtl" class="ar">كوفер</td><td lang="ar" dir="rtl" class="ar">كُوفَر</td></tr><tr><td lang="de" dir="ltr">Rezeption</td><td lang="ar" dir="rtl" class="ar">ريتسيبسيون</td><td lang="ar" dir="rtl" class="ar">رِيتسِپْتسيُون</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Ich fahre nach Berlin.</div><div class="de" dir="ltr">Wir fliegen in die Schweiz.</div><div class="de" dir="ltr">Ich möchte ein Zimmer buchen.</div><div class="de" dir="ltr">Wie lange bleiben Sie?</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Reiseziel <small dir="ltr">تمارين صوتية داخلية (لا نص فيديو موثّق)</small></h3><p dir="rtl">اسمع واكتب الوجهة ووسيلة النقل.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=RscFhO-93PM" target="_blank" rel="noopener">https://www.youtube.com/watch?v=RscFhO-93PM</a><ul class="qs"><li dir='rtl'>كم ليلة يبقى؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — Hotel <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع الحجز واكتب السعر.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=RscFhO-93PM" target="_blank" rel="noopener">https://www.youtube.com/watch?v=RscFhO-93PM</a><ul class="qs"><li dir='rtl'>هل الغرفة فردية أم مزدوجة؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: رحلة إلى برلين <small dir="ltr">Lesen: Eine Reise nach Berlin</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Im Sommer fahre ich nach Berlin.</td><td lang="ar" dir="rtl" class="ar">في الصيف أسافر إلى برلين.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich buche ein Zimmer im Hotel.</td><td lang="ar" dir="rtl" class="ar">أحجز غرفة في الفندق.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Die Übernachtung kostet 60 Euro.</td><td lang="ar" dir="rtl" class="ar">المبيت يكلّف 60 يورو.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich bleibe drei Nächte.</td><td lang="ar" dir="rtl" class="ar">أبقى ثلاث ليالٍ.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Der Zug fährt um 8 Uhr ab und kommt um 12 Uhr an.</td><td lang="ar" dir="rtl" class="ar">القطار ينطلق الساعة 8 ويصل الساعة 12.</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">إلى أين يسافر؟</p><p class="qa" dir="ltr">Nach Berlin.</p></div><div class="qitem"><p dir="rtl" class="qq">كم المبيت؟</p><p class="qa" dir="ltr">60 Euro.</p></div><div class="qitem"><p dir="rtl" class="qq">كم ليلة؟</p><p class="qa" dir="ltr">Drei Nächte.</p></div><div class="qitem"><p dir="rtl" class="qq">متى ينطلق القطار؟</p><p class="qa" dir="ltr">Um 8 Uhr.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: حجز فندق</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Guten Tag! Ich möchte ein Zimmer buchen.</td><td lang="de" dir="ltr">Für wie viele Nächte?</td></tr><tr><td lang="de" dir="ltr">Für zwei Nächte.</td><td lang="de" dir="ltr">Ein Einzelzimmer oder ein Doppelzimmer?</td></tr><tr><td lang="de" dir="ltr">Ein Einzelzimmer, bitte.</td><td lang="de" dir="ltr">Das kostet 50 Euro pro Nacht.</td></tr><tr><td lang="de" dir="ltr">Gut. Wann ist das Frühstück?</td><td lang="de" dir="ltr">Von 7 bis 10 Uhr.</td></tr><tr><td lang="de" dir="ltr">Danke schön!</td><td lang="de" dir="ltr">Gern!</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">احجز غرفة: عدد الليالي، النوع، السعر، سؤال عن الفطور.</p>
+  <ul><li dir="rtl">nach/in صحيحة.</li><li dir="rtl">buchen وbleiben مصرّفة.</li><li dir="rtl">سؤال السعر والمدة.</li><li dir="rtl">أدب.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب خطة رحلة 5 جمل.</p><pre class="model">Im Sommer fahre ich nach Berlin.
+Ich fahre mit dem Zug.
+Ich buche ein Zimmer im Hotel.
+Ich bleibe drei Nächte.
+Die Übernachtung kostet 60 Euro.</pre><p dir="rtl">اكتب جملتين: وجهة بلا أداة ووجهة بأداة.</p><pre class="model">Ich fahre nach Ägypten.
+Wir fliegen in die Schweiz.</pre><ul><li dir="rtl">nach/in صحيحة.</li><li dir="rtl">خمس جمل كاملة.</li><li dir="rtl">أرقام ومدة صحيحة.</li><li dir="rtl">علامات ترقيم سليمة.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">أكمل بـ nach أو in die.</span></h3><div class="de" dir="ltr">Ich fahre ____ Berlin.</div><div class="de" dir="ltr">Wir fliegen ____ Schweiz.</div><div class="de" dir="ltr">Er reist ____ Ägypten.</div><div class="de" dir="ltr">Sie fährt ____ Türkei.</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل الكلمة بمعناها.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">die Reise</td><td lang="ar" dir="rtl" class="ar">الرحلة</td></tr><tr><td lang="de" dir="ltr">das Zimmer</td><td lang="ar" dir="rtl" class="ar">الغرفة</td></tr><tr><td lang="de" dir="ltr">der Koffer</td><td lang="ar" dir="rtl" class="ar">الحقيبة</td></tr><tr><td lang="de" dir="ltr">die Rezeption</td><td lang="ar" dir="rtl" class="ar">الاستقبال</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">nach Berlin / Ich fahre</div><div class="de" dir="ltr">ein Zimmer / Ich möchte / buchen</div><div class="de" dir="ltr">ab / Der Zug / fährt um 8 Uhr</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">Wir fliegen ____ Türkei. <span class="opts">[ nach | in die | zu ]</span></div><div class="de" dir="ltr">Wie lange ____ Sie? <span class="opts">[ bleiben | bleibt | bleibe ]</span></div><div class="de" dir="ltr">Die Übernachtung ____ 60 Euro. <span class="opts">[ kostet | kosten | kostest ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich fahre ____ Berlin.</td><td lang="de" dir="ltr">nach</td></tr><tr><td lang="de" dir="ltr">Wir fliegen ____ Schweiz.</td><td lang="de" dir="ltr">in die</td></tr><tr><td lang="de" dir="ltr">Er reist ____ Ägypten.</td><td lang="de" dir="ltr">nach</td></tr><tr><td lang="de" dir="ltr">Sie fährt ____ Türkei.</td><td lang="de" dir="ltr">in die</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">die Reise</td><td lang="ar" dir="rtl" class="ar">الرحلة</td></tr><tr><td lang="de" dir="ltr">das Zimmer</td><td lang="ar" dir="rtl" class="ar">الغرفة</td></tr><tr><td lang="de" dir="ltr">der Koffer</td><td lang="ar" dir="rtl" class="ar">الحقيبة</td></tr><tr><td lang="de" dir="ltr">die Rezeption</td><td lang="ar" dir="rtl" class="ar">الاستقبال</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">nach Berlin / Ich fahre</td><td lang="de" dir="ltr">Ich fahre nach Berlin.</td></tr><tr><td lang="de" dir="ltr">ein Zimmer / Ich möchte / buchen</td><td lang="de" dir="ltr">Ich möchte ein Zimmer buchen.</td></tr><tr><td lang="de" dir="ltr">ab / Der Zug / fährt um 8 Uhr</td><td lang="de" dir="ltr">Der Zug fährt um 8 Uhr ab.</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Wir fliegen ____ Türkei.</td><td lang="de" dir="ltr">in die</td></tr><tr><td lang="de" dir="ltr">Wie lange ____ Sie?</td><td lang="de" dir="ltr">bleiben</td></tr><tr><td lang="de" dir="ltr">Die Übernachtung ____ 60 Euro.</td><td lang="de" dir="ltr">kostet</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ nach die Schweiz</div><div class="good" dir="ltr">✅ in die Schweiz</div><p dir="rtl">بلدان بأداة تأخذ in + نصب.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich buche ein Zimmer für zwei Nacht.</div><div class="good" dir="ltr">✅ für zwei Nächte</div><p dir="rtl">جمع Nacht = Nächte.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Der Zug abfährt um 8.</div><div class="good" dir="ltr">✅ Der Zug fährt um 8 Uhr ab.</div><p dir="rtl">فعل منفصل.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Wie lange du bleibst?</div><div class="good" dir="ltr">✅ Wie lange bleibst du?</div><p dir="rtl">السؤال بالفعل أولًا.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich fliege nach Türkei.</div><div class="good" dir="ltr">✅ Ich fliege in die Türkei.</div><p dir="rtl">Türkei بأداة.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">قل: أسافر إلى برلين.</td><td lang="de" dir="ltr">Ich fahre nach Berlin.</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">قل: نطير إلى سويسرا.</td><td lang="de" dir="ltr">Wir fliegen in die Schweiz.</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">قل: أريد حجز غرفة.</td><td lang="de" dir="ltr">Ich möchte ein Zimmer buchen.</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">اسأل: كم يكلّف المبيت؟</td><td lang="de" dir="ltr">Wie viel kostet die Übernachtung?</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">قل: لليلتين.</td><td lang="de" dir="ltr">Für zwei Nächte.</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">قل: القطار ينطلق الساعة 8.</td><td lang="de" dir="ltr">Der Zug fährt um 8 Uhr ab.</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">قل: نصل الساعة 12.</td><td lang="de" dir="ltr">Wir kommen um 12 Uhr an.</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">اسأل: كم مدة بقائكم؟</td><td lang="de" dir="ltr">Wie lange bleiben Sie?</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">قل: الحقيبة ثقيلة.</td><td lang="de" dir="ltr">Der Koffer ist schwer.</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">اكتب جملة عن الفندق.</td><td lang="de" dir="ltr">Das Hotel ist im Zentrum.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="de" dir="ltr">nach/in.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="ar" dir="rtl" class="ar">حجز الفندق.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">خطة رحلة كاملة.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 17 (Wir fahren weg): Reiseziele, Unterkunft, Buchung.<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 10, Teil 2 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=RscFhO-93PM" target="_blank" rel="noopener">https://www.youtube.com/watch?v=RscFhO-93PM</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">مادة أصلية؛ لا اقتباس من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L10-T02 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

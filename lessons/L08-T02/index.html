@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الدعوة — هل تأتي معنا؟ · Einladung — Kommst du mit?</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#38619F; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#38619F,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L08-T02">← العودة للداشبورد والاختبار</a> · L08-T02</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>الدعوة — هل تأتي معنا؟</h1>
+    <h2>Einladung — Kommst du mit? — Lektion 8, Teil 2</h2>
+    <p class="sub">inoffizielle Uhrzeit, zu-/absagen, kommen · A1, Kapitel 3 + 4</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 3</span>
+    <span class="chip">Video 47:54</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L08-S2</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تقرأ الساعة بالطريقة غير الرسمية.</li><li dir="rtl">أن تدعو صديقًا وتقبل/ترفض.</li><li dir="rtl">أن تستخدم kommen مع الضمائر.</li><li dir="rtl">أن تفرّق بين halb وViertel.</li><li dir="rtl">أن تكتب دعوة قصيرة.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=yM88p8O9SKA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=yM88p8O9SKA</a></div>
+  <div class="card">
+    <h3>Lektion 8, Teile 2–3 — Einladungen und Uhrzeit</h3>
+    <p class="meta">47:54 · <a class="link" href="https://www.youtube.com/watch?v=yM88p8O9SKA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=yM88p8O9SKA</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">قراءة الساعة بطريقتين: 17:30 وhalb sechs.</li><li dir="rtl">قبول الدعوة: Ja, gern! / رفضها: Leider nicht.</li><li dir="rtl">Frage: Kommst du mit?</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">كم الساعة في الدعوة؟</li><li dir="rtl">هل قبل المتحدث؟</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">الساعة <small dir="ltr">Uhrzeit</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">halb sieben</td><td lang="ar" dir="rtl" class="ar">السادسة والنصف (حرفيًا نصف السابعة)</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Viertel nach sechs</td><td lang="ar" dir="rtl" class="ar">السادسة وربع</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Viertel vor sieben</td><td lang="ar" dir="rtl" class="ar">السابعة إلا ربعًا</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">zehn nach acht</td><td lang="ar" dir="rtl" class="ar">الثامنة وعشر دقائق</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">fünf vor neun</td><td lang="ar" dir="rtl" class="ar">التاسعة إلا خمسًا</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Mittag</td><td lang="ar" dir="rtl" class="ar">الظهر</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Mitternacht</td><td lang="ar" dir="rtl" class="ar">منتصف الليل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">pünktlich</td><td lang="ar" dir="rtl" class="ar">في الموعد</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">دعوة <small dir="ltr">Einladung</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">einladen</td><td lang="ar" dir="rtl" class="ar">يدعو</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Einladung, -en</td><td lang="ar" dir="rtl" class="ar">الدعوة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">mitkommen</td><td lang="ar" dir="rtl" class="ar">يأتي مع</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">zusammen</td><td lang="ar" dir="rtl" class="ar">معًا</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Party, -s</td><td lang="ar" dir="rtl" class="ar">الحفلة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Konzert, -e</td><td lang="ar" dir="rtl" class="ar">الحفل الموسيقي</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Film, -e</td><td lang="ar" dir="rtl" class="ar">الفيلم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">leider</td><td lang="ar" dir="rtl" class="ar">للأسف</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">ردود <small dir="ltr">Antworten</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ja, gern!</td><td lang="ar" dir="rtl" class="ar">نعم، بسرور!</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Gerne!</td><td lang="ar" dir="rtl" class="ar">بكل سرور!</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Leider nicht.</td><td lang="ar" dir="rtl" class="ar">للأسف لا.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ich habe keine Zeit.</td><td lang="ar" dir="rtl" class="ar">ليس لديّ وقت.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Vielleicht.</td><td lang="ar" dir="rtl" class="ar">ربما.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Schade!</td><td lang="ar" dir="rtl" class="ar">يا للأسف!</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Kommst du mit?</div><div class="gloss" dir="rtl">هل تأتي معنا؟</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ja, gern! Um wie viel Uhr?</div><div class="gloss" dir="rtl">نعم بسرور! في أي ساعة؟</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Um halb sieben.</div><div class="gloss" dir="rtl">في السادسة والنصف.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Leider nicht. Ich habe keine Zeit.</div><div class="gloss" dir="rtl">للأسف لا. ليس لديّ وقت.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir gehen ins Konzert. Kommst du mit?</div><div class="gloss" dir="rtl">نذهب إلى الحفل. هل تأتي؟</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Der Film beginnt um Viertel nach acht.</div><div class="gloss" dir="rtl">الفيلم يبدأ في الثامنة وربع.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Sei pünktlich, bitte!</div><div class="gloss" dir="rtl">كن في الموعد من فضلك!</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Schade! Vielleicht nächstes Mal.</div><div class="gloss" dir="rtl">يا للأسف! ربما المرة القادمة.</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">الساعة غير الرسمية <small dir="ltr">Uhrzeit informell</small></h3><p dir="rtl" class="bodyar">halb + الساعة التالية: halb sieben = 6:30. Viertel nach = وربع، Viertel vor = إلا ربع. nach/vor + دقائق.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الرقمي</th><th lang="ar" dir="rtl">غير الرسمي</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">6:30</td><td lang="de" dir="ltr">halb sieben</td><td lang="ar" dir="rtl" class="ar">النصف قبل الساعة</td></tr><tr><td lang="de" dir="ltr">6:15</td><td lang="de" dir="ltr">Viertel nach sechs</td><td lang="ar" dir="rtl" class="ar">وربع</td></tr><tr><td lang="de" dir="ltr">6:45</td><td lang="de" dir="ltr">Viertel vor sieben</td><td lang="ar" dir="rtl" class="ar">إلا ربع</td></tr><tr><td lang="de" dir="ltr">8:10</td><td lang="de" dir="ltr">zehn nach acht</td><td lang="ar" dir="rtl" class="ar">وعشر</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">halb سبعة تعني 6:30 لا 7:30.</p></div></div><div class="card"><h3 dir="rtl">تصريف kommen <small dir="ltr">kommen im Satz</small></h3><p dir="rtl" class="bodyar">kommen: ich komme, du kommst, er/sie kommt, wir kommen, ihr kommt, sie kommen. mitkommen فعل منفصل: Ich komme mit.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الضمير</th><th lang="de" dir="ltr">kommen</th><th lang="ar" dir="rtl">مثال</th></tr></thead><tbody><tr><td lang="de" dir="ltr">ich</td><td lang="de" dir="ltr">komme</td><td lang="de" dir="ltr">Ich komme.</td></tr><tr><td lang="de" dir="ltr">du</td><td lang="de" dir="ltr">kommst</td><td lang="de" dir="ltr">Kommst du mit?</td></tr><tr><td lang="de" dir="ltr">er/sie</td><td lang="de" dir="ltr">kommt</td><td lang="de" dir="ltr">Sie kommt auch.</td></tr><tr><td lang="de" dir="ltr">wir</td><td lang="de" dir="ltr">kommen</td><td lang="de" dir="ltr">Wir kommen zusammen.</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">في mitkommen يعود mit إلى النهاية.</p></div></div><div class="card"><h3 dir="rtl">قبول ورفض <small dir="ltr">Zu- und absagen</small></h3><p dir="rtl" class="bodyar">القبول: Ja, gern! / Gerne! الرفض المهذب: Leider nicht, ich habe keine Zeit. ثم: Schade! أو Vielleicht nächstes Mal.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموقف</th><th lang="ar" dir="rtl">العبارة</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">قبول</td><td lang="de" dir="ltr">Ja, gern!</td><td lang="ar" dir="rtl" class="ar">مباشر ومهذب</td></tr><tr><td lang="ar" dir="rtl" class="ar">رفض</td><td lang="de" dir="ltr">Leider nicht.</td><td lang="ar" dir="rtl" class="ar">يلطف الرفض</td></tr><tr><td lang="ar" dir="rtl" class="ar">اعتذار</td><td lang="de" dir="ltr">Ich habe keine Zeit.</td><td lang="ar" dir="rtl" class="ar">سبب واضح</td></tr><tr><td lang="ar" dir="rtl" class="ar">تأجيل</td><td lang="de" dir="ltr">Vielleicht nächstes Mal.</td><td lang="ar" dir="rtl" class="ar">يحفظ العلاقة</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">لا ترفض بـ Nein وحدها؛ استخدم Leider.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">halb</td><td lang="ar" dir="rtl" class="ar">هالب</td><td lang="ar" dir="rtl" class="ar">هالب</td></tr><tr><td lang="de" dir="ltr">Viertel</td><td lang="ar" dir="rtl" class="ar">فيرتل</td><td lang="ar" dir="rtl" class="ar">فِيرْتِل</td></tr><tr><td lang="de" dir="ltr">Konzert</td><td lang="ar" dir="rtl" class="ar">كونتسيرت</td><td lang="ar" dir="rtl" class="ar">كُونْتسِيرْت</td></tr><tr><td lang="de" dir="ltr">Einladung</td><td lang="ar" dir="rtl" class="ar">أينلادونغ</td><td lang="ar" dir="rtl" class="ar">أينْلادُونْگ</td></tr><tr><td lang="de" dir="ltr">vielleicht</td><td lang="ar" dir="rtl" class="ar">فيلايشت</td><td lang="ar" dir="rtl" class="ar">فِيلايْشت</td></tr><tr><td lang="de" dir="ltr">Schade</td><td lang="ar" dir="rtl" class="ar">شاده</td><td lang="ar" dir="rtl" class="ar">شادِه</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Kommst du mit?</div><div class="de" dir="ltr">Um halb sieben.</div><div class="de" dir="ltr">Ja, gern!</div><div class="de" dir="ltr">Leider nicht.</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Einladung <small dir="ltr">تمارين صوتية داخلية (لا نص فيديو موثّق)</small></h3><p dir="rtl">اسمع واكتب الوقت والدعوة.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=yM88p8O9SKA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=yM88p8O9SKA</a><ul class="qs"><li dir='rtl'>هل قبل المتحدث؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — Uhrzeit <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع أربع ساعات واكتبها رقميًا.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=yM88p8O9SKA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=yM88p8O9SKA</a><ul class="qs"><li dir='rtl'>أي ساعة كانت halb؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: دعوة <small dir="ltr">Lesen: Eine Einladung</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">A</td><td lang="de" dir="ltr">Wir gehen am Samstag ins Konzert. Kommst du mit?</td><td lang="ar" dir="rtl" class="ar">نذهب يوم السبت إلى الحفل. هل تأتي معنا؟</td></tr><tr><td lang="de" dir="ltr">B</td><td lang="de" dir="ltr">Ja, gern! Um wie viel Uhr?</td><td lang="ar" dir="rtl" class="ar">نعم بسرور! في أي ساعة؟</td></tr><tr><td lang="de" dir="ltr">A</td><td lang="de" dir="ltr">Um halb acht.</td><td lang="ar" dir="rtl" class="ar">في السابعة والنصف.</td></tr><tr><td lang="de" dir="ltr">B</td><td lang="de" dir="ltr">Super. Und wo?</td><td lang="ar" dir="rtl" class="ar">رائع. وأين؟</td></tr><tr><td lang="de" dir="ltr">A</td><td lang="de" dir="ltr">Am Bahnhof. Sei pünktlich!</td><td lang="ar" dir="rtl" class="ar">في المحطة. كن في الموعد!</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">إلى أين الدعوة؟</p><p class="qa" dir="ltr">Ins Konzert.</p></div><div class="qitem"><p dir="rtl" class="qq">في أي ساعة؟</p><p class="qa" dir="ltr">Um halb acht.</p></div><div class="qitem"><p dir="rtl" class="qq">أين اللقاء؟</p><p class="qa" dir="ltr">Am Bahnhof.</p></div><div class="qitem"><p dir="rtl" class="qq">هل قبل B؟</p><p class="qa" dir="ltr">Ja, gern.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: دعوة</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich gehe ins Kino. Kommst du mit?</td><td lang="de" dir="ltr">Ja, gern! Wann?</td></tr><tr><td lang="de" dir="ltr">Um Viertel nach sieben.</td><td lang="de" dir="ltr">Das ist früh. Um halb acht?</td></tr><tr><td lang="de" dir="ltr">Kein Problem.</td><td lang="de" dir="ltr">Und der Film?</td></tr><tr><td lang="de" dir="ltr">Er ist super!</td><td lang="de" dir="ltr">Toll, bis Samstag!</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">وَجّه دعوة لصديق ورفضها بلطف ثم اقترح وقتًا آخر.</p>
+  <ul><li dir="rtl">Uhrzeit صحيحة (halb/Viertel).</li><li dir="rtl">kommen مصرّفة.</li><li dir="rtl">رفض مهذب.</li><li dir="rtl">نطق Konzert مقبول.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب دعوة 3 أسطر + ردًا بالقبول.</p><pre class="model">Hallo! Wir gehen am Freitag ins Kino.
+Der Film beginnt um halb acht.
+Kommst du mit?
+Antwort: Ja, gern! Bis Freitag!</pre><p dir="rtl">اكتب رفضًا مهذبًا بسبب عدم الوقت.</p><pre class="model">Leider nicht. Ich habe am Freitag keine Zeit.
+Schade! Vielleicht nächstes Mal.</pre><ul><li dir="rtl">دعوة وسؤال واضح.</li><li dir="rtl">وقت مكتوب صحيحًا.</li><li dir="rtl">رد مهذب.</li><li dir="rtl">علامات ترقيم سليمة.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">اكتب الساعة غير الرسمية.</span></h3><div class="de" dir="ltr">6:30 → ____</div><div class="de" dir="ltr">6:15 → ____</div><div class="de" dir="ltr">6:45 → ____</div><div class="de" dir="ltr">8:10 → ____</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل العبارة بمعناها.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ja, gern!</td><td lang="ar" dir="rtl" class="ar">نعم بسرور!</td></tr><tr><td lang="de" dir="ltr">Leider nicht.</td><td lang="ar" dir="rtl" class="ar">للأسف لا.</td></tr><tr><td lang="de" dir="ltr">Vielleicht.</td><td lang="ar" dir="rtl" class="ar">ربما.</td></tr><tr><td lang="de" dir="ltr">Schade!</td><td lang="ar" dir="rtl" class="ar">يا للأسف!</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">mit / Kommst du / ?</div><div class="de" dir="ltr">halb acht / um / Der Film beginnt</div><div class="de" dir="ltr">keine Zeit / Ich habe / am Freitag</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">____ du mit? <span class="opts">[ Kommst | Kommt | Kommen ]</span></div><div class="de" dir="ltr">6:30 = ____. <span class="opts">[ halb sieben | halb sechs | sieben halb ]</span></div><div class="de" dir="ltr">Leider ____. Ich habe keine Zeit. <span class="opts">[ nicht | kein | nein ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">6:30 → ____</td><td lang="de" dir="ltr">halb sieben</td></tr><tr><td lang="de" dir="ltr">6:15 → ____</td><td lang="de" dir="ltr">Viertel nach sechs</td></tr><tr><td lang="de" dir="ltr">6:45 → ____</td><td lang="de" dir="ltr">Viertel vor sieben</td></tr><tr><td lang="de" dir="ltr">8:10 → ____</td><td lang="de" dir="ltr">zehn nach acht</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ja, gern!</td><td lang="ar" dir="rtl" class="ar">نعم بسرور!</td></tr><tr><td lang="de" dir="ltr">Leider nicht.</td><td lang="ar" dir="rtl" class="ar">للأسف لا.</td></tr><tr><td lang="de" dir="ltr">Vielleicht.</td><td lang="ar" dir="rtl" class="ar">ربما.</td></tr><tr><td lang="de" dir="ltr">Schade!</td><td lang="ar" dir="rtl" class="ar">يا للأسف!</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">mit / Kommst du / ?</td><td lang="de" dir="ltr">Kommst du mit?</td></tr><tr><td lang="de" dir="ltr">halb acht / um / Der Film beginnt</td><td lang="de" dir="ltr">Der Film beginnt um halb acht.</td></tr><tr><td lang="de" dir="ltr">keine Zeit / Ich habe / am Freitag</td><td lang="de" dir="ltr">Ich habe am Freitag keine Zeit.</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">____ du mit?</td><td lang="de" dir="ltr">Kommst</td></tr><tr><td lang="de" dir="ltr">6:30 = ____.</td><td lang="de" dir="ltr">halb sieben</td></tr><tr><td lang="de" dir="ltr">Leider ____. Ich habe keine Zeit.</td><td lang="de" dir="ltr">nicht</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ halb sechs = 5:30 (خطأ في الفهم)</div><div class="good" dir="ltr">✅ halb sechs = 5:30</div><p dir="rtl">halb + الساعة التالية: halb sechs = 5:30.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich komme mit mit.</div><div class="good" dir="ltr">✅ Ich komme mit.</div><p dir="rtl">mit مرة واحدة في النهاية.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Du kommt mit?</div><div class="good" dir="ltr">✅ Du kommst mit?</div><p dir="rtl">du → kommst.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Nein, ich habe nicht Zeit.</div><div class="good" dir="ltr">✅ Nein, ich habe keine Zeit.</div><p dir="rtl">نكرة → keine.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Um halb sieben uhr.</div><div class="good" dir="ltr">✅ Um halb sieben.</div><p dir="rtl">Uhr لا تُكرر مع halb.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">6:30 غير رسمي؟</td><td lang="de" dir="ltr">halb sieben</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">6:45 غير رسمي؟</td><td lang="de" dir="ltr">Viertel vor sieben</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">صرّف: du + kommen</td><td lang="de" dir="ltr">du kommst</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">قل: هل تأتي معنا؟</td><td lang="de" dir="ltr">Kommst du mit?</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">قل: نعم بسرور!</td><td lang="de" dir="ltr">Ja, gern!</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">قل: للأسف لا، ليس لديّ وقت.</td><td lang="de" dir="ltr">Leider nicht, ich habe keine Zeit.</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">قل: الفيلم يبدأ في الثامنة وربع.</td><td lang="de" dir="ltr">Der Film beginnt um Viertel nach acht.</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">قل: كن في الموعد.</td><td lang="de" dir="ltr">Sei pünktlich!</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">قل: ربما المرة القادمة.</td><td lang="de" dir="ltr">Vielleicht nächstes Mal.</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">اكتب جملة عن الحفل.</td><td lang="de" dir="ltr">Wir gehen ins Konzert.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="ar" dir="rtl" class="ar">الساعة غير الرسمية.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="ar" dir="rtl" class="ar">دعوة/رفض مهذب.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">حوار دعوة كامل.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 3 Sequenz 2 + Kapitel 4 Sequenz 2: Einladung, inoffizielle Uhrzeit, Verabredungen.<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 8, Teile 2–3 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=yM88p8O9SKA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=yM88p8O9SKA</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">مادة أصلية؛ لا اقتباس من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L08-T02 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

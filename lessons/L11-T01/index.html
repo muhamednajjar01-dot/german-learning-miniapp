@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>يومي — الروتين اليومي والماضي · Mein Tag — Tagesablauf und Perfekt</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#94389F; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#94389F,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L11-T01">← العودة للداشبورد والاختبار</a> · L11-T01</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>يومي — الروتين اليومي والماضي</h1>
+    <h2>Mein Tag — Tagesablauf und Perfekt — Lektion 11, Teil 1</h2>
+    <p class="sub">Tagesablauf, Perfekt mit haben, Zeitfolge · A1, Kapitel 6 + 9</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 4</span>
+    <span class="chip">Video 26:06</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L11-S1</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تصف روتينك اليومي بترتيب زمني.</li><li dir="rtl">أن تستخدم روابط الترتيب: zuerst/dann/danach.</li><li dir="rtl">أن تكوّن Perfekt مع haben.</li><li dir="rtl">أن تسمّي 10 أفعال يومية.</li><li dir="rtl">أن تحكي ما فعلته أمس في 5 جمل.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=IdIyQsOiQBY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=IdIyQsOiQBY</a></div>
+  <div class="card">
+    <h3>Lektion 11, Teil 1 — Tagesablauf</h3>
+    <p class="meta">26:06 · <a class="link" href="https://www.youtube.com/watch?v=IdIyQsOiQBY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=IdIyQsOiQBY</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">وصف اليوم بالترتيب: zuerst, dann, danach, am Abend.</li><li dir="rtl">الماضي مع haben: Ich habe gearbeitet.</li><li dir="rtl">أفعال الروتين: aufstehen, frühstücken, arbeiten, schlafen.</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">بماذا يبدأ المتحدث يومه؟</li><li dir="rtl">هل استخدم Perfekt أم Präsens؟</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">أفعال اليوم <small dir="ltr">Alltagsverben</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">aufstehen</td><td lang="ar" dir="rtl" class="ar">يستيقظ</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">frühstücken</td><td lang="ar" dir="rtl" class="ar">يتناول الفطور</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">arbeiten</td><td lang="ar" dir="rtl" class="ar">يعمل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">lernen</td><td lang="ar" dir="rtl" class="ar">يتعلم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">essen</td><td lang="ar" dir="rtl" class="ar">يأكل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">schlafen</td><td lang="ar" dir="rtl" class="ar">ينام</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">duschen</td><td lang="ar" dir="rtl" class="ar">يستحم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">anfangen</td><td lang="ar" dir="rtl" class="ar">يبدأ</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">enden</td><td lang="ar" dir="rtl" class="ar">ينتهي</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">fernsehen</td><td lang="ar" dir="rtl" class="ar">يشاهد التلفاز</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">ترتيب زمني <small dir="ltr">Zeitfolge</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">zuerst</td><td lang="ar" dir="rtl" class="ar">أولًا</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">dann</td><td lang="ar" dir="rtl" class="ar">ثم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">danach</td><td lang="ar" dir="rtl" class="ar">بعد ذلك</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">am Morgen</td><td lang="ar" dir="rtl" class="ar">في الصباح</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">am Mittag</td><td lang="ar" dir="rtl" class="ar">في الظهر</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">am Abend</td><td lang="ar" dir="rtl" class="ar">في المساء</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">um 7 Uhr</td><td lang="ar" dir="rtl" class="ar">الساعة 7</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">jeden Tag</td><td lang="ar" dir="rtl" class="ar">كل يوم</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">Perfekt <small dir="ltr">Perfekt</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich habe gearbeitet.</td><td lang="ar" dir="rtl" class="ar">لقد عملت.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ich habe gelernt.</td><td lang="ar" dir="rtl" class="ar">لقد تعلمت.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ich habe gefrühstückt.</td><td lang="ar" dir="rtl" class="ar">لقد تناولت الفطور.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ich habe ferngesehen.</td><td lang="ar" dir="rtl" class="ar">لقد شاهدت التلفاز.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ich habe geschlafen.</td><td lang="ar" dir="rtl" class="ar">لقد نمت.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Partizip</td><td lang="ar" dir="rtl" class="ar">اسم المفعول</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Zuerst stehe ich um 7 Uhr auf.</div><div class="gloss" dir="rtl">أولًا أستيقظ الساعة 7.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Dann frühstücke ich.</div><div class="gloss" dir="rtl">ثم أتناول الفطور.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Danach arbeite ich bis 16 Uhr.</div><div class="gloss" dir="rtl">بعد ذلك أعمل حتى 16.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Am Abend sehe ich fern.</div><div class="gloss" dir="rtl">في المساء أشاهد التلفاز.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Gestern habe ich gearbeitet.</div><div class="gloss" dir="rtl">أمس عملت.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich habe um 8 Uhr gefrühstückt.</div><div class="gloss" dir="rtl">تناولت الفطور الساعة 8.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Am Wochenende habe ich geschlafen.</div><div class="gloss" dir="rtl">في عطلة الأسبوع نمت.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wann fängt die Arbeit an?</div><div class="gloss" dir="rtl">متى يبدأ العمل؟</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">Perfekt مع haben <small dir="ltr">haben-Perfekt</small></h3><p dir="rtl" class="bodyar">الماضي القريب: haben (مصرّف) + Partizip II في نهاية الجملة. معظم الأفعال تأخذ haben: gearbeitet، gelernt، gefrühstückt.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">المضارع</th><th lang="de" dir="ltr">Perfekt</th><th lang="de" dir="ltr">Partizip</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich arbeite.</td><td lang="de" dir="ltr">Ich habe gearbeitet.</td><td lang="de" dir="ltr">gearbeitet</td></tr><tr><td lang="de" dir="ltr">Ich lerne.</td><td lang="de" dir="ltr">Ich habe gelernt.</td><td lang="de" dir="ltr">gelernt</td></tr><tr><td lang="de" dir="ltr">Ich esse.</td><td lang="de" dir="ltr">Ich habe gegessen.</td><td lang="de" dir="ltr">gegessen</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">الفعل المساعد ثانٍ، والPartizip أخيرًا.</p></div></div><div class="card"><h3 dir="rtl">ترتيب اليوم <small dir="ltr">Tagesablauf</small></h3><p dir="rtl" class="bodyar">للسرد: zuerst → dann → danach → am Abend. كل جملة تبدأ بالظرف ويبقى الفعل ثانيًا.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الرابط</th><th lang="ar" dir="rtl">مثال</th></tr></thead><tbody><tr><td lang="de" dir="ltr">zuerst</td><td lang="de" dir="ltr">Zuerst stehe ich auf.</td></tr><tr><td lang="de" dir="ltr">dann</td><td lang="de" dir="ltr">Dann frühstücke ich.</td></tr><tr><td lang="de" dir="ltr">danach</td><td lang="de" dir="ltr">Danach arbeite ich.</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">بعد zuerst ينتقل الفاعل بعد الفعل.</p></div></div><div class="card"><h3 dir="rtl">ظروف الزمن <small dir="ltr">Zeitfolge</small></h3><p dir="rtl" class="bodyar">am Morgen/Mittag/Abend، um + ساعة، jeden Tag. لاحظ: am + فترة، um + ساعة محددة.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">التعبير</th><th lang="ar" dir="rtl">الاستخدام</th></tr></thead><tbody><tr><td lang="de" dir="ltr">am Morgen</td><td lang="ar" dir="rtl" class="ar">فترة</td></tr><tr><td lang="de" dir="ltr">um 7 Uhr</td><td lang="ar" dir="rtl" class="ar">ساعة محددة</td></tr><tr><td lang="de" dir="ltr">jeden Tag</td><td lang="ar" dir="rtl" class="ar">تكرار</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">لا نقول in Morgen.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">aufstehen</td><td lang="ar" dir="rtl" class="ar">أوفشتين</td><td lang="ar" dir="rtl" class="ar">أُوفْشْتِيهِن</td></tr><tr><td lang="de" dir="ltr">frühstücken</td><td lang="ar" dir="rtl" class="ar">فروشتوكن</td><td lang="ar" dir="rtl" class="ar">فْرُوشْتُوكِن</td></tr><tr><td lang="de" dir="ltr">gearbeitet</td><td lang="ar" dir="rtl" class="ar">غearbeitet</td><td lang="ar" dir="rtl" class="ar">گِأَربايتِت</td></tr><tr><td lang="de" dir="ltr">geschlafen</td><td lang="ar" dir="rtl" class="ar">غشلافن</td><td lang="ar" dir="rtl" class="ar">گِشْلافِن</td></tr><tr><td lang="de" dir="ltr">ferngesehen</td><td lang="ar" dir="rtl" class="ar">فيرنغزهن</td><td lang="ar" dir="rtl" class="ar">فِيرْنْگِزِيهِن</td></tr><tr><td lang="de" dir="ltr">danach</td><td lang="ar" dir="rtl" class="ar">داناخ</td><td lang="ar" dir="rtl" class="ar">داناخ</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Zuerst stehe ich auf.</div><div class="de" dir="ltr">Dann frühstücke ich.</div><div class="de" dir="ltr">Ich habe gearbeitet.</div><div class="de" dir="ltr">Am Abend sehe ich fern.</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Mein Tag <small dir="ltr">تمارين صوتية داخلية (لا نص فيديو موثّق)</small></h3><p dir="rtl">اسمع واكتب ثلاثة أحداث بالترتيب.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=IdIyQsOiQBY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=IdIyQsOiQBY</a><ul class="qs"><li dir='rtl'>متى يبدأ العمل؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — Gestern <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع ثلاث جمل في الماضي واكتب الأفعال.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=IdIyQsOiQBY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=IdIyQsOiQBY</a><ul class="qs"><li dir='rtl'>أي فعل جاء مع haben؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: يوم عادي <small dir="ltr">Lesen: Ein normaler Tag</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich stehe um 6 Uhr auf.</td><td lang="ar" dir="rtl" class="ar">أستيقظ الساعة 6.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Dann dusche ich und frühstücke.</td><td lang="ar" dir="rtl" class="ar">ثم أستحم وأتناول الفطور.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Um 8 Uhr fängt die Arbeit an.</td><td lang="ar" dir="rtl" class="ar">الساعة 8 يبدأ العمل.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Am Abend sehe ich fern.</td><td lang="ar" dir="rtl" class="ar">في المساء أشاهد التلفاز.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Gestern habe ich bis 18 Uhr gearbeitet.</td><td lang="ar" dir="rtl" class="ar">أمس عملت حتى 18.</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">متى يستيقظ؟</p><p class="qa" dir="ltr">Um 6 Uhr.</p></div><div class="qitem"><p dir="rtl" class="qq">متى يبدأ العمل؟</p><p class="qa" dir="ltr">Um 8 Uhr.</p></div><div class="qitem"><p dir="rtl" class="qq">ماذا يفعل في المساء؟</p><p class="qa" dir="ltr">Er sieht fern.</p></div><div class="qitem"><p dir="rtl" class="qq">حتى متى عمل أمس؟</p><p class="qa" dir="ltr">Bis 18 Uhr.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: يومك</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Wann stehst du auf?</td><td lang="de" dir="ltr">Um 6 Uhr.</td></tr><tr><td lang="de" dir="ltr">Und dann?</td><td lang="de" dir="ltr">Dann frühstücke ich.</td></tr><tr><td lang="de" dir="ltr">Wann fängt die Arbeit an?</td><td lang="de" dir="ltr">Um 8 Uhr.</td></tr><tr><td lang="de" dir="ltr">Was hast du gestern gemacht?</td><td lang="de" dir="ltr">Ich habe gearbeitet.</td></tr><tr><td lang="de" dir="ltr">Und am Abend?</td><td lang="de" dir="ltr">Ich habe ferngesehen.</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">احكِ يومك: 3 أحداث بالترتيب + حدث أمس في Perfekt.</p>
+  <ul><li dir="rtl">zuerts/dann صحيحة.</li><li dir="rtl">الفعل ثانٍ بعد الظرف.</li><li dir="rtl">haben + Partizip صحيح.</li><li dir="rtl">نطق frühstücken مقبول.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب 5 جمل عن يومك.</p><pre class="model">Zuerst stehe ich um 7 Uhr auf.
+Dann frühstücke ich.
+Danach arbeite ich.
+Am Abend sehe ich fern.
+Gestern habe ich bis 18 Uhr gearbeitet.</pre><p dir="rtl">اكتب جملتين في Perfekt.</p><pre class="model">Ich habe gelernt.
+Ich habe geschlafen.</pre><ul><li dir="rtl">ترتيب زمني واضح.</li><li dir="rtl">haben + Partizip صحيح.</li><li dir="rtl">خمس جمل كاملة.</li><li dir="rtl">علامات ترقيم سليمة.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">أكمل بـ haben في التصريف الصحيح + Partizip.</span></h3><div class="de" dir="ltr">Ich ____ gearbeitet.</div><div class="de" dir="ltr">Du ____ gelernt.</div><div class="de" dir="ltr">Er ____ gefrühstückt.</div><div class="de" dir="ltr">Wir ____ geschlafen.</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل الفعل بمعناه.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">aufstehen</td><td lang="ar" dir="rtl" class="ar">يستيقظ</td></tr><tr><td lang="de" dir="ltr">frühstücken</td><td lang="ar" dir="rtl" class="ar">يتناول الفطور</td></tr><tr><td lang="de" dir="ltr">arbeiten</td><td lang="ar" dir="rtl" class="ar">يعمل</td></tr><tr><td lang="de" dir="ltr">fernsehen</td><td lang="ar" dir="rtl" class="ar">يشاهد التلفاز</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">auf / Ich stehe / um 7 Uhr</div><div class="de" dir="ltr">gearbeitet / Ich habe</div><div class="de" dir="ltr">an / Die Arbeit / fängt um 8 Uhr</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">Ich ____ gelernt. <span class="opts">[ habe | hat | haben ]</span></div><div class="de" dir="ltr">Er ____ geschlafen. <span class="opts">[ habe | hat | hast ]</span></div><div class="de" dir="ltr">Zuerst ____ ich auf. <span class="opts">[ stehe | stehst | stehen ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich ____ gearbeitet.</td><td lang="de" dir="ltr">habe</td></tr><tr><td lang="de" dir="ltr">Du ____ gelernt.</td><td lang="de" dir="ltr">hast</td></tr><tr><td lang="de" dir="ltr">Er ____ gefrühstückt.</td><td lang="de" dir="ltr">hat</td></tr><tr><td lang="de" dir="ltr">Wir ____ geschlafen.</td><td lang="de" dir="ltr">haben</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">aufstehen</td><td lang="ar" dir="rtl" class="ar">يستيقظ</td></tr><tr><td lang="de" dir="ltr">frühstücken</td><td lang="ar" dir="rtl" class="ar">يتناول الفطور</td></tr><tr><td lang="de" dir="ltr">arbeiten</td><td lang="ar" dir="rtl" class="ar">يعمل</td></tr><tr><td lang="de" dir="ltr">fernsehen</td><td lang="ar" dir="rtl" class="ar">يشاهد التلفاز</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">auf / Ich stehe / um 7 Uhr</td><td lang="de" dir="ltr">Ich stehe um 7 Uhr auf.</td></tr><tr><td lang="de" dir="ltr">gearbeitet / Ich habe</td><td lang="de" dir="ltr">Ich habe gearbeitet.</td></tr><tr><td lang="de" dir="ltr">an / Die Arbeit / fängt um 8 Uhr</td><td lang="de" dir="ltr">Die Arbeit fängt um 8 Uhr an.</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich ____ gelernt.</td><td lang="de" dir="ltr">habe</td></tr><tr><td lang="de" dir="ltr">Er ____ geschlafen.</td><td lang="de" dir="ltr">hat</td></tr><tr><td lang="de" dir="ltr">Zuerst ____ ich auf.</td><td lang="de" dir="ltr">stehe</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ Ich habe gearbeitet habe.</div><div class="good" dir="ltr">✅ Ich habe gearbeitet.</div><p dir="rtl">haben مرة واحدة.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich gearbeitet habe.</div><div class="good" dir="ltr">✅ Ich habe gearbeitet.</div><p dir="rtl">الفعل المساعد ثانٍ.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Zuerst ich stehe auf.</div><div class="good" dir="ltr">✅ Zuerst stehe ich auf.</div><p dir="rtl">الفعل ثانٍ بعد الظرف.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ in Morgen</div><div class="good" dir="ltr">✅ am Morgen</div><p dir="rtl">الفترات تأخذ am.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich habe gearbeit.</div><div class="good" dir="ltr">✅ Ich habe gearbeitet.</div><p dir="rtl">Partizip كامل.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">قل: أستيقظ الساعة 7.</td><td lang="de" dir="ltr">Ich stehe um 7 Uhr auf.</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">قل: ثم أتناول الفطور.</td><td lang="de" dir="ltr">Dann frühstücke ich.</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">قل: أمس عملت.</td><td lang="de" dir="ltr">Gestern habe ich gearbeitet.</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">قل: لقد تعلمت.</td><td lang="de" dir="ltr">Ich habe gelernt.</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">صرّف: er + haben (Perfekt)</td><td lang="de" dir="ltr">er hat</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">قل: في المساء أشاهد التلفاز.</td><td lang="de" dir="ltr">Am Abend sehe ich fern.</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">اسأل: متى يبدأ العمل؟</td><td lang="de" dir="ltr">Wann fängt die Arbeit an?</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">قل: نمت جيدًا.</td><td lang="de" dir="ltr">Ich habe gut geschlafen.</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">انفِ: Ich habe gearbeitet.</td><td lang="de" dir="ltr">Ich habe nicht gearbeitet.</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">اكتب جملة عن الصباح.</td><td lang="de" dir="ltr">Am Morgen dusche ich.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="ar" dir="rtl" class="ar">Perfekt مع haben.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="ar" dir="rtl" class="ar">ترتيب اليوم.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">حكاية يوم كامل في الماضي.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 6 (Mein Alltag) + Kapitel 9 (Das war sehr schön): Tagesablauf, Perfekt.<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 11, Teil 1 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=IdIyQsOiQBY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=IdIyQsOiQBY</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">مادة أصلية؛ لا اقتباس نصي من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L11-T01 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

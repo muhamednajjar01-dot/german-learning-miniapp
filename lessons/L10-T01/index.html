@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أركب المترو — وسائل النقل · Ich steige in die U-Bahn ein — Verkehrsmittel</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#5E27B0; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#5E27B0,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L10-T01">← العودة للداشبورد والاختبار</a> · L10-T01</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>أركب المترو — وسائل النقل</h1>
+    <h2>Ich steige in die U-Bahn ein — Verkehrsmittel — Lektion 10, Teil 1</h2>
+    <p class="sub">mit + Dativ, trennbare Verben, Fahrkarte · A1, Kapitel 17</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 4</span>
+    <span class="chip">Video 29:42</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L10-S1</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تسمّي 8 وسائل نقل.</li><li dir="rtl">أن تستخدم mit + Dativ.</li><li dir="rtl">أن تصرّف الأفعال المنفصلة.</li><li dir="rtl">أن تسأل عن الطريق والتذكرة.</li><li dir="rtl">أن تصف رحلتك اليومية في 5 جمل.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=_7LvfVD4ids" target="_blank" rel="noopener">https://www.youtube.com/watch?v=_7LvfVD4ids</a></div>
+  <div class="card">
+    <h3>Lektion 10, Teil 1 — Unterwegs in der Stadt</h3>
+    <p class="meta">29:42 · <a class="link" href="https://www.youtube.com/watch?v=_7LvfVD4ids" target="_blank" rel="noopener">https://www.youtube.com/watch?v=_7LvfVD4ids</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">وسائل النقل مع mit + Dativ: mit dem Bus.</li><li dir="rtl">أفعال الحركة المنفصلة: einsteigen, aussteigen, umsteigen.</li><li dir="rtl">شراء التذكرة: eine Fahrkarte kaufen.</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">بأي وسيلة نقل بدأ المتحدث؟</li><li dir="rtl">هل قال mit dem Bus أم mit der Bus؟</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">وسائل النقل <small dir="ltr">Verkehrsmittel</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Bus, -se</td><td lang="ar" dir="rtl" class="ar">الباص</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die U-Bahn, -en</td><td lang="ar" dir="rtl" class="ar">المترو</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Straßenbahn, -en</td><td lang="ar" dir="rtl" class="ar">الترام</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Zug, die Züge</td><td lang="ar" dir="rtl" class="ar">القطار</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Auto, -s</td><td lang="ar" dir="rtl" class="ar">السيارة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Fahrrad, die Fahrräder</td><td lang="ar" dir="rtl" class="ar">الدراجة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Flugzeug, -e</td><td lang="ar" dir="rtl" class="ar">الطائرة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Taxi, -s</td><td lang="ar" dir="rtl" class="ar">التاكسي</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">في المحطة <small dir="ltr">Am Bahnhof</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Bahnhof, die Bahnhöfe</td><td lang="ar" dir="rtl" class="ar">محطة القطار</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Haltestelle, -n</td><td lang="ar" dir="rtl" class="ar">موقف الباص</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Bahnsteig, -e</td><td lang="ar" dir="rtl" class="ar">الرصيف</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Fahrkarte, -n</td><td lang="ar" dir="rtl" class="ar">التذكرة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Fahrplan, die Fahrpläne</td><td lang="ar" dir="rtl" class="ar">جدول المواعيد</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Linie, -n</td><td lang="ar" dir="rtl" class="ar">الخط</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">einsteigen</td><td lang="ar" dir="rtl" class="ar">يركب</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">aussteigen</td><td lang="ar" dir="rtl" class="ar">ينزل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">umsteigen</td><td lang="ar" dir="rtl" class="ar">يغيّر الوسيلة</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">عبارات <small dir="ltr">Redemittel</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">mit dem Bus fahren</td><td lang="ar" dir="rtl" class="ar">يسافر بالباص</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Wo ist die Haltestelle?</td><td lang="ar" dir="rtl" class="ar">أين الموقف؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Wann fährt der Zug?</td><td lang="ar" dir="rtl" class="ar">متى يتحرك القطار؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ich kaufe eine Fahrkarte.</td><td lang="ar" dir="rtl" class="ar">أشتري تذكرة.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Wo muss ich umsteigen?</td><td lang="ar" dir="rtl" class="ar">أين يجب أن أغيّر؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Der Bus kommt gleich.</td><td lang="ar" dir="rtl" class="ar">الباص يأتي حالًا.</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Ich fahre mit dem Bus zur Arbeit.</div><div class="gloss" dir="rtl">أذهب إلى العمل بالباص.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Sie fährt mit der U-Bahn.</div><div class="gloss" dir="rtl">هي تذهب بالمترو.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich steige am Bahnhof ein.</div><div class="gloss" dir="rtl">أركب في المحطة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir steigen am Markt aus.</div><div class="gloss" dir="rtl">ننزل عند السوق.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wo muss ich umsteigen?</div><div class="gloss" dir="rtl">أين يجب أن أغيّر الوسيلة؟</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich kaufe eine Fahrkarte.</div><div class="gloss" dir="rtl">أشتري تذكرة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Der Zug fährt um 9 Uhr.</div><div class="gloss" dir="rtl">القطار يتحرك الساعة 9.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Das Fahrrad ist langsam, aber gesund.</div><div class="gloss" dir="rtl">الدراجة بطيئة لكنها صحية.</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">mit + Dativ <small dir="ltr">mit + Dativ</small></h3><p dir="rtl" class="bodyar">mit يأخذ حالة الجر (Dativ). المذكر: dem، المؤنث: der، المحايد: dem. مع وسائل النقل: mit dem Bus، mit der U-Bahn.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الجنس</th><th lang="de" dir="ltr">mit +</th><th lang="ar" dir="rtl">مثال</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">مذكر</td><td lang="de" dir="ltr">dem</td><td lang="de" dir="ltr">mit dem Bus</td></tr><tr><td lang="ar" dir="rtl" class="ar">مؤنث</td><td lang="de" dir="ltr">der</td><td lang="de" dir="ltr">mit der U-Bahn</td></tr><tr><td lang="ar" dir="rtl" class="ar">محايد</td><td lang="de" dir="ltr">dem</td><td lang="de" dir="ltr">mit dem Auto</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">لا نقول mit der Bus.</p></div></div><div class="card"><h3 dir="rtl">أفعال منفصلة <small dir="ltr">Trennbare Verben</small></h3><p dir="rtl" class="bodyar">einsteigen/aussteigen/umsteigen أفعال منفصلة: المقطع ein-/aus-/um- يعود إلى نهاية الجملة. Ich steige ein.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">المصدر</th><th lang="ar" dir="rtl">الجملة</th><th lang="ar" dir="rtl">الموضع</th></tr></thead><tbody><tr><td lang="de" dir="ltr">einsteigen</td><td lang="de" dir="ltr">Ich steige ein.</td><td lang="ar" dir="rtl" class="ar">ein في النهاية</td></tr><tr><td lang="de" dir="ltr">aussteigen</td><td lang="de" dir="ltr">Wir steigen aus.</td><td lang="ar" dir="rtl" class="ar">aus في النهاية</td></tr><tr><td lang="de" dir="ltr">umsteigen</td><td lang="de" dir="ltr">Du steigst um.</td><td lang="ar" dir="rtl" class="ar">um في النهاية</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">الفعل المصرّف ثانٍ، والبادئة أخيرًا.</p></div></div><div class="card"><h3 dir="rtl">في المحطة <small dir="ltr">Am Bahnhof</small></h3><p dir="rtl" class="bodyar">أسئلة مفيدة: Wo ist die Haltestelle? Wann fährt der Zug? Wo muss ich umsteigen? الجواب يبدأ بـ am/um.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الجواب النموذجي</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Wo ist die Haltestelle?</td><td lang="de" dir="ltr">Dort, an der Ecke.</td></tr><tr><td lang="de" dir="ltr">Wann fährt der Zug?</td><td lang="de" dir="ltr">Um 9 Uhr.</td></tr><tr><td lang="de" dir="ltr">Wo steige ich um?</td><td lang="de" dir="ltr">Am Hauptbahnhof.</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">Hauptbahnhof = المحطة الرئيسية.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">U-Bahn</td><td lang="ar" dir="rtl" class="ar">أوبان</td><td lang="ar" dir="rtl" class="ar">أُوبان</td></tr><tr><td lang="de" dir="ltr">Straßenbahn</td><td lang="ar" dir="rtl" class="ar">شتراسنبahn</td><td lang="ar" dir="rtl" class="ar">شْتراسِنْبان</td></tr><tr><td lang="de" dir="ltr">Fahrkarte</td><td lang="ar" dir="rtl" class="ar">فاركarte</td><td lang="ar" dir="rtl" class="ar">فارْكارْتِه</td></tr><tr><td lang="de" dir="ltr">einsteigen</td><td lang="ar" dir="rtl" class="ar">أينشتايغن</td><td lang="ar" dir="rtl" class="ar">أينْشْتايْگِن</td></tr><tr><td lang="de" dir="ltr">umsteigen</td><td lang="ar" dir="rtl" class="ar">أومشتايغن</td><td lang="ar" dir="rtl" class="ar">أُومْشْتايْگِن</td></tr><tr><td lang="de" dir="ltr">Bahnhof</td><td lang="ar" dir="rtl" class="ar">بانhof</td><td lang="ar" dir="rtl" class="ar">بانْهُوف</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Ich fahre mit dem Bus.</div><div class="de" dir="ltr">Ich steige ein.</div><div class="de" dir="ltr">Wo muss ich umsteigen?</div><div class="de" dir="ltr">Ich kaufe eine Fahrkarte.</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Unterwegs <small dir="ltr">تمارين صوتية داخلية (لا نص فيديو موثّق)</small></h3><p dir="rtl">اسمع واكتب وسيلتي النقل المذكورتين.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=_7LvfVD4ids" target="_blank" rel="noopener">https://www.youtube.com/watch?v=_7LvfVD4ids</a><ul class="qs"><li dir='rtl'>أين ينزل المتحدث؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — Abfahrt <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع ثلاثة مواعيد واكتبها.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=_7LvfVD4ids" target="_blank" rel="noopener">https://www.youtube.com/watch?v=_7LvfVD4ids</a><ul class="qs"><li dir='rtl'>أي وسيلة كانت في الساعة 9؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: إلى العمل <small dir="ltr">Lesen: Zur Arbeit</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich fahre jeden Tag mit der U-Bahn zur Arbeit.</td><td lang="ar" dir="rtl" class="ar">أذهب كل يوم إلى العمل بالمترو.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich steige am Hauptbahnhof ein.</td><td lang="ar" dir="rtl" class="ar">أركب في المحطة الرئيسية.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Dann steige ich am Markt um.</td><td lang="ar" dir="rtl" class="ar">ثم أغيّر الوسيلة عند السوق.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Die Fahrt dauert 30 Minuten.</td><td lang="ar" dir="rtl" class="ar">الرحلة تستغرق 30 دقيقة.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Die Fahrkarte kostet drei Euro.</td><td lang="ar" dir="rtl" class="ar">التذكرة تكلّف ثلاثة يورو.</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">بأي وسيلة يذهب؟</p><p class="qa" dir="ltr">Mit der U-Bahn.</p></div><div class="qitem"><p dir="rtl" class="qq">أين يركب؟</p><p class="qa" dir="ltr">Am Hauptbahnhof.</p></div><div class="qitem"><p dir="rtl" class="qq">أين يغيّر؟</p><p class="qa" dir="ltr">Am Markt.</p></div><div class="qitem"><p dir="rtl" class="qq">كم تستغرق الرحلة؟</p><p class="qa" dir="ltr">30 Minuten.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: الطريق</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Wie fährst du zur Arbeit?</td><td lang="de" dir="ltr">Mit dem Bus. Und du?</td></tr><tr><td lang="de" dir="ltr">Mit der U-Bahn. Wo steigst du ein?</td><td lang="de" dir="ltr">Am Bahnhof.</td></tr><tr><td lang="de" dir="ltr">Musst du umsteigen?</td><td lang="de" dir="ltr">Ja, am Markt.</td></tr><tr><td lang="de" dir="ltr">Wie lange dauert die Fahrt?</td><td lang="de" dir="ltr">20 Minuten.</td></tr><tr><td lang="de" dir="ltr">Gut! Bis morgen!</td><td lang="de" dir="ltr">Bis morgen!</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">صِف طريقك اليومي: وسيلة، مكان الركوب، التحويل، المدة.</p>
+  <ul><li dir="rtl">mit + Dativ صحيحة.</li><li dir="rtl">الفعل المنفصل في مكانه.</li><li dir="rtl">أسئلة الطريق صحيحة.</li><li dir="rtl">نطق U-Bahn وFahrkarte مقبول.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب 5 جمل عن طريقك إلى العمل/الدراسة.</p><pre class="model">Ich fahre mit dem Bus.
+Ich steige am Bahnhof ein.
+Ich steige am Markt aus.
+Die Fahrt dauert 25 Minuten.
+Die Fahrkarte kostet zwei Euro.</pre><p dir="rtl">اكتب سؤالين عن الطريق.</p><pre class="model">Wo ist die Haltestelle?
+Wo muss ich umsteigen?</pre><ul><li dir="rtl">mit + Dativ صحيحة.</li><li dir="rtl">الفعل المنفصل صحيح.</li><li dir="rtl">خمس جمل كاملة.</li><li dir="rtl">علامات ترقيم سليمة.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">أكمل بـ dem/der.</span></h3><div class="de" dir="ltr">mit ____ Bus</div><div class="de" dir="ltr">mit ____ U-Bahn</div><div class="de" dir="ltr">mit ____ Auto</div><div class="de" dir="ltr">mit ____ Fahrrad</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل الكلمة بمعناها.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Bahnhof</td><td lang="ar" dir="rtl" class="ar">محطة القطار</td></tr><tr><td lang="de" dir="ltr">die Haltestelle</td><td lang="ar" dir="rtl" class="ar">موقف الباص</td></tr><tr><td lang="de" dir="ltr">die Fahrkarte</td><td lang="ar" dir="rtl" class="ar">التذكرة</td></tr><tr><td lang="de" dir="ltr">umsteigen</td><td lang="ar" dir="rtl" class="ar">يغيّر الوسيلة</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">mit dem Bus / Ich fahre</div><div class="de" dir="ltr">ein / Ich steige</div><div class="de" dir="ltr">umsteigen / muss ich / Wo</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">Ich fahre mit ____ U-Bahn. <span class="opts">[ dem | der | den ]</span></div><div class="de" dir="ltr">Wir ____ am Markt aus. <span class="opts">[ steigen | steigt | steige ]</span></div><div class="de" dir="ltr">____ fährt der Zug? <span class="opts">[ Wann | Wo | Was ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">mit ____ Bus</td><td lang="de" dir="ltr">dem</td></tr><tr><td lang="de" dir="ltr">mit ____ U-Bahn</td><td lang="de" dir="ltr">der</td></tr><tr><td lang="de" dir="ltr">mit ____ Auto</td><td lang="de" dir="ltr">dem</td></tr><tr><td lang="de" dir="ltr">mit ____ Fahrrad</td><td lang="de" dir="ltr">dem</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Bahnhof</td><td lang="ar" dir="rtl" class="ar">محطة القطار</td></tr><tr><td lang="de" dir="ltr">die Haltestelle</td><td lang="ar" dir="rtl" class="ar">موقف الباص</td></tr><tr><td lang="de" dir="ltr">die Fahrkarte</td><td lang="ar" dir="rtl" class="ar">التذكرة</td></tr><tr><td lang="de" dir="ltr">umsteigen</td><td lang="ar" dir="rtl" class="ar">يغيّر الوسيلة</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">mit dem Bus / Ich fahre</td><td lang="de" dir="ltr">Ich fahre mit dem Bus.</td></tr><tr><td lang="de" dir="ltr">ein / Ich steige</td><td lang="de" dir="ltr">Ich steige ein.</td></tr><tr><td lang="de" dir="ltr">umsteigen / muss ich / Wo</td><td lang="de" dir="ltr">Wo muss ich umsteigen?</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich fahre mit ____ U-Bahn.</td><td lang="de" dir="ltr">der</td></tr><tr><td lang="de" dir="ltr">Wir ____ am Markt aus.</td><td lang="de" dir="ltr">steigen</td></tr><tr><td lang="de" dir="ltr">____ fährt der Zug?</td><td lang="de" dir="ltr">Wann</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ mit der Bus</div><div class="good" dir="ltr">✅ mit dem Bus</div><p dir="rtl">Bus مذكر → dem.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich einsteige am Bahnhof.</div><div class="good" dir="ltr">✅ Ich steige am Bahnhof ein.</div><p dir="rtl">الفعل ثانٍ والبادئة أخيرًا.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich fahre mit U-Bahn.</div><div class="good" dir="ltr">✅ Ich fahre mit der U-Bahn.</div><p dir="rtl">mit يحتاج أداة جر.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Wo ich umsteige?</div><div class="good" dir="ltr">✅ Wo muss ich umsteigen?</div><p dir="rtl">السؤال يحتاج muss.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Der Zug fährt am 9 Uhr.</div><div class="good" dir="ltr">✅ Der Zug fährt um 9 Uhr.</div><p dir="rtl">الساعة um.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">قل: أذهب بالباص.</td><td lang="de" dir="ltr">Ich fahre mit dem Bus.</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">قل: أذهب بالمترو.</td><td lang="de" dir="ltr">Ich fahre mit der U-Bahn.</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">قل: أركب في المحطة.</td><td lang="de" dir="ltr">Ich steige am Bahnhof ein.</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">قل: أنزل عند السوق.</td><td lang="de" dir="ltr">Ich steige am Markt aus.</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">اسأل: أين الموقف؟</td><td lang="de" dir="ltr">Wo ist die Haltestelle?</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">اسأل: متى يتحرك القطار؟</td><td lang="de" dir="ltr">Wann fährt der Zug?</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">قل: أشتري تذكرة.</td><td lang="de" dir="ltr">Ich kaufe eine Fahrkarte.</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">قل: يجب أن أغيّر في المحطة الرئيسية.</td><td lang="de" dir="ltr">Ich muss am Hauptbahnhof umsteigen.</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">انفِ: Ich fahre mit dem Auto.</td><td lang="de" dir="ltr">Ich fahre nicht mit dem Auto.</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">اكتب جملة عن الدراجة.</td><td lang="de" dir="ltr">Ich fahre mit dem Fahrrad.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="de" dir="ltr">mit + Dativ.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="ar" dir="rtl" class="ar">الأفعال المنفصلة.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">وصف طريق كامل.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 17 (Wir fahren weg) und Kapitel 18 (Arbeit und Mobilität): Verkehrsmittel, Wegbeschreibung.<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 10, Teil 1 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=_7LvfVD4ids" target="_blank" rel="noopener">https://www.youtube.com/watch?v=_7LvfVD4ids</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">مادة أصلية؛ لا اقتباس نصي من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L10-T01 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أريد أن آكل شيئًا — الوجبات · Ich möchte etwas essen — Mahlzeiten</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#38409F; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#38409F,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L09-T01">← العودة للداشبورد والاختبار</a> · L09-T01</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>أريد أن آكل شيئًا — الوجبات</h1>
+    <h2>Ich möchte etwas essen — Mahlzeiten — Lektion 9, Teil 1</h2>
+    <p class="sub">möchten, Akkusativ, Mahlzeiten und Getränke · A1, Kapitel 5</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 3</span>
+    <span class="chip">Video 24:24</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L09-S1</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تسمّي الوجبات والأطعمة الأساسية.</li><li dir="rtl">أن تستخدم möchten + اسم في النصب.</li><li dir="rtl">أن تصرّف essen وtrinken.</li><li dir="rtl">أن تعبّر عن الرغبة بأدب.</li><li dir="rtl">أن تكتب قائمة وجبة قصيرة.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=xENVA_Smcag" target="_blank" rel="noopener">https://www.youtube.com/watch?v=xENVA_Smcag</a></div>
+  <div class="card">
+    <h3>Lektion 9, Teil 1 — Essen und Einladung</h3>
+    <p class="meta">24:24 · <a class="link" href="https://www.youtube.com/watch?v=xENVA_Smcag" target="_blank" rel="noopener">https://www.youtube.com/watch?v=xENVA_Smcag</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">التعبير عن الرغبة: Ich möchte etwas essen.</li><li dir="rtl">أسماء الوجبات والأطعمة مع أداتها.</li><li dir="rtl">الفعل essen وtrinken في المضارع.</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">ماذا طلب المتحدث أولًا؟</li><li dir="rtl">هل قال Ich möchte أم Ich will؟</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">الوجبات <small dir="ltr">Mahlzeiten</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">das Frühstück</td><td lang="ar" dir="rtl" class="ar">الفطور</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Mittagessen</td><td lang="ar" dir="rtl" class="ar">الغداء</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Abendessen</td><td lang="ar" dir="rtl" class="ar">العشاء</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Hunger</td><td lang="ar" dir="rtl" class="ar">الجوع</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Durst</td><td lang="ar" dir="rtl" class="ar">العطش</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ich habe Hunger.</td><td lang="ar" dir="rtl" class="ar">أنا جائع.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ich habe Durst.</td><td lang="ar" dir="rtl" class="ar">أنا عطشان.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Mahlzeit, -en</td><td lang="ar" dir="rtl" class="ar">الوجبة</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">أطعمة <small dir="ltr">Lebensmittel</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">das Brot</td><td lang="ar" dir="rtl" class="ar">الخبز</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Käse</td><td lang="ar" dir="rtl" class="ar">الجبن</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Ei, -er</td><td lang="ar" dir="rtl" class="ar">البيضة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Apfel, die Äpfel</td><td lang="ar" dir="rtl" class="ar">التفاحة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Reis</td><td lang="ar" dir="rtl" class="ar">الأرز</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Fleisch</td><td lang="ar" dir="rtl" class="ar">اللحم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Fisch</td><td lang="ar" dir="rtl" class="ar">السمك</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Salat, -e</td><td lang="ar" dir="rtl" class="ar">السلطة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Suppe, -n</td><td lang="ar" dir="rtl" class="ar">الحساء</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Kuchen, -</td><td lang="ar" dir="rtl" class="ar">الكعك</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">مشروبات وأفعال <small dir="ltr">Getränke und Verben</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">das Wasser</td><td lang="ar" dir="rtl" class="ar">الماء</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Tee</td><td lang="ar" dir="rtl" class="ar">الشاي</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Kaffee</td><td lang="ar" dir="rtl" class="ar">القهوة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Saft</td><td lang="ar" dir="rtl" class="ar">العصير</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">essen</td><td lang="ar" dir="rtl" class="ar">يأكل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">trinken</td><td lang="ar" dir="rtl" class="ar">يشرب</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">möchten</td><td lang="ar" dir="rtl" class="ar">يرغب</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">nehmen</td><td lang="ar" dir="rtl" class="ar">يأخذ</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Ich habe Hunger. Ich möchte etwas essen.</div><div class="gloss" dir="rtl">أنا جائع. أريد أن آكل شيئًا.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich möchte einen Apfel.</div><div class="gloss" dir="rtl">أريد تفاحة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Möchtest du Wasser oder Tee?</div><div class="gloss" dir="rtl">أتريد ماءً أم شايًا؟</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Zum Frühstück esse ich Brot mit Käse.</div><div class="gloss" dir="rtl">على الفطور آكل خبزًا مع الجبن.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Er trinkt keinen Kaffee.</div><div class="gloss" dir="rtl">هو لا يشرب القهوة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir möchten eine Suppe und einen Salat.</div><div class="gloss" dir="rtl">نريد حساءً وسلطة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Das Mittagessen ist um 13 Uhr.</div><div class="gloss" dir="rtl">الغداء في الساعة 13.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich nehme den Fisch, bitte.</div><div class="gloss" dir="rtl">سآخذ السمك من فضلك.</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">möchten + نصب <small dir="ltr">möchten im Satz</small></h3><p dir="rtl" class="bodyar">möchten + اسم في النصب. المذكر: einen/den، المؤنث والمحايد بلا تغيير. يمكن أن يتبعها فعل في المصدر: Ich möchte etwas essen.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الصيغة</th><th lang="ar" dir="rtl">مثال</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">möchten + اسم</td><td lang="de" dir="ltr">Ich möchte einen Apfel.</td><td lang="ar" dir="rtl" class="ar">einen للمذكر</td></tr><tr><td lang="ar" dir="rtl" class="ar">möchten + مصدر</td><td lang="de" dir="ltr">Ich möchte essen.</td><td lang="ar" dir="rtl" class="ar">بدون zu</td></tr><tr><td lang="de" dir="ltr">möchten + etwas</td><td lang="de" dir="ltr">Ich möchte etwas trinken.</td><td lang="ar" dir="rtl" class="ar">etwas + مصدر</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">möchten لا تأخذ zu قبل المصدر.</p></div></div><div class="card"><h3 dir="rtl">essen وtrinken <small dir="ltr">essen und trinken</small></h3><p dir="rtl" class="bodyar">essen شاذ: ich esse, du isst, er/sie isst, wir essen. trinken منتظم: ich trinke, du trinkst, er trinkt.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الضمير</th><th lang="de" dir="ltr">essen</th><th lang="de" dir="ltr">trinken</th></tr></thead><tbody><tr><td lang="de" dir="ltr">ich</td><td lang="de" dir="ltr">esse</td><td lang="de" dir="ltr">trinke</td></tr><tr><td lang="de" dir="ltr">du</td><td lang="de" dir="ltr">isst</td><td lang="de" dir="ltr">trinkst</td></tr><tr><td lang="de" dir="ltr">er/sie</td><td lang="de" dir="ltr">isst</td><td lang="de" dir="ltr">trinkt</td></tr><tr><td lang="de" dir="ltr">wir</td><td lang="de" dir="ltr">essen</td><td lang="de" dir="ltr">trinken</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">du/er → isst (بحرف i).</p></div></div><div class="card"><h3 dir="rtl">Akkusativ مع الأطعمة <small dir="ltr">Akkusativ bei Essen</small></h3><p dir="rtl" class="bodyar">بعد essen/nehmen/möchten نستخدم النصب: den/einen للمذكر. المؤنث: die/eine. المحايد: das/ein.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">مثال</th><th lang="ar" dir="rtl">الأداة</th><th lang="ar" dir="rtl">الجنس</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich esse einen Apfel.</td><td lang="de" dir="ltr">einen</td><td lang="ar" dir="rtl" class="ar">مذكر</td></tr><tr><td lang="de" dir="ltr">Ich esse eine Suppe.</td><td lang="de" dir="ltr">eine</td><td lang="ar" dir="rtl" class="ar">مؤنث</td></tr><tr><td lang="de" dir="ltr">Ich esse ein Brot.</td><td lang="de" dir="ltr">ein</td><td lang="ar" dir="rtl" class="ar">محايد</td></tr><tr><td lang="de" dir="ltr">Ich trinke den Saft.</td><td lang="de" dir="ltr">den</td><td lang="ar" dir="rtl" class="ar">معرّف مذكر</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">الفاكهة كثيرًا ما تكون مؤنثة أو مذكرة؛ احفظ الاسم مع أداته.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Frühstück</td><td lang="ar" dir="rtl" class="ar">فروشتوك</td><td lang="ar" dir="rtl" class="ar">فْرُوشْتُوك</td></tr><tr><td lang="de" dir="ltr">Mittagessen</td><td lang="ar" dir="rtl" class="ar">ميتاغإسن</td><td lang="ar" dir="rtl" class="ar">مِتّاجْإِسِن</td></tr><tr><td lang="de" dir="ltr">Abendessen</td><td lang="ar" dir="rtl" class="ar">آبنتإسن</td><td lang="ar" dir="rtl" class="ar">آبِنْدْإِسِن</td></tr><tr><td lang="de" dir="ltr">Hunger</td><td lang="ar" dir="rtl" class="ar">هونغر</td><td lang="ar" dir="rtl" class="ar">هُونْگَر</td></tr><tr><td lang="de" dir="ltr">Käse</td><td lang="ar" dir="rtl" class="ar">كيزه</td><td lang="ar" dir="rtl" class="ar">كِيزِه</td></tr><tr><td lang="de" dir="ltr">Suppe</td><td lang="ar" dir="rtl" class="ar">زوبه</td><td lang="ar" dir="rtl" class="ar">زُوبِّه</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Ich habe Hunger.</div><div class="de" dir="ltr">Ich möchte etwas essen.</div><div class="de" dir="ltr">Ich möchte einen Apfel.</div><div class="de" dir="ltr">Er trinkt keinen Kaffee.</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Frühstück <small dir="ltr">تمارين صوتية داخلية (لا نص فيديو موثّق)</small></h3><p dir="rtl">اسمع واكتب ثلاثة أشياء على طاولة الفطور.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=xENVA_Smcag" target="_blank" rel="noopener">https://www.youtube.com/watch?v=xENVA_Smcag</a><ul class="qs"><li dir='rtl'>هل شرب المتحدث القهوة؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — Was möchtest du? <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع أربع رغبات واكتبها.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=xENVA_Smcag" target="_blank" rel="noopener">https://www.youtube.com/watch?v=xENVA_Smcag</a><ul class="qs"><li dir='rtl'>أي طعام تكرر؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: عند العم هاري <small dir="ltr">Lesen: Bei Onkel Harry</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich habe Hunger, Onkel Harry.</td><td lang="ar" dir="rtl" class="ar">أنا جائع يا عم هاري.</td></tr><tr><td lang="de" dir="ltr">Onkel</td><td lang="de" dir="ltr">Möchtest du eine Suppe?</td><td lang="ar" dir="rtl" class="ar">أتريد حساءً؟</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ja, gern. Und ich möchte einen Salat.</td><td lang="ar" dir="rtl" class="ar">نعم بسرور. وأريد سلطة.</td></tr><tr><td lang="de" dir="ltr">Onkel</td><td lang="de" dir="ltr">Möchtest du auch Wasser?</td><td lang="ar" dir="rtl" class="ar">أتريد ماءً أيضًا؟</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Nein, danke. Ich trinke keinen Kaffee und kein Wasser.</td><td lang="ar" dir="rtl" class="ar">لا شكرًا. لا أشرب القهوة ولا الماء.</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">ماذا يريد الضيف أولًا؟</p><p class="qa" dir="ltr">Eine Suppe.</p></div><div class="qitem"><p dir="rtl" class="qq">وماذا أيضًا؟</p><p class="qa" dir="ltr">Einen Salat.</p></div><div class="qitem"><p dir="rtl" class="qq">هل يريد الماء؟</p><p class="qa" dir="ltr">Nein.</p></div><div class="qitem"><p dir="rtl" class="qq">ماذا لا يشرب؟</p><p class="qa" dir="ltr">Kaffee und Wasser.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: على المائدة</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich habe Hunger. Und du?</td><td lang="de" dir="ltr">Ich auch. Möchtest du eine Suppe?</td></tr><tr><td lang="de" dir="ltr">Ja, gern. Ich möchte auch Brot.</td><td lang="de" dir="ltr">Hier ist Brot. Möchtest du Tee?</td></tr><tr><td lang="de" dir="ltr">Nein, danke. Ich trinke lieber Wasser.</td><td lang="de" dir="ltr">Kein Problem.</td></tr><tr><td lang="de" dir="ltr">Das Essen ist lecker!</td><td lang="de" dir="ltr">Danke! Nimm noch etwas Salat.</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">اطلب وجبة كاملة: مقبل + طبق + مشروب، بأدب.</p>
+  <ul><li dir="rtl">möchten + نصب.</li><li dir="rtl">einen/eine صحيحة.</li><li dir="rtl">essen/trinken مصرّفة.</li><li dir="rtl">أدب الطلب.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب 5 جمل عن وجباتك اليوم.</p><pre class="model">Zum Frühstück esse ich Brot mit Käse.
+Ich trinke Tee.
+Zum Mittagessen esse ich Reis mit Fleisch.
+Ich habe keinen Hunger am Abend.
+Ich möchte eine Suppe.</pre><p dir="rtl">اكتب قائمة وجبة لصديقك (3 أسطر).</p><pre class="model">Möchtest du eine Suppe?
+Ich habe Salat und Brot.
+Möchtest du Tee oder Wasser?</pre><ul><li dir="rtl">أدوات النصب صحيحة.</li><li dir="rtl">ثلاث وجبات مذكورة.</li><li dir="rtl">خمس جمل كاملة.</li><li dir="rtl">علامات ترقيم سليمة.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">أكمل بـ einen/eine/ein أو keinen/keine/kein.</span></h3><div class="de" dir="ltr">Ich möchte ____ Apfel.</div><div class="de" dir="ltr">Ich möchte ____ Suppe.</div><div class="de" dir="ltr">Ich möchte ____ Brot.</div><div class="de" dir="ltr">Ich trinke ____ Kaffee. (نفي)</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل الكلمة بمعناها.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">das Frühstück</td><td lang="ar" dir="rtl" class="ar">الفطور</td></tr><tr><td lang="de" dir="ltr">das Mittagessen</td><td lang="ar" dir="rtl" class="ar">الغداء</td></tr><tr><td lang="de" dir="ltr">das Abendessen</td><td lang="ar" dir="rtl" class="ar">العشاء</td></tr><tr><td lang="de" dir="ltr">der Hunger</td><td lang="ar" dir="rtl" class="ar">الجوع</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">etwas / Ich möchte / essen</div><div class="de" dir="ltr">einen Apfel / Ich möchte</div><div class="de" dir="ltr">keinen Kaffee / Er trinkt</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">Du ____ Brot. <span class="opts">[ isst | esst | esse ]</span></div><div class="de" dir="ltr">Er ____ Tee. <span class="opts">[ trinkt | trinken | trinkst ]</span></div><div class="de" dir="ltr">Ich möchte ____ Salat. <span class="opts">[ ein | einen | eine ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Ich möchte ____ Apfel.</td><td lang="de" dir="ltr">einen</td></tr><tr><td lang="de" dir="ltr">Ich möchte ____ Suppe.</td><td lang="de" dir="ltr">eine</td></tr><tr><td lang="de" dir="ltr">Ich möchte ____ Brot.</td><td lang="de" dir="ltr">ein</td></tr><tr><td lang="ar" dir="rtl" class="ar">Ich trinke ____ Kaffee. (نفي)</td><td lang="de" dir="ltr">keinen</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">das Frühstück</td><td lang="ar" dir="rtl" class="ar">الفطور</td></tr><tr><td lang="de" dir="ltr">das Mittagessen</td><td lang="ar" dir="rtl" class="ar">الغداء</td></tr><tr><td lang="de" dir="ltr">das Abendessen</td><td lang="ar" dir="rtl" class="ar">العشاء</td></tr><tr><td lang="de" dir="ltr">der Hunger</td><td lang="ar" dir="rtl" class="ar">الجوع</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">etwas / Ich möchte / essen</td><td lang="de" dir="ltr">Ich möchte etwas essen.</td></tr><tr><td lang="de" dir="ltr">einen Apfel / Ich möchte</td><td lang="de" dir="ltr">Ich möchte einen Apfel.</td></tr><tr><td lang="de" dir="ltr">keinen Kaffee / Er trinkt</td><td lang="de" dir="ltr">Er trinkt keinen Kaffee.</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Du ____ Brot.</td><td lang="de" dir="ltr">isst</td></tr><tr><td lang="de" dir="ltr">Er ____ Tee.</td><td lang="de" dir="ltr">trinkt</td></tr><tr><td lang="de" dir="ltr">Ich möchte ____ Salat.</td><td lang="de" dir="ltr">einen</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ Ich möchte ein Apfel.</div><div class="good" dir="ltr">✅ Ich möchte einen Apfel.</div><p dir="rtl">مذكر نصب.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Du isst? (خطأ في التصريف)</div><div class="good" dir="ltr">✅ Du isst.</div><p dir="rtl">التصريف صحيح: du isst.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich möchte zu essen.</div><div class="good" dir="ltr">✅ Ich möchte essen.</div><p dir="rtl">möchten بلا zu.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Er trinkt nicht Kaffee.</div><div class="good" dir="ltr">✅ Er trinkt keinen Kaffee.</div><p dir="rtl">نكرة → keinen.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich habe Hunger. (بمعنى عطش)</div><div class="good" dir="ltr">✅ Ich habe Durst.</div><p dir="rtl">Hunger ≠ Durst.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">قل: أنا جائع.</td><td lang="de" dir="ltr">Ich habe Hunger.</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">قل: أريد أن آكل شيئًا.</td><td lang="de" dir="ltr">Ich möchte etwas essen.</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">قل: أريد تفاحة.</td><td lang="de" dir="ltr">Ich möchte einen Apfel.</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">قل: أريد حساءً.</td><td lang="de" dir="ltr">Ich möchte eine Suppe.</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">قل: لا أشرب القهوة.</td><td lang="de" dir="ltr">Ich trinke keinen Kaffee.</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">صرّف: du + essen</td><td lang="de" dir="ltr">du isst</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">صرّف: er + trinken</td><td lang="de" dir="ltr">er trinkt</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">قل: على الفطور آكل خبزًا.</td><td lang="de" dir="ltr">Zum Frühstück esse ich Brot.</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">اسأل: أتريد شايًا؟</td><td lang="de" dir="ltr">Möchtest du Tee?</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">اكتب جملة عن العشاء.</td><td lang="de" dir="ltr">Das Abendessen ist um 19 Uhr.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="ar" dir="rtl" class="ar">مفردات الطعام + möchten.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="ar" dir="rtl" class="ar">essen/trinken والنصب.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">حوار على المائدة.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 5 (Einkaufen und Essen) + Kapitel 4 (Im Restaurant): Mahlzeiten, Lebensmittel, möchten.<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 9, Teil 1 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=xENVA_Smcag" target="_blank" rel="noopener">https://www.youtube.com/watch?v=xENVA_Smcag</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">مادة أصلية؛ لا اقتباس نصي من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L09-T01 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

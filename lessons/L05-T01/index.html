@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ما هذا؟ — أشياء الحياة اليومية · Was ist das? — Alltagsgegenstände</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#3A9F38; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#3A9F38,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L05-T01">← العودة للداشبورد والاختبار</a> · L05-T01</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>ما هذا؟ — أشياء الحياة اليومية</h1>
+    <h2>Was ist das? — Alltagsgegenstände — Lektion 5, Teil 1</h2>
+    <p class="sub">ein/eine, bestimmter Artikel, Negationsartikel kein · A1, Kapitel 3</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 2</span>
+    <span class="chip">Video 22:06</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L05-S1</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تسأل وتجيب: Was ist das? — Das ist ein …</li><li dir="rtl">أن تفرّق بين ein/eine بحسب الجنس.</li><li dir="rtl">أن تفرّق بين الذكر الأول (ein) والذكر المعروف (der).</li><li dir="rtl">أن تنفي: Das ist kein/keine …</li><li dir="rtl">أن تسمّي 12 شيئًا يوميًا.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=aqdtJPbKLLc" target="_blank" rel="noopener">https://www.youtube.com/watch?v=aqdtJPbKLLc</a></div>
+  <div class="card">
+    <h3>Lektion 5, Teil 1 — Gegenstände im Alltag</h3>
+    <p class="meta">22:06 · <a class="link" href="https://www.youtube.com/watch?v=aqdtJPbKLLc" target="_blank" rel="noopener">https://www.youtube.com/watch?v=aqdtJPbKLLc</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">السؤال: Was ist das? والجواب: Das ist ein/eine …</li><li dir="rtl">الفرق بين أول ذكر للشيء (ein) وذكره مرة ثانية (der/die/das).</li><li dir="rtl">النفي: Das ist kein/keine …</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">ما أول شيء سأل عنه المتحدث؟</li><li dir="rtl">هل استخدم ein أم eine مع Tasche؟</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">أشياء يومية <small dir="ltr">Alltagsgegenstände</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Schlüssel, -</td><td lang="ar" dir="rtl" class="ar">المفتاح</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Handy, -s</td><td lang="ar" dir="rtl" class="ar">الهاتف المحمول</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Buch, die Bücher</td><td lang="ar" dir="rtl" class="ar">الكتاب</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Brille, -n</td><td lang="ar" dir="rtl" class="ar">النظارة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Stift, -e</td><td lang="ar" dir="rtl" class="ar">القلم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Heft, -e</td><td lang="ar" dir="rtl" class="ar">الدفتر</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Tasche, -n</td><td lang="ar" dir="rtl" class="ar">الحقيبة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Portemonnaie, -s</td><td lang="ar" dir="rtl" class="ar">المحفظة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Rucksack, die Rucksäcke</td><td lang="ar" dir="rtl" class="ar">حقيبة الظهر</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Uhr, -en</td><td lang="ar" dir="rtl" class="ar">الساعة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Taschentuch, die Taschentücher</td><td lang="ar" dir="rtl" class="ar">المنديل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Kugelschreiber, -</td><td lang="ar" dir="rtl" class="ar">قلم الحبر</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">سؤال وجواب <small dir="ltr">Fragen und Antworten</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Was ist das?</td><td lang="ar" dir="rtl" class="ar">ما هذا؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Das ist ein …</td><td lang="ar" dir="rtl" class="ar">هذا … (مذكر)</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Das ist eine …</td><td lang="ar" dir="rtl" class="ar">هذه … (مؤنث)</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Das ist kein …</td><td lang="ar" dir="rtl" class="ar">هذا ليس … (مذكر)</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Das ist keine …</td><td lang="ar" dir="rtl" class="ar">هذه ليست … (مؤنث)</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ist das dein …?</td><td lang="ar" dir="rtl" class="ar">هل هذا … لك؟</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">صفات مساعدة <small dir="ltr">Hilfsadjektive</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">neu</td><td lang="ar" dir="rtl" class="ar">جديد</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">alt</td><td lang="ar" dir="rtl" class="ar">قديم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">klein</td><td lang="ar" dir="rtl" class="ar">صغير</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">groß</td><td lang="ar" dir="rtl" class="ar">كبير</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">wichtig</td><td lang="ar" dir="rtl" class="ar">مهم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">praktisch</td><td lang="ar" dir="rtl" class="ar">عملي</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Was ist das? — Das ist ein Schlüssel.</div><div class="gloss" dir="rtl">ما هذا؟ — هذا مفتاح.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Was ist das? — Das ist eine Tasche.</div><div class="gloss" dir="rtl">ما هذا؟ — هذه حقيبة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Das ist ein Handy. Das Handy ist neu.</div><div class="gloss" dir="rtl">هذا هاتف. الهاتف جديد.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Das ist keine Brille, das ist eine Uhr.</div><div class="gloss" dir="rtl">هذه ليست نظارة، هذه ساعة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ist das dein Heft? — Ja, das ist mein Heft.</div><div class="gloss" dir="rtl">هل هذا دفترك؟ — نعم، هذا دفتري.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich brauche einen Stift, keinen Kugelschreiber.</div><div class="gloss" dir="rtl">أحتاج قلم رصاص، لا قلم حبر.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Der Rucksack ist praktisch und groß.</div><div class="gloss" dir="rtl">حقيبة الظهر عملية وكبيرة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Das Taschentuch ist klein, aber wichtig.</div><div class="gloss" dir="rtl">المنديل صغير لكنه مهم.</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">السؤال والجواب <small dir="ltr">Frage und Antwort: Was ist das?</small></h3><p dir="rtl" class="bodyar">السؤال الثابت: Was ist das? والجواب: Das ist ein/eine + الاسم. لا نستخدم er/sie في هذا الجواب الأول.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الجواب</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Was ist das?</td><td lang="de" dir="ltr">Das ist ein Schlüssel.</td><td lang="ar" dir="rtl" class="ar">مذكر → ein</td></tr><tr><td lang="de" dir="ltr">Was ist das?</td><td lang="de" dir="ltr">Das ist eine Tasche.</td><td lang="ar" dir="rtl" class="ar">مؤنث → eine</td></tr><tr><td lang="de" dir="ltr">Was ist das?</td><td lang="de" dir="ltr">Das ist ein Handy.</td><td lang="ar" dir="rtl" class="ar">محايد → ein</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">نستخدم das لأننا لا نعرف الشيء بعد.</p></div></div><div class="card"><h3 dir="rtl">أول ذكر ثم التعريف <small dir="ltr">Erste Nennung und danach</small></h3><p dir="rtl" class="bodyar">عند أول ذكر نستخدم ein/eine. عند ذكره مرة ثانية نستخدم der/die/das لأن الشيء أصبح معروفًا.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">أول ذكر</th><th lang="ar" dir="rtl">الذكر الثاني</th><th lang="ar" dir="rtl">الجنس</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Das ist ein Stift.</td><td lang="de" dir="ltr">Der Stift ist neu.</td><td lang="ar" dir="rtl" class="ar">مذكر</td></tr><tr><td lang="de" dir="ltr">Das ist eine Tasche.</td><td lang="de" dir="ltr">Die Tasche ist groß.</td><td lang="ar" dir="rtl" class="ar">مؤنث</td></tr><tr><td lang="de" dir="ltr">Das ist ein Heft.</td><td lang="de" dir="ltr">Das Heft ist klein.</td><td lang="ar" dir="rtl" class="ar">محايد</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">خطأ شائع: تكرار ein في الذكر الثاني.</p></div></div><div class="card"><h3 dir="rtl">النفي بـ kein/keine <small dir="ltr">Verneinung mit kein und keine</small></h3><p dir="rtl" class="bodyar">ننفي الاسم النكرة بـ kein (مذكر/محايد) أو keine (مؤنث/جمع). kein يتصرّف مثل ein تمامًا.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">مثبت</th><th lang="ar" dir="rtl">منفي</th><th lang="ar" dir="rtl">الجنس</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Das ist ein Schlüssel.</td><td lang="de" dir="ltr">Das ist kein Schlüssel.</td><td lang="ar" dir="rtl" class="ar">مذكر</td></tr><tr><td lang="de" dir="ltr">Das ist eine Brille.</td><td lang="de" dir="ltr">Das ist keine Brille.</td><td lang="ar" dir="rtl" class="ar">مؤنث</td></tr><tr><td lang="de" dir="ltr">Das sind Stifte.</td><td lang="de" dir="ltr">Das sind keine Stifte.</td><td lang="ar" dir="rtl" class="ar">جمع</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">الاسم المعرّف يُنفى بـ nicht: Das ist nicht der Schlüssel.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Schlüssel</td><td lang="ar" dir="rtl" class="ar">شلوسل</td><td lang="ar" dir="rtl" class="ar">شلُوسِل</td></tr><tr><td lang="de" dir="ltr">Brille</td><td lang="ar" dir="rtl" class="ar">بريلله</td><td lang="ar" dir="rtl" class="ar">بْرِيلِّه</td></tr><tr><td lang="de" dir="ltr">Portemonnaie</td><td lang="ar" dir="rtl" class="ar">بورتمونيه</td><td lang="ar" dir="rtl" class="ar">بُورتْمُونِيه</td></tr><tr><td lang="de" dir="ltr">Taschentuch</td><td lang="ar" dir="rtl" class="ar">تاشنتوخ</td><td lang="ar" dir="rtl" class="ar">تاشِنْتُوخ</td></tr><tr><td lang="de" dir="ltr">Rucksack</td><td lang="ar" dir="rtl" class="ar">روكساك</td><td lang="ar" dir="rtl" class="ar">رُوكزاك</td></tr><tr><td lang="de" dir="ltr">Uhr</td><td lang="ar" dir="rtl" class="ar">أور</td><td lang="ar" dir="rtl" class="ar">أُور</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Was ist das?</div><div class="de" dir="ltr">Das ist ein Schlüssel.</div><div class="de" dir="ltr">Das ist eine Tasche.</div><div class="de" dir="ltr">Das ist kein Handy.</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Was ist in der Tasche? <small dir="ltr">تمارين صوتية داخلية (لا نص فيديو موثّق)</small></h3><p dir="rtl">اسمع واكتب ثلاثة أشياء ذُكرت في الحقيبة.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=aqdtJPbKLLc" target="_blank" rel="noopener">https://www.youtube.com/watch?v=aqdtJPbKLLc</a><ul class="qs"><li dir='rtl'>هل ذُكر المفتاح؟</li><li dir='rtl'>ما الشيء الذي لم يُذكر؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — ein oder eine? <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع أربع جمل وسجّل ein/eine لكل اسم.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=aqdtJPbKLLc" target="_blank" rel="noopener">https://www.youtube.com/watch?v=aqdtJPbKLLc</a><ul class="qs"><li dir='rtl'>أي اسم كان مؤنثًا؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: على الطاولة <small dir="ltr">Lesen: Auf dem Tisch</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Auf dem Tisch liegt ein Buch.</td><td lang="ar" dir="rtl" class="ar">على الطاولة كتاب.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Das Buch ist alt, aber wichtig.</td><td lang="ar" dir="rtl" class="ar">الكتاب قديم لكنه مهم.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Daneben ist eine Brille.</td><td lang="ar" dir="rtl" class="ar">بجانبه نظارة.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Die Brille ist neu.</td><td lang="ar" dir="rtl" class="ar">النظارة جديدة.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ein Handy ist nicht da.</td><td lang="ar" dir="rtl" class="ar">الهاتف ليس هناك.</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">ماذا يوجد على الطاولة؟</p><p class="qa" dir="ltr">Ein Buch und eine Brille.</p></div><div class="qitem"><p dir="rtl" class="qq">كيف الكتاب؟</p><p class="qa" dir="ltr">Alt, aber wichtig.</p></div><div class="qitem"><p dir="rtl" class="qq">هل النظارة قديمة؟</p><p class="qa" dir="ltr">Nein, sie ist neu.</p></div><div class="qitem"><p dir="rtl" class="qq">هل الهاتف موجود؟</p><p class="qa" dir="ltr">Nein, ein Handy ist nicht da.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: في الحقيبة</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Was ist das?</td><td lang="de" dir="ltr">Das ist ein Schlüssel.</td></tr><tr><td lang="de" dir="ltr">Und das?</td><td lang="de" dir="ltr">Das ist eine Brille.</td></tr><tr><td lang="de" dir="ltr">Ist das dein Handy?</td><td lang="de" dir="ltr">Nein, das ist kein Handy. Das ist ein Portemonnaie.</td></tr><tr><td lang="de" dir="ltr">Hast du einen Stift?</td><td lang="de" dir="ltr">Ja, hier ist ein Stift.</td></tr><tr><td lang="de" dir="ltr">Danke! Der Stift ist praktisch.</td><td lang="de" dir="ltr">Bitte schön!</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">أخرج 4 أشياء من حقيبتك وعرّفها: Das ist ein/eine …</p>
+  <ul><li dir="rtl">ein/eine حسب الجنس.</li><li dir="rtl">kein/keine في النفي.</li><li dir="rtl">التعريف في الذكر الثاني.</li><li dir="rtl">نطق Schlüssel وTaschentuch مقبول.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب 5 جمل عن أشياء على مكتبك.</p><pre class="model">Auf dem Tisch ist ein Buch.
+Das Buch ist neu.
+Daneben ist eine Brille.
+Die Brille ist klein.
+Ein Handy ist nicht da.</pre><p dir="rtl">اكتب جملتي نفي بـ kein/keine.</p><pre class="model">Das ist kein Schlüssel.
+Das ist keine Tasche.</pre><ul><li dir="rtl">ein/eine صحيحة.</li><li dir="rtl">kein/keine صحيحة.</li><li dir="rtl">خمس جمل كاملة.</li><li dir="rtl">علامات ترقيم سليمة.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">ضع ein أو eine.</span></h3><div class="de" dir="ltr">Das ist ____ Schlüssel.</div><div class="de" dir="ltr">Das ist ____ Tasche.</div><div class="de" dir="ltr">Das ist ____ Handy.</div><div class="de" dir="ltr">Das ist ____ Brille.</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل الشيء بمعناه.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Rucksack</td><td lang="ar" dir="rtl" class="ar">حقيبة الظهر</td></tr><tr><td lang="de" dir="ltr">das Portemonnaie</td><td lang="ar" dir="rtl" class="ar">المحفظة</td></tr><tr><td lang="de" dir="ltr">die Uhr</td><td lang="ar" dir="rtl" class="ar">الساعة</td></tr><tr><td lang="de" dir="ltr">das Taschentuch</td><td lang="ar" dir="rtl" class="ar">المنديل</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">das / Was / ist</div><div class="de" dir="ltr">ein / Das ist / Schlüssel</div><div class="de" dir="ltr">keine / Das ist / Tasche</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">Das ist ____ Brille. <span class="opts">[ ein | eine | einen ]</span></div><div class="de" dir="ltr">Das ist ____ Handy. <span class="opts">[ kein | keine | nicht ]</span></div><div class="de" dir="ltr">Das ist ____ der Schlüssel. <span class="opts">[ kein | keine | nicht ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Das ist ____ Schlüssel.</td><td lang="de" dir="ltr">ein</td></tr><tr><td lang="de" dir="ltr">Das ist ____ Tasche.</td><td lang="de" dir="ltr">eine</td></tr><tr><td lang="de" dir="ltr">Das ist ____ Handy.</td><td lang="de" dir="ltr">ein</td></tr><tr><td lang="de" dir="ltr">Das ist ____ Brille.</td><td lang="de" dir="ltr">eine</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Rucksack</td><td lang="ar" dir="rtl" class="ar">حقيبة الظهر</td></tr><tr><td lang="de" dir="ltr">das Portemonnaie</td><td lang="ar" dir="rtl" class="ar">المحفظة</td></tr><tr><td lang="de" dir="ltr">die Uhr</td><td lang="ar" dir="rtl" class="ar">الساعة</td></tr><tr><td lang="de" dir="ltr">das Taschentuch</td><td lang="ar" dir="rtl" class="ar">المنديل</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">das / Was / ist</td><td lang="de" dir="ltr">Was ist das?</td></tr><tr><td lang="de" dir="ltr">ein / Das ist / Schlüssel</td><td lang="de" dir="ltr">Das ist ein Schlüssel.</td></tr><tr><td lang="de" dir="ltr">keine / Das ist / Tasche</td><td lang="de" dir="ltr">Das ist keine Tasche.</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Das ist ____ Brille.</td><td lang="de" dir="ltr">eine</td></tr><tr><td lang="de" dir="ltr">Das ist ____ Handy.</td><td lang="de" dir="ltr">kein</td></tr><tr><td lang="de" dir="ltr">Das ist ____ der Schlüssel.</td><td lang="de" dir="ltr">nicht</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ Das ist ein Tasche.</div><div class="good" dir="ltr">✅ Das ist eine Tasche.</div><p dir="rtl">Tasche مؤنث → eine.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Das ist eine Handy.</div><div class="good" dir="ltr">✅ Das ist ein Handy.</div><p dir="rtl">Handy محايد → ein.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Das ist kein Brille.</div><div class="good" dir="ltr">✅ Das ist keine Brille.</div><p dir="rtl">مؤنث → keine.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Das ist nicht ein Schlüssel.</div><div class="good" dir="ltr">✅ Das ist kein Schlüssel.</div><p dir="rtl">النكرة تُنفى بـ kein.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Was ist das? — Er ist ein Stift.</div><div class="good" dir="ltr">✅ Das ist ein Stift.</div><p dir="rtl">الجواب الأول يبدأ بـ Das.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">اسأل: ما هذا؟</td><td lang="de" dir="ltr">Was ist das?</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">قل: هذا مفتاح.</td><td lang="de" dir="ltr">Das ist ein Schlüssel.</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">قل: هذه نظارة.</td><td lang="de" dir="ltr">Das ist eine Brille.</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">قل: هذا ليس هاتفًا.</td><td lang="de" dir="ltr">Das ist kein Handy.</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">قل: هذه ليست حقيبة.</td><td lang="de" dir="ltr">Das ist keine Tasche.</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">عرّف الشيء ثم أعد ذكره (Stift).</td><td lang="de" dir="ltr">Das ist ein Stift. Der Stift ist neu.</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">اسأل: هل هذا دفترك؟</td><td lang="de" dir="ltr">Ist das dein Heft?</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">قل: أحتاج قلمًا.</td><td lang="de" dir="ltr">Ich brauche einen Stift.</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">انفِ: Das ist der Schlüssel.</td><td lang="de" dir="ltr">Das ist nicht der Schlüssel.</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">اكتب جملة عن حقيبة الظهر.</td><td lang="de" dir="ltr">Der Rucksack ist praktisch.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="ar" dir="rtl" class="ar">ein/eine + مفردات الأشياء.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="ar" dir="rtl" class="ar">kein/keine والنفي.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">لعبة: عرّف 10 أشياء في غرفتك.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 3 Sequenz 3 (Was ist das?): Alltagsgegenstände, bestimmter/unbestimmter Artikel, Negationsartikel.<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 5, Teil 1 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=aqdtJPbKLLc" target="_blank" rel="noopener">https://www.youtube.com/watch?v=aqdtJPbKLLc</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">مادة أصلية؛ لا اقتباس نصي من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L05-T01 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

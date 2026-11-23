@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مراجعة الدرس الثاني — الأشخاص والأشياء وطلب التوضيح · Wiederholung Lektion 2 — Personen, Dinge, Nachfragen</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#A99425; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#A99425,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L02-R">← العودة للداشبورد والاختبار</a> · L02-R</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>مراجعة الدرس الثاني — الأشخاص والأشياء وطلب التوضيح</h1>
+    <h2>Wiederholung Lektion 2 — Personen, Dinge, Nachfragen — Lektion 2, Teil R</h2>
+    <p class="sub">Konsolidierung: T01–T03 · Selbsttest · Fehlerklinik · Wiederholungsplan</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 1</span>
+    <span class="chip">Video 0:00</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L02-R</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">تثبيت التقديم الشخصي والمهن بأداة صحيحة.</li><li dir="rtl">تثبيت أدوات التعريف والجمع والألوان.</li><li dir="rtl">تثبيت عبارات طلب التكرار والمعنى.</li><li dir="rtl">تشخيص الأخطاء الخمسة الشائعة وتصحيحها.</li><li dir="rtl">قياس التقدّم باختبار من 20 بندًا.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=RGF-Ckgjqo0" target="_blank" rel="noopener">https://www.youtube.com/watch?v=RGF-Ckgjqo0</a></div>
+  <div class="card">
+    <h3>Wiederholung — Rückblick auf Lektion 2 (kein neues Video)</h3>
+    <p class="meta">0:00 · <a class="link" href="https://www.youtube.com/watch?v=RGF-Ckgjqo0" target="_blank" rel="noopener">https://www.youtube.com/watch?v=RGF-Ckgjqo0</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">ليست مشاهدة جديدة: هذه جلسة تثبيت لما أُنجز في T01–T03.</li><li dir="rtl">أعد قراءة بطاقتك الشخصية بصوت مسموع مرة واحدة.</li><li dir="rtl">راجع أخطاءك المسجّلة قبل البدء بالتمارين.</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">ما أكثر خطأ تكرر معك في هذا الدرس؟</li><li dir="rtl">هل تستطيع وصف مكتبك في 3 جمل دون نظر؟</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">مراجعة سريعة: المهن <small dir="ltr">Berufe (Wiederholung)</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Journalist / die Journalistin</td><td lang="ar" dir="rtl" class="ar">الصحفي/الصحفية</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Lehrer / die Lehrerin</td><td lang="ar" dir="rtl" class="ar">المعلّم/المعلّمة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Arzt / die Ärztin</td><td lang="ar" dir="rtl" class="ar">الطبيب/الطبيبة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Ingenieur / die Ingenieurin</td><td lang="ar" dir="rtl" class="ar">المهندس/المهندسة</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">مراجعة: الأشياء <small dir="ltr">Gegenstände (Wiederholung)</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Tisch / die Stühle</td><td lang="ar" dir="rtl" class="ar">الطاولة/الكراسي</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Lampe / die Lampen</td><td lang="ar" dir="rtl" class="ar">المصباح/المصابيح</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Regal / die Regale</td><td lang="ar" dir="rtl" class="ar">الرف/الأرفف</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Schlüssel / die Schlüssel</td><td lang="ar" dir="rtl" class="ar">المفتاح/المفاتيح</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">مراجعة: عبارات <small dir="ltr">Redemittel (Wiederholung)</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Wie bitte?</td><td lang="ar" dir="rtl" class="ar">عفوًا؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Können Sie das wiederholen?</td><td lang="ar" dir="rtl" class="ar">هل يمكنك الإعادة؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Wie schreibt man das?</td><td lang="ar" dir="rtl" class="ar">كيف تُكتب؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Ich verstehe nicht.</td><td lang="ar" dir="rtl" class="ar">لا أفهم.</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Was bedeutet das?</td><td lang="ar" dir="rtl" class="ar">ماذا يعني؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Langsamer, bitte.</td><td lang="ar" dir="rtl" class="ar">أبطأ من فضلك.</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Ich heiße Mohamed, komme aus Ägypten und bin Student.</div><div class="gloss" dir="rtl">اسمي محمد، من مصر، وطالب.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Das ist ein Tisch. Der Tisch ist braun.</div><div class="gloss" dir="rtl">هذه طاولة. الطاولة بنّية.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Das ist eine Lampe. Sie ist neu.</div><div class="gloss" dir="rtl">هذا مصباح. إنه جديد.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich brauche einen Stift, keinen Kugelschreiber.</div><div class="gloss" dir="rtl">أحتاج قلمًا رصاصًا، لا قلم حبر.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wie bitte? Können Sie das wiederholen?</div><div class="gloss" dir="rtl">عفوًا؟ هل يمكنك الإعادة؟</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wie schreibt man „Schlüssel“?</div><div class="gloss" dir="rtl">كيف تُكتب كلمة Schlüssel؟</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">خريطة القواعد الثلاث في الدرس <small dir="ltr">Grammatik-Überblick Lektion 2</small></h3><p dir="rtl" class="bodyar">ثلاثة محاور: (1) الفعل في الموضع الثاني، (2) جنس الاسم وأداته وجمعه، (3) نهاية الصفة بعد ein/eine. أعد ترتيبها ذهنيًا قبل كل تمرين.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">المحور</th><th lang="ar" dir="rtl">القاعدة</th><th lang="ar" dir="rtl">مثال صحيح</th><th lang="ar" dir="rtl">خطأ شائع</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">الموضع الثاني</td><td lang="ar" dir="rtl" class="ar">الفعل ثانٍ دائمًا</td><td lang="de" dir="ltr">Heute arbeite ich.</td><td lang="de" dir="ltr">Heute ich arbeite.</td></tr><tr><td lang="ar" dir="rtl" class="ar">الجنس والجمع</td><td lang="ar" dir="rtl" class="ar">der/die/das + لاحقة جمع</td><td lang="de" dir="ltr">die Stühle</td><td lang="de" dir="ltr">die Stuhle</td></tr><tr><td lang="ar" dir="rtl" class="ar">صفة اللون</td><td lang="ar" dir="rtl" class="ar">-er مذكر، -e مؤنث</td><td lang="de" dir="ltr">ein roter Stuhl</td><td lang="de" dir="ltr">ein rot Stuhl</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">المراجعة تركّز على الأخطاء لا على إعادة الشرح.</p></div></div><div class="card"><h3 dir="rtl">النفي في سياق الدرس <small dir="ltr">Negation im Kontext</small></h3><p dir="rtl" class="bodyar">nicht للفعل والصفة والاسم المعرّف، kein/keine للاسم النكرة. راقب أداة الاسم قبل اختيار النفي.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الجملة</th><th lang="ar" dir="rtl">النفي الصحيح</th><th lang="ar" dir="rtl">السبب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Der Stuhl ist blau.</td><td lang="de" dir="ltr">Der Stuhl ist nicht blau.</td><td lang="ar" dir="rtl" class="ar">اسم معرّف</td></tr><tr><td lang="de" dir="ltr">Ich habe ein Heft.</td><td lang="de" dir="ltr">Ich habe kein Heft.</td><td lang="ar" dir="rtl" class="ar">اسم نكرة</td></tr><tr><td lang="de" dir="ltr">Ich verstehe das.</td><td lang="de" dir="ltr">Ich verstehe das nicht.</td><td lang="ar" dir="rtl" class="ar">نفي الفعل</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">kein يأخذ نهايات ein نفسها: keinen (مذكر نصب)، keine، kein.</p></div></div><div class="card"><h3 dir="rtl">الضمائر بعد التعريف <small dir="ltr">Pronomen nach das ist</small></h3><p dir="rtl" class="bodyar">بعد التعريف نشير بضمير يطابق الجنس: der→er، die→sie، das→es. وهذا مفتاح جمل الوصف القصيرة.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">التعريف</th><th lang="ar" dir="rtl">الضمير</th><th lang="ar" dir="rtl">جملة وصف</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Das ist der Ausweis.</td><td lang="de" dir="ltr">er</td><td lang="de" dir="ltr">Er ist neu.</td></tr><tr><td lang="de" dir="ltr">Das ist die Tasche.</td><td lang="de" dir="ltr">sie</td><td lang="de" dir="ltr">Sie ist leicht.</td></tr><tr><td lang="de" dir="ltr">Das ist das Buch.</td><td lang="de" dir="ltr">es</td><td lang="de" dir="ltr">Es ist schwer.</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">خطأ متكرر: استخدام sie لكل شيء.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Stuhl</td><td lang="ar" dir="rtl" class="ar">شتول</td><td lang="ar" dir="rtl" class="ar">شتول</td></tr><tr><td lang="de" dir="ltr">Schlüssel</td><td lang="ar" dir="rtl" class="ar">شلوسل</td><td lang="ar" dir="rtl" class="ar">شلُوسِل</td></tr><tr><td lang="de" dir="ltr">Journalist</td><td lang="ar" dir="rtl" class="ar">جورناليست</td><td lang="ar" dir="rtl" class="ar">جورناليست</td></tr><tr><td lang="de" dir="ltr">verheiratet</td><td lang="ar" dir="rtl" class="ar">فرهايراتِت</td><td lang="ar" dir="rtl" class="ar">فِرهايْراتِت</td></tr><tr><td lang="de" dir="ltr">grün</td><td lang="ar" dir="rtl" class="ar">جرون</td><td lang="ar" dir="rtl" class="ar">گرُون</td></tr><tr><td lang="de" dir="ltr">kaputt</td><td lang="ar" dir="rtl" class="ar">كابوت</td><td lang="ar" dir="rtl" class="ar">كابُوت</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Ich heiße Mohamed und komme aus Ägypten.</div><div class="de" dir="ltr">Das ist ein roter Stuhl.</div><div class="de" dir="ltr">Können Sie das wiederholen?</div><div class="de" dir="ltr">Wie schreibt man das?</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Selbsthören 1 — Aufnahme der eigenen Vorstellung <small dir="ltr">تسجيل ذاتي (لا فيديو جديد)</small></h3><p dir="rtl">سجّل تقديمك (5 جمل)، ثم استمع وحدّد: هل الفعل في الموضع الثاني في كل جملة؟</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=RGF-Ckgjqo0" target="_blank" rel="noopener">https://www.youtube.com/watch?v=RGF-Ckgjqo0</a><ul class="qs"><li dir='rtl'>هل نطقت J وß صحيحًا؟</li><li dir='rtl'>كم جملة احتاجت إعادة؟</li></ul></div><div class="card"><h3>2. Selbsthören 2 — Wiederholung mit Partner <small dir="ltr">حوار ثنائي</small></h3><p dir="rtl">نفّذ حوار طلب التكرار، ثم بدّلا الأدوار.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=RGF-Ckgjqo0" target="_blank" rel="noopener">https://www.youtube.com/watch?v=RGF-Ckgjqo0</a><ul class="qs"><li dir='rtl'>هل استخدمتما Sie/du بشكل متسق؟</li><li dir='rtl'>هل كانت عبارة الطلب مهذبة؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: عيادة الأخطاء <small dir="ltr">Lesen: Fehlerklinik</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="de" dir="ltr">FALSCH: Heute ich arbeite in Berlin.</td><td lang="ar" dir="rtl" class="ar">خطأ: ترتيب الفعل بعد الظرف.</td></tr><tr><td lang="de" dir="ltr">1</td><td lang="de" dir="ltr">RICHTIG: Heute arbeite ich in Berlin.</td><td lang="ar" dir="rtl" class="ar">الصواب: الفعل ثانٍ.</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="de" dir="ltr">FALSCH: ein rot Stuhl</td><td lang="ar" dir="rtl" class="ar">خطأ: نهاية الصفة ناقصة.</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="de" dir="ltr">RICHTIG: ein roter Stuhl</td><td lang="ar" dir="rtl" class="ar">الصواب: -er للمذكر.</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="de" dir="ltr">FALSCH: Das ist der Schlüssel. Sie ist neu.</td><td lang="ar" dir="rtl" class="ar">خطأ: ضمير لا يطابق الجنس.</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="de" dir="ltr">RICHTIG: Er ist neu.</td><td lang="ar" dir="rtl" class="ar">الصواب: der → er.</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">ما خطأ الجملة الأولى؟</p><p class="qa" dir="ltr">Die Wortstellung: das Verb muss an Position 2 stehen.</p></div><div class="qitem"><p dir="rtl" class="qq">ما تصحيح الصفة بعد ein للمذكر؟</p><p class="qa" dir="ltr">ein roter Stuhl.</p></div><div class="qitem"><p dir="rtl" class="qq">ما ضمير der Schlüssel؟</p><p class="qa" dir="ltr">er.</p></div><div class="qitem"><p dir="rtl" class="qq">أي قاعدة تخص الجملة الثالثة؟</p><p class="qa" dir="ltr">Pronomen nach dem Genus.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار مراجعة شامل</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Wie heißt du und woher kommst du?</td><td lang="de" dir="ltr">Ich heiße Ashraf und komme aus Syrien.</td></tr><tr><td lang="de" dir="ltr">Was bist du von Beruf?</td><td lang="de" dir="ltr">Ich bin Lehrer. Und du?</td></tr><tr><td lang="de" dir="ltr">Ich bin Student. Wie heißt das auf Deutsch?</td><td lang="de" dir="ltr">Das ist ein Regal. Es ist braun.</td></tr><tr><td lang="de" dir="ltr">Wie bitte? Wie schreibt man das?</td><td lang="de" dir="ltr">R-E-G-A-L. Verstehst du?</td></tr><tr><td lang="de" dir="ltr">Ja, danke. Ich brauche kein Regal, nur einen Stift.</td><td lang="de" dir="ltr">Kein Problem!</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">قدّم نفسك في 5 جمل، ثم صِف مكتبك في 3 جمل، ثم اطلب التكرار مرة واحدة — كتسجيل واحد متصل.</p>
+  <ul><li dir="rtl">الفعل ثانٍ في كل جملة.</li><li dir="rtl">أداة كل اسم صحيحة.</li><li dir="rtl">ضمير الوصف مطابق للجنس.</li><li dir="rtl">عبارة طلب مهذبة وواضحة.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب 8 جمل مراجعة: تقديم (3)، وصف (3)، طلب توضيح (2).</p><pre class="model">Ich heiße Mohamed und komme aus Ägypten.
+Ich bin Student.
+Ich spreche Arabisch und Deutsch.
+Mein Tisch ist grau.
+Die Lampe ist neu.
+Das Regal ist braun und groß.
+Wie bitte? Können Sie das wiederholen?
+Wie schreibt man „Regal“?</pre><p dir="rtl">صحّح خمس جمل خاطئة من (عيادة الأخطاء).</p><pre class="model">Heute arbeite ich in Berlin.
+ein roter Stuhl
+Er ist neu.
+Ich habe kein Heft.
+Ich verstehe das nicht.</pre><ul><li dir="rtl">لا أخطاء في ترتيب الفعل.</li><li dir="rtl">أدوات ونهايات صحيحة.</li><li dir="rtl">علامات ترقيم سليمة.</li><li dir="rtl">ثماني جمل كاملة على الأقل.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>R1 · <span dir="rtl">أكمل بالأداة أو النهاية الصحيحة.</span></h3><div class="de" dir="ltr">____ Tisch ist braun.</div><div class="de" dir="ltr">Ich brauche ein____ Stift.</div><div class="de" dir="ltr">eine rot____ Lampe</div><div class="de" dir="ltr">____ Stühle sind neu.</div></div><div class="card"><h3>R2 · <span dir="rtl">صِل الخطأ بتصحيحه.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Heute ich arbeite.</td><td lang="de" dir="ltr">Heute arbeite ich.</td></tr><tr><td lang="de" dir="ltr">ein rot Stuhl</td><td lang="de" dir="ltr">ein roter Stuhl</td></tr><tr><td lang="de" dir="ltr">Das ist der Schlüssel. Sie ist neu.</td><td lang="de" dir="ltr">Er ist neu.</td></tr><tr><td lang="de" dir="ltr">Ich habe nicht Auto.</td><td lang="de" dir="ltr">Ich habe kein Auto.</td></tr></tbody></table></div></div><div class="card"><h3>R3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">wiederholen / Sie / Können / das</div><div class="de" dir="ltr">ist / Die Lampe / neu</div><div class="de" dir="ltr">kein / Ich / Regal / brauche</div></div><div class="card"><h3>R4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">____ kommen aus Syrien. <span class="opts">[ Er | Sie | Es ]</span></div><div class="de" dir="ltr">Das ist ____ Tasche. <span class="opts">[ mein | meine | meinen ]</span></div><div class="de" dir="ltr">Wie ____ man „Schlüssel“? <span class="opts">[ schreibt | schreiben | schreibst ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>R1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">____ Tisch ist braun.</td><td lang="de" dir="ltr">Der</td></tr><tr><td lang="de" dir="ltr">Ich brauche ein____ Stift.</td><td lang="de" dir="ltr">en</td></tr><tr><td lang="de" dir="ltr">eine rot____ Lampe</td><td lang="de" dir="ltr">e</td></tr><tr><td lang="de" dir="ltr">____ Stühle sind neu.</td><td lang="de" dir="ltr">Die</td></tr></tbody></table></div><h3>R2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Heute ich arbeite.</td><td lang="de" dir="ltr">Heute arbeite ich.</td></tr><tr><td lang="de" dir="ltr">ein rot Stuhl</td><td lang="de" dir="ltr">ein roter Stuhl</td></tr><tr><td lang="de" dir="ltr">Das ist der Schlüssel. Sie ist neu.</td><td lang="de" dir="ltr">Er ist neu.</td></tr><tr><td lang="de" dir="ltr">Ich habe nicht Auto.</td><td lang="de" dir="ltr">Ich habe kein Auto.</td></tr></tbody></table></div><h3>R3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">wiederholen / Sie / Können / das</td><td lang="de" dir="ltr">Können Sie das wiederholen?</td></tr><tr><td lang="de" dir="ltr">ist / Die Lampe / neu</td><td lang="de" dir="ltr">Die Lampe ist neu.</td></tr><tr><td lang="de" dir="ltr">kein / Ich / Regal / brauche</td><td lang="de" dir="ltr">Ich brauche kein Regal.</td></tr></tbody></table></div><h3>R4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">____ kommen aus Syrien.</td><td lang="de" dir="ltr">Sie</td></tr><tr><td lang="de" dir="ltr">Das ist ____ Tasche.</td><td lang="de" dir="ltr">meine</td></tr><tr><td lang="de" dir="ltr">Wie ____ man „Schlüssel“?</td><td lang="de" dir="ltr">schreibt</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ Heute ich arbeite.</div><div class="good" dir="ltr">✅ Heute arbeite ich.</div><p dir="rtl">الفعل ثانٍ بعد الظرف.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ ein rot Stuhl</div><div class="good" dir="ltr">✅ ein roter Stuhl</div><p dir="rtl">نهاية -er للمذكر بعد ein.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Das ist der Schlüssel. Sie ist neu.</div><div class="good" dir="ltr">✅ Er ist neu.</div><p dir="rtl">der → er.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich habe nicht Auto.</div><div class="good" dir="ltr">✅ Ich habe kein Auto.</div><p dir="rtl">نكرة → kein.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Was?</div><div class="good" dir="ltr">✅ Wie bitte?</div><p dir="rtl">أدب الطلب.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 20 · النجاح: 14/20</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">أداة Tisch</td><td lang="de" dir="ltr">der</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">جمع der Stuhl</td><td lang="de" dir="ltr">die Stühle</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">أداة Lampe</td><td lang="de" dir="ltr">die</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">أداة Fenster</td><td lang="de" dir="ltr">das</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">صفة: ein ____ Stuhl (rot)</td><td lang="de" dir="ltr">roter</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">صفة: eine ____ Lampe (blau)</td><td lang="de" dir="ltr">blaue</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">ضمير der Ausweis</td><td lang="de" dir="ltr">er</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">ضمير die Tasche</td><td lang="de" dir="ltr">sie</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">ضمير das Buch</td><td lang="de" dir="ltr">es</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">نفي: Ich habe ein Heft.</td><td lang="de" dir="ltr">Ich habe kein Heft.</td></tr><tr><td lang="de" dir="ltr">11</td><td lang="ar" dir="rtl" class="ar">نفي: Der Stuhl ist blau.</td><td lang="de" dir="ltr">Der Stuhl ist nicht blau.</td></tr><tr><td lang="de" dir="ltr">12</td><td lang="ar" dir="rtl" class="ar">اطلب التكرار (رسمي).</td><td lang="de" dir="ltr">Können Sie das wiederholen?</td></tr><tr><td lang="de" dir="ltr">13</td><td lang="ar" dir="rtl" class="ar">اسأل عن المعنى.</td><td lang="de" dir="ltr">Was bedeutet das?</td></tr><tr><td lang="de" dir="ltr">14</td><td lang="ar" dir="rtl" class="ar">اسأل عن الكتابة.</td><td lang="de" dir="ltr">Wie schreibt man das?</td></tr><tr><td lang="de" dir="ltr">15</td><td lang="ar" dir="rtl" class="ar">قل: لم أفهم.</td><td lang="de" dir="ltr">Ich verstehe nicht.</td></tr><tr><td lang="de" dir="ltr">16</td><td lang="ar" dir="rtl" class="ar">ترتيب: heute / ich / arbeite</td><td lang="de" dir="ltr">Heute arbeite ich.</td></tr><tr><td lang="de" dir="ltr">17</td><td lang="ar" dir="rtl" class="ar">ما مهنتك؟</td><td lang="de" dir="ltr">Was bist du von Beruf?</td></tr><tr><td lang="de" dir="ltr">18</td><td lang="ar" dir="rtl" class="ar">من أين أنت؟</td><td lang="de" dir="ltr">Woher kommst du?</td></tr><tr><td lang="de" dir="ltr">19</td><td lang="ar" dir="rtl" class="ar">صف مصباحًا بجملتين.</td><td lang="de" dir="ltr">Das ist eine Lampe. Sie ist neu.</td></tr><tr><td lang="de" dir="ltr">20</td><td lang="ar" dir="rtl" class="ar">تهجّى Regal.</td><td lang="de" dir="ltr">R-E-G-A-L</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="ar" dir="rtl" class="ar">الأخطاء الخمسة من عيادة الأخطاء.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="ar" dir="rtl" class="ar">الضمائر والنفي في جمل جديدة.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+10 أيام</td><td lang="ar" dir="rtl" class="ar">إعادة الاختبار كاملًا بلا نظر.</td><td lang="de" dir="ltr">30</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 1–2 (نطاق الجلسات T01–T03).<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">مواد مُجمَّعة</td><td dir="rtl">مراجعة مبنية على محتوى L02-T01 وL02-T02 وL02-T03 المُنتَج والمدقَّق فقط.</td><td dir="rtl">consolidation_of_audited_material</td></tr><tr><td dir="rtl">لا فيديو جديد</td><td dir="rtl">جلسة تثبيت؛ لا ادعاء مشاهدة أو اقتباس.</td><td dir="rtl">no_new_video</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L02-R · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

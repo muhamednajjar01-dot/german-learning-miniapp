@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>التقنية في الحياة اليومية — الجمع والأعطال · Technik im Alltag — Plural und Defekte</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#389F78; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#389F78,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L06-T02">← العودة للداشبورد والاختبار</a> · L06-T02</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>التقنية في الحياة اليومية — الجمع والأعطال</h1>
+    <h2>Technik im Alltag — Plural und Defekte — Lektion 6, Teil 2</h2>
+    <p class="sub">Plural der Geräte, nicht/kein, Nachfragen · A1, Kapitel 2</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 2</span>
+    <span class="chip">Video 43:36</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L06-S2</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تجمع أسماء الأجهزة بشكل صحيح.</li><li dir="rtl">أن تصف عطلًا: funktioniert nicht.</li><li dir="rtl">أن تفرّق بين nicht وkein في سياق الأجهزة.</li><li dir="rtl">أن تسأل: Welcher/Welche/Welches …?</li><li dir="rtl">أن تطلب إصلاحًا بجملة مهذبة.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=g64jFRCA5DQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=g64jFRCA5DQ</a></div>
+  <div class="card">
+    <h3>Lektion 6, Teile 2–3 — Technik und Reparatur</h3>
+    <p class="meta">43:36 · <a class="link" href="https://www.youtube.com/watch?v=g64jFRCA5DQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=g64jFRCA5DQ</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">أسماء الأجهزة في الجمع: der Drucker → die Drucker.</li><li dir="rtl">وصف العطل: Das Gerät funktioniert nicht.</li><li dir="rtl">السؤال عن جهاز محدد: Welcher Drucker?</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">أي جهاز يحتاج إصلاحًا؟</li><li dir="rtl">هل قال die Drucker أم die Drucker؟ (بلا نهاية)</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">أجهزة (مفرد/جمع) <small dir="ltr">Geräte Singular/Plural</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Drucker / die Drucker</td><td lang="ar" dir="rtl" class="ar">الطابعة/الطابعات</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Laptop / die Laptops</td><td lang="ar" dir="rtl" class="ar">الحاسوب/الحواسيب</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Bildschirm / die Bildschirme</td><td lang="ar" dir="rtl" class="ar">الشاشة/الشاشات</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Tastatur / die Tastaturen</td><td lang="ar" dir="rtl" class="ar">لوحة المفاتيح/اللوحات</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Kabel / die Kabel</td><td lang="ar" dir="rtl" class="ar">الكابل/الكابلات</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Gerät / die Geräte</td><td lang="ar" dir="rtl" class="ar">الجهاز/الأجهزة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Stecker / die Stecker</td><td lang="ar" dir="rtl" class="ar">القابس/القوابس</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Batterie / die Batterien</td><td lang="ar" dir="rtl" class="ar">البطارية/البطاريات</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">أعطال وإصلاح <small dir="ltr">Defekt und Reparatur</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">kaputt</td><td lang="ar" dir="rtl" class="ar">معطّل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">funktionieren</td><td lang="ar" dir="rtl" class="ar">يعمل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">reparieren</td><td lang="ar" dir="rtl" class="ar">يُصلح</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">austauschen</td><td lang="ar" dir="rtl" class="ar">يستبدل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Problem, -e</td><td lang="ar" dir="rtl" class="ar">المشكلة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Reparatur, -en</td><td lang="ar" dir="rtl" class="ar">الإصلاح</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Techniker, -</td><td lang="ar" dir="rtl" class="ar">الفني</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Hilfe!</td><td lang="ar" dir="rtl" class="ar">مساعدة!</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">سؤال واختيار <small dir="ltr">Fragen und Auswahl</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Welcher Drucker?</td><td lang="ar" dir="rtl" class="ar">أي طابعة؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Welche Tastatur?</td><td lang="ar" dir="rtl" class="ar">أي لوحة مفاتيح؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Welches Kabel?</td><td lang="ar" dir="rtl" class="ar">أي كابل؟</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">dieser / diese / dieses</td><td lang="ar" dir="rtl" class="ar">هذا/هذه</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der hier / die hier</td><td lang="ar" dir="rtl" class="ar">هذا هنا/هذه هنا</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">beide</td><td lang="ar" dir="rtl" class="ar">كلاهما</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Die Drucker funktionieren nicht.</div><div class="gloss" dir="rtl">الطابعات لا تعمل.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Welcher Laptop ist kaputt? — Dieser hier.</div><div class="gloss" dir="rtl">أي حاسوب معطّل؟ — هذا هنا.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Ich brauche ein neues Kabel.</div><div class="gloss" dir="rtl">أحتاج كابلًا جديدًا.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Die Batterie ist leer.</div><div class="gloss" dir="rtl">البطارية فارغة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Können Sie das Gerät reparieren?</div><div class="gloss" dir="rtl">هل يمكنك إصلاح الجهاز؟</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Der Techniker kommt morgen.</div><div class="gloss" dir="rtl">الفني يأتي غدًا.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir haben ein Problem mit dem Drucker.</div><div class="gloss" dir="rtl">لدينا مشكلة مع الطابعة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Beide Bildschirme sind neu.</div><div class="gloss" dir="rtl">كلتا الشاشتين جديدتان.</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">جمع الأجهزة <small dir="ltr">Plural der Geräte</small></h3><p dir="rtl" class="bodyar">أكثر الأجهزة المنتهية بـ -er تبقى بلا تغيير في الجمع: der Drucker → die Drucker. المنتهية بـ -ung/-ion تأخذ -en. بعضها يأخذ -e أو -s.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">المفرد</th><th lang="ar" dir="rtl">الجمع</th><th lang="ar" dir="rtl">اللاحقة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Drucker</td><td lang="de" dir="ltr">die Drucker</td><td lang="ar" dir="rtl" class="ar">بلا تغيير</td></tr><tr><td lang="de" dir="ltr">der Bildschirm</td><td lang="de" dir="ltr">die Bildschirme</td><td lang="de" dir="ltr">-e</td></tr><tr><td lang="de" dir="ltr">die Tastatur</td><td lang="de" dir="ltr">die Tastaturen</td><td lang="de" dir="ltr">-en</td></tr><tr><td lang="de" dir="ltr">der Laptop</td><td lang="de" dir="ltr">die Laptops</td><td lang="de" dir="ltr">-s</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">في الجمع تكون الأداة دائمًا die.</p></div></div><div class="card"><h3 dir="rtl">nicht أم kein <small dir="ltr">nicht und kein bei Geräten</small></h3><p dir="rtl" class="bodyar">kein/keine تنفي اسمًا نكرة؛ nicht تنفي الفعل أو الصفة أو الاسم المعرّف. مع الأجهزة المعروفة نستخدم nicht.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الجملة</th><th lang="ar" dir="rtl">النفي الصحيح</th><th lang="ar" dir="rtl">السبب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Das ist ein Drucker.</td><td lang="de" dir="ltr">Das ist kein Drucker.</td><td lang="ar" dir="rtl" class="ar">نكرة</td></tr><tr><td lang="de" dir="ltr">Der Drucker funktioniert.</td><td lang="de" dir="ltr">Der Drucker funktioniert nicht.</td><td lang="ar" dir="rtl" class="ar">فعل</td></tr><tr><td lang="de" dir="ltr">Die Batterie ist voll.</td><td lang="de" dir="ltr">Die Batterie ist nicht voll.</td><td lang="ar" dir="rtl" class="ar">صفة</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">لا نقول Der Drucker funktioniert kein.</p></div></div><div class="card"><h3 dir="rtl">السؤال بـ welcher <small dir="ltr">Fragewort welcher</small></h3><p dir="rtl" class="bodyar">welcher للمذكر، welche للمؤنث والجمع، welches للمحايد. تأخذ نفس نهايات der/die/das في الرفع.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الجنس</th><th lang="ar" dir="rtl">الأداة</th><th lang="ar" dir="rtl">مثال</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">مذكر</td><td lang="de" dir="ltr">welcher</td><td lang="de" dir="ltr">Welcher Drucker?</td></tr><tr><td lang="ar" dir="rtl" class="ar">مؤنث</td><td lang="de" dir="ltr">welche</td><td lang="de" dir="ltr">Welche Tastatur?</td></tr><tr><td lang="ar" dir="rtl" class="ar">محايد</td><td lang="de" dir="ltr">welches</td><td lang="de" dir="ltr">Welches Kabel?</td></tr><tr><td lang="ar" dir="rtl" class="ar">جمع</td><td lang="de" dir="ltr">welche</td><td lang="de" dir="ltr">Welche Geräte?</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">الجواب: dieser/diese/dieses أو der hier/die hier.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Gerät</td><td lang="ar" dir="rtl" class="ar">جريت</td><td lang="ar" dir="rtl" class="ar">گِرِيت</td></tr><tr><td lang="de" dir="ltr">reparieren</td><td lang="ar" dir="rtl" class="ar">ريباريرن</td><td lang="ar" dir="rtl" class="ar">رِيبَارِيرِن</td></tr><tr><td lang="de" dir="ltr">Batterie</td><td lang="ar" dir="rtl" class="ar">باتري</td><td lang="ar" dir="rtl" class="ar">باتِرِي</td></tr><tr><td lang="de" dir="ltr">Stecker</td><td lang="ar" dir="rtl" class="ar">شتيكر</td><td lang="ar" dir="rtl" class="ar">شْتِيكَر</td></tr><tr><td lang="de" dir="ltr">Techniker</td><td lang="ar" dir="rtl" class="ar">تيشنيکر</td><td lang="ar" dir="rtl" class="ar">تِيشْنِيكَر</td></tr><tr><td lang="de" dir="ltr">Welcher</td><td lang="ar" dir="rtl" class="ar">فيلشر</td><td lang="ar" dir="rtl" class="ar">ڤِيلْشَر</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Die Drucker funktionieren nicht.</div><div class="de" dir="ltr">Welcher Laptop ist kaputt?</div><div class="de" dir="ltr">Ich brauche ein neues Kabel.</div><div class="de" dir="ltr">Können Sie das reparieren?</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Im Technikraum <small dir="ltr">تمارين صوتية داخلية (لا نص فيديو موثّق)</small></h3><p dir="rtl">اسمع واكتب الجهازين المعطّلين.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=g64jFRCA5DQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=g64jFRCA5DQ</a><ul class="qs"><li dir='rtl'>من سيتصل به المتحدث؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — Singular oder Plural? <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع أربع كلمات وسجّل: مفرد أم جمع؟</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=g64jFRCA5DQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=g64jFRCA5DQ</a><ul class="qs"><li dir='rtl'>أي كلمة كانت جمعًا؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: مشكلة مع الطابعة <small dir="ltr">Lesen: Ein Problem mit dem Drucker</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Guten Tag, ich habe ein Problem.</td><td lang="ar" dir="rtl" class="ar">نهارك سعيد، لديّ مشكلة.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Mein Drucker funktioniert nicht.</td><td lang="ar" dir="rtl" class="ar">طابعتي لا تعمل.</td></tr><tr><td lang="de" dir="ltr">Techniker</td><td lang="de" dir="ltr">Welcher Drucker ist es?</td><td lang="ar" dir="rtl" class="ar">أي طابعة هي؟</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Der Drucker hier. Die Batterie ist auch leer.</td><td lang="ar" dir="rtl" class="ar">الطابعة هنا. البطارية أيضًا فارغة.</td></tr><tr><td lang="de" dir="ltr">Techniker</td><td lang="de" dir="ltr">Kein Problem. Ich repariere das Gerät morgen.</td><td lang="ar" dir="rtl" class="ar">لا مشكلة. سأصلح الجهاز غدًا.</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">ما المشكلة الأولى؟</p><p class="qa" dir="ltr">Der Drucker funktioniert nicht.</p></div><div class="qitem"><p dir="rtl" class="qq">ماذا عن البطارية؟</p><p class="qa" dir="ltr">Sie ist leer.</p></div><div class="qitem"><p dir="rtl" class="qq">متى سيصلح الفني الجهاز؟</p><p class="qa" dir="ltr">Morgen.</p></div><div class="qitem"><p dir="rtl" class="qq">أي طابعة؟</p><p class="qa" dir="ltr">Der Drucker hier.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: طلب إصلاح</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Guten Tag! Kann ich helfen?</td><td lang="de" dir="ltr">Ja, mein Laptop ist kaputt.</td></tr><tr><td lang="de" dir="ltr">Welcher Laptop ist es?</td><td lang="de" dir="ltr">Dieser hier. Er funktioniert nicht.</td></tr><tr><td lang="de" dir="ltr">Ist die Batterie leer?</td><td lang="de" dir="ltr">Nein, die Batterie ist voll.</td></tr><tr><td lang="de" dir="ltr">Ich repariere ihn morgen.</td><td lang="de" dir="ltr">Danke! Was kostet die Reparatur?</td></tr><tr><td lang="de" dir="ltr">Zwanzig Euro.</td><td lang="de" dir="ltr">Okay, danke!</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">صِف جهازين معطّلين واطلب إصلاحهما.</p>
+  <ul><li dir="rtl">جمع الأجهزة صحيح.</li><li dir="rtl">nicht مع الفعل.</li><li dir="rtl">welcher/welche صحيحة.</li><li dir="rtl">طلب مهذب.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب 5 جمل: 2 عن أجهزة معطلة، 2 عن جمع، 1 طلب إصلاح.</p><pre class="model">Mein Drucker funktioniert nicht.
+Die Laptops sind alt.
+Die Tastaturen sind neu.
+Ich brauche ein neues Kabel.
+Können Sie das Gerät reparieren?</pre><p dir="rtl">اكتب سؤالين بـ welcher/welche.</p><pre class="model">Welcher Drucker ist kaputt?
+Welche Tastatur brauchst du?</pre><ul><li dir="rtl">جمع صحيح.</li><li dir="rtl">nicht/kein في محلها.</li><li dir="rtl">خمس جمل كاملة.</li><li dir="rtl">علامات ترقيم سليمة.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">اكتب الجمع الصحيح.</span></h3><div class="de" dir="ltr">der Drucker → die ____</div><div class="de" dir="ltr">der Bildschirm → die ____</div><div class="de" dir="ltr">die Tastatur → die ____</div><div class="de" dir="ltr">das Gerät → die ____</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل الكلمة بمعناها.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Stecker</td><td lang="ar" dir="rtl" class="ar">القابس</td></tr><tr><td lang="de" dir="ltr">die Batterie</td><td lang="ar" dir="rtl" class="ar">البطارية</td></tr><tr><td lang="de" dir="ltr">der Techniker</td><td lang="ar" dir="rtl" class="ar">الفني</td></tr><tr><td lang="de" dir="ltr">die Reparatur</td><td lang="ar" dir="rtl" class="ar">الإصلاح</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">nicht / Der Drucker / funktioniert</div><div class="de" dir="ltr">ist / Welcher Laptop / kaputt</div><div class="de" dir="ltr">reparieren / Können Sie / das Gerät</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">Die Drucker funktionieren ____. <span class="opts">[ kein | keine | nicht ]</span></div><div class="de" dir="ltr">Das ist ____ Drucker, das ist ein Kopierer. <span class="opts">[ kein | keine | nicht ]</span></div><div class="de" dir="ltr">____ Tastatur ist neu? <span class="opts">[ Welcher | Welche | Welches ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Drucker → die ____</td><td lang="de" dir="ltr">Drucker</td></tr><tr><td lang="de" dir="ltr">der Bildschirm → die ____</td><td lang="de" dir="ltr">Bildschirme</td></tr><tr><td lang="de" dir="ltr">die Tastatur → die ____</td><td lang="de" dir="ltr">Tastaturen</td></tr><tr><td lang="de" dir="ltr">das Gerät → die ____</td><td lang="de" dir="ltr">Geräte</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">der Stecker</td><td lang="ar" dir="rtl" class="ar">القابس</td></tr><tr><td lang="de" dir="ltr">die Batterie</td><td lang="ar" dir="rtl" class="ar">البطارية</td></tr><tr><td lang="de" dir="ltr">der Techniker</td><td lang="ar" dir="rtl" class="ar">الفني</td></tr><tr><td lang="de" dir="ltr">die Reparatur</td><td lang="ar" dir="rtl" class="ar">الإصلاح</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">nicht / Der Drucker / funktioniert</td><td lang="de" dir="ltr">Der Drucker funktioniert nicht.</td></tr><tr><td lang="de" dir="ltr">ist / Welcher Laptop / kaputt</td><td lang="de" dir="ltr">Welcher Laptop ist kaputt?</td></tr><tr><td lang="de" dir="ltr">reparieren / Können Sie / das Gerät</td><td lang="de" dir="ltr">Können Sie das Gerät reparieren?</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Die Drucker funktionieren ____.</td><td lang="de" dir="ltr">nicht</td></tr><tr><td lang="de" dir="ltr">Das ist ____ Drucker, das ist ein Kopierer.</td><td lang="de" dir="ltr">kein</td></tr><tr><td lang="de" dir="ltr">____ Tastatur ist neu?</td><td lang="de" dir="ltr">Welche</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ Die Drucker funktionieren kein.</div><div class="good" dir="ltr">✅ Die Drucker funktionieren nicht.</div><p dir="rtl">نفي الفعل بـ nicht.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ die Druckers</div><div class="good" dir="ltr">✅ die Drucker</div><p dir="rtl">Drucker جمعها بلا -s.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Welcher Tastatur?</div><div class="good" dir="ltr">✅ Welche Tastatur?</div><p dir="rtl">Tastatur مؤنث → welche.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich brauche ein neues Kabel. (خطأ النهاية)</div><div class="good" dir="ltr">✅ Ich brauche ein neues Kabel.</div><p dir="rtl">الصيغة صحيحة: ein neues Kabel (محايد نصب).</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Das Gerät funktioniert nicht gut. (المقصود: معطّل تمامًا)</div><div class="good" dir="ltr">✅ Das Gerät ist kaputt.</div><p dir="rtl">kaputt أدق للعطل الكامل.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">جمع der Drucker؟</td><td lang="de" dir="ltr">die Drucker</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">جمع die Tastatur؟</td><td lang="de" dir="ltr">die Tastaturen</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">قل: الطابعات لا تعمل.</td><td lang="de" dir="ltr">Die Drucker funktionieren nicht.</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">قل: أي حاسوب معطّل؟</td><td lang="de" dir="ltr">Welcher Laptop ist kaputt?</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">قل: أي لوحة مفاتيح تحتاج؟</td><td lang="de" dir="ltr">Welche Tastatur brauchst du?</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">قل: البطارية فارغة.</td><td lang="de" dir="ltr">Die Batterie ist leer.</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">اطلب إصلاح الجهاز.</td><td lang="de" dir="ltr">Können Sie das Gerät reparieren?</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">انفِ: Das ist ein Drucker.</td><td lang="de" dir="ltr">Das ist kein Drucker.</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">انفِ: Die Batterie ist voll.</td><td lang="de" dir="ltr">Die Batterie ist nicht voll.</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">اكتب جملة عن كابل جديد.</td><td lang="de" dir="ltr">Ich brauche ein neues Kabel.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="ar" dir="rtl" class="ar">جمع الأجهزة.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="de" dir="ltr">nicht/kein + welcher.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">حوار إصلاح كامل شفهيًا.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 2: Gegenstände am Arbeitsplatz, Pluralendungen, Negation, Fragen.<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 6, Teile 2–3 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=g64jFRCA5DQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=g64jFRCA5DQ</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">مادة أصلية؛ لا اقتباس من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L06-T02 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>

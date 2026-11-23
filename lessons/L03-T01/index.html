@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>هذه عائلتي · Das ist meine Familie</title>
+<style>
+:root {
+  --navy:#0E1526; --ink:#1B2438; --muted:#6B7280; --soft:#F4F6FA;
+  --line:#D8DEE9; --accent:#999936; --amber:#FFB020; --green:#0F9E8F;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#0B1120; color:var(--ink);
+  font-family:"Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size:15px; line-height:1.7; }
+.ar { font-family:"Dubai","Segoe UI",sans-serif; }
+.sheet { max-width:920px; margin:24px auto; background:#fff;
+  border-radius:22px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.35); }
+.hero { background:linear-gradient(160deg,#1A2340 0%,#0E1526 62%);
+  color:#fff; padding:46px 44px 38px; position:relative; }
+.hero:after { content:""; position:absolute; inset:auto 0 0 0; height:6px;
+  background:linear-gradient(90deg,#999936,#FFB020,#0F9E8F); }
+.kicker { color:var(--amber); font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; margin:0 0 14px; }
+.hero h1 { font-family:"Dubai",sans-serif; font-size:40px; margin:0 0 6px;
+  font-weight:700; }
+.hero h2 { font-size:17px; margin:0; color:#C9D3E4; font-weight:400; }
+.hero .sub { color:#8899AA; font-size:13px; margin-top:8px; }
+.chips { display:flex; gap:10px; flex-wrap:wrap; padding:18px 44px;
+  background:var(--soft); border-bottom:1px solid var(--line); }
+.chip { background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:5px 14px; font-size:12px; font-weight:600; }
+.body { padding:34px 44px 56px; }
+.sec { display:flex; align-items:center; gap:12px; margin:40px 0 16px;
+  padding-bottom:10px; border-bottom:3px solid var(--accent); }
+.secn { background:var(--accent); color:#fff; font-weight:700; font-size:13px;
+  border-radius:10px; padding:6px 11px; }
+.seca { font-family:"Dubai",sans-serif; font-size:22px; font-weight:700;
+  margin-inline-start:auto; }
+.secd { color:var(--muted); font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; }
+h3 { font-size:16px; margin:22px 0 8px; }
+h3 small { color:var(--muted); font-size:11px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:600; }
+table.tbl { width:100%; border-collapse:collapse; margin:10px 0 18px;
+  font-size:13.5px; border:1px solid var(--line); border-radius:10px;
+  overflow:hidden; }
+.tbl th { background:var(--navy); color:#fff; text-align:start;
+  padding:9px 12px; font-size:12px; }
+.tbl td { padding:9px 12px; border-top:1px solid var(--line); vertical-align:top;
+  overflow-wrap:anywhere; word-break:break-word; }
+.tbl tbody tr:nth-child(even) { background:var(--soft); }
+.card { border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  margin:16px 0; background:#fff; }
+.ex { margin:6px 0 14px; padding-inline-start:14px;
+  border-inline-start:4px solid var(--accent); direction:ltr; text-align:left; }
+.ex .de { font-size:15px; color:var(--navy); direction:ltr; text-align:left; }
+.ex .gloss { color:var(--muted); font-size:13.5px; direction:rtl; text-align:right; }
+.de { direction:ltr; text-align:left; }
+.tbl td[dir="ltr"] { direction:ltr; text-align:left; }
+.note { background:#E8F6F3; border-inline-start:5px solid var(--green);
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.note b { color:#0B6E63; font-size:12px; }
+.warn { background:#FDECEC; border-inline-start:5px solid #D14343;
+  border-radius:10px; padding:12px 14px; margin:12px 0; }
+.bodyar { font-size:15px; }
+.qs li, ul li { margin:3px 0; }
+.link { color:#397FD5; word-break:break-all; overflow-wrap:anywhere;
+  font-size:12.5px; }
+.tbl.src { table-layout:fixed; }
+.tbl.src td { vertical-align:top; }
+.src-url { margin-top:5px; text-align:left; }
+h3 small { display:inline-block; unicode-bidi:isolate; }
+.qitem { border-inline-start:3px solid var(--accent); padding-inline-start:12px;
+  margin:10px 0; }
+.qq { margin:0; font-weight:600; }
+.qa { margin:2px 0 0; color:#0B6E63; font-size:13.5px; }
+.model { background:var(--soft); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; font-family:"Consolas",monospace; font-size:13px;
+  white-space:pre-wrap; direction:ltr; text-align:left; }
+.opts { color:var(--muted); }
+.mistake { border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+  margin:10px 0; }
+.mistake .bad { color:#B91C1C; }
+.mistake .good { color:#15803D; }
+.video { position:relative; padding-bottom:56.25%; height:0; margin:12px 0 20px;
+  border-radius:14px; overflow:hidden; background:#000; }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.meta { color:var(--muted); font-size:12.5px; }
+.foot { border-top:1px solid var(--line); margin-top:34px; padding-top:14px;
+  color:var(--muted); font-size:11.5px; }
+@media (max-width:720px) {
+  .hero { padding:30px 22px; } .hero h1 { font-size:30px; }
+  .body, .chips { padding-inline:22px; }
+  .sheet { margin:0; border-radius:0; }
+  .sec { flex-wrap:wrap; }
+  .secd { margin-inline-start:0; }
+}
+
+
+/* --- GLS bidi/order contract (D-138) --- */
+html{direction:ltr}
+[dir="rtl"],.ar{direction:rtl;text-align:right;unicode-bidi:isolate}
+td[dir="rtl"],th[dir="rtl"],li[dir="rtl"],p[dir="rtl"],h1[dir="rtl"],
+h2[dir="rtl"],h3[dir="rtl"],h4[dir="rtl"]{text-align:right}
+td[dir="ltr"],th[dir="ltr"],.de,.rtl-de{direction:ltr;text-align:left;
+  unicode-bidi:isolate}
+.tw{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;max-width:100%}
+.tw>.hint{font-size:11px;color:#6B7280;margin:0 0 4px;letter-spacing:.02em}
+.tw>table{min-width:100%}
+@media (max-width:640px){.tw>table{min-width:520px}}
+
+</style>
+</head>
+<body><nav dir="rtl" style="padding:14px;background:#112038;color:white;position:sticky;top:0;z-index:100"><a style="color:#fff" href="../../?lesson=L03-T01">← العودة للداشبورد والاختبار</a> · L03-T01</nav>
+<main class="sheet">
+  <header class="hero">
+    <p class="kicker">German Learning OS · Deutsch Learning Atlas</p>
+    <h1>هذه عائلتي</h1>
+    <h2>Das ist meine Familie — Lektion 3, Teil 1</h2>
+    <p class="sub">Possessivartikel mein/meine, Familienmitglieder · A1, Kapitel 13</p>
+  </header>
+  <div class="chips" dir="ltr">
+    <span class="chip">CEFR A1.1</span>
+    <span class="chip">Modul 1</span>
+    <span class="chip">Video 24:12</span>
+    <span class="chip">180 min</span>
+    <span class="chip">L03-S1</span>
+  </div>
+  <div class="body">
+
+  <section class="objectives">
+    <h3 dir="rtl">أهداف الجلسة <small>Lernziele</small></h3>
+    <ol><li dir="rtl">أن تسمّي أفراد العائلة الأساسيين.</li><li dir="rtl">أن تستخدم mein/meine بشكل صحيح.</li><li dir="rtl">أن تقدّم شخصًا: Das ist mein Bruder. Er ist 20.</li><li dir="rtl">أن تسأل عن عائلة الآخر: Hast du Geschwister?</li><li dir="rtl">أن تصف عائلتك في 5 جمل.</li></ol>
+    <div class="note" dir="rtl"><b>قبل أن تبدأ</b>
+      <p>شاهد الفيديو أولًا كاملًا دون توقف. الملف هو التثبيت والتمرين، لا الشرح الأول.</p></div>
+  </section>
+
+  <div class="sec "><span class="secn">B</span><span class="secd" lang="de" dir="ltr">Watch first</span><span class="seca" lang="ar" dir="rtl">شاهد أولًا</span></div>
+  <div class="card" dir="ltr" lang="de"><p class="meta" dir="rtl">الفيديو لا يُضمَّن داخل الملف؛ افتح الرابط في المتصفح:</p><a class="link" href="https://www.youtube.com/watch?v=yI3_cpxetNE" target="_blank" rel="noopener">https://www.youtube.com/watch?v=yI3_cpxetNE</a></div>
+  <div class="card">
+    <h3>Lektion 3, Teil 1 — Familie und Verwandte</h3>
+    <p class="meta">24:12 · <a class="link" href="https://www.youtube.com/watch?v=yI3_cpxetNE" target="_blank" rel="noopener">https://www.youtube.com/watch?v=yI3_cpxetNE</a></p>
+    <p class="meta" dir="rtl">حالة النص: قيد التحقق — لم يُقتبس من الفيديو أي كلام منسوب للمعلّم.</p>
+    <h3 dir="rtl">على ماذا تركّز</h3>
+    <ul><li dir="rtl">كيف يقدّم المتحدث أفراد عائلته: Das ist mein Bruder.</li><li dir="rtl">الفرق بين mein وmeine بحسب جنس الاسم.</li><li dir="rtl">أسماء أفراد العائلة مع أداتها وجمعها.</li></ul>
+    <h3 dir="rtl">أسئلة بعد المشاهدة</h3>
+    <ul><li dir="rtl">من قدّم المتحدث أولًا: الأب أم الأم؟</li><li dir="rtl">هل قال mein أو meine مع Schwester؟</li></ul>
+  </div>
+
+  <div class="sec "><span class="secn">D</span><span class="secd" lang="de" dir="ltr">Wortschatz</span><span class="seca" lang="ar" dir="rtl">المفردات</span></div>
+  <h3 dir="rtl">أفراد العائلة <small dir="ltr">Familie</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">die Familie, -n</td><td lang="ar" dir="rtl" class="ar">العائلة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Mutter, die Mütter</td><td lang="ar" dir="rtl" class="ar">الأم</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Vater, die Väter</td><td lang="ar" dir="rtl" class="ar">الأب</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Eltern (Pl.)</td><td lang="ar" dir="rtl" class="ar">الوالدان</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Schwester, -n</td><td lang="ar" dir="rtl" class="ar">الأخت</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Bruder, die Brüder</td><td lang="ar" dir="rtl" class="ar">الأخ</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Geschwister (Pl.)</td><td lang="ar" dir="rtl" class="ar">الأشقاء</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Tochter, die Töchter</td><td lang="ar" dir="rtl" class="ar">الابنة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Sohn, die Söhne</td><td lang="ar" dir="rtl" class="ar">الابن</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Großmutter</td><td lang="ar" dir="rtl" class="ar">الجدة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Großvater</td><td lang="ar" dir="rtl" class="ar">الجد</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">die Tante, -n</td><td lang="ar" dir="rtl" class="ar">العمة/الخالة</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">der Onkel, -</td><td lang="ar" dir="rtl" class="ar">العم/الخال</td><td lang="de" dir="ltr"></td></tr></tbody></table></div><h3 dir="rtl">حالة وأوصاف <small dir="ltr">Status und Beschreibung</small></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th><th lang="ar" dir="rtl">ملاحظة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">verheiratet</td><td lang="ar" dir="rtl" class="ar">متزوج</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">ledig</td><td lang="ar" dir="rtl" class="ar">أعزب</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">das Kind, -er</td><td lang="ar" dir="rtl" class="ar">الطفل</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">jung</td><td lang="ar" dir="rtl" class="ar">صغير السن</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">alt</td><td lang="ar" dir="rtl" class="ar">كبير السن</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">zusammen</td><td lang="ar" dir="rtl" class="ar">معًا</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">wohnen</td><td lang="ar" dir="rtl" class="ar">يسكن</td><td lang="de" dir="ltr"></td></tr><tr><td lang="de" dir="ltr">Geschwister haben</td><td lang="ar" dir="rtl" class="ar">لديه أشقاء</td><td lang="de" dir="ltr"></td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">E</span><span class="secd" lang="de" dir="ltr">Beispiele</span><span class="seca" lang="ar" dir="rtl">أمثلة أساسية</span></div>
+  <div class="ex" dir="ltr"><div class="de" dir="ltr">Das ist meine Mutter. Sie heißt Fatima.</div><div class="gloss" dir="rtl">هذه أمي. اسمها فاطمة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Das ist mein Bruder. Er ist 20 Jahre alt.</div><div class="gloss" dir="rtl">هذا أخي. عمره 20 سنة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Meine Eltern wohnen in Kairo.</div><div class="gloss" dir="rtl">والداي يسكنان في القاهرة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Hast du Geschwister? — Ja, eine Schwester.</div><div class="gloss" dir="rtl">هل لديك أشقاء؟ — نعم، أخت واحدة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Mein Vater ist Lehrer.</div><div class="gloss" dir="rtl">أبي معلّم.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Wir wohnen zusammen in Berlin.</div><div class="gloss" dir="rtl">نسكن معًا في برلين.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Meine Großmutter ist 70 Jahre alt.</div><div class="gloss" dir="rtl">جدتي عمرها 70 سنة.</div></div><div class="ex" dir="ltr"><div class="de" dir="ltr">Das ist mein Onkel und das ist meine Tante.</div><div class="gloss" dir="rtl">هذا عمي وهذه عمتي.</div></div>
+
+  <div class="sec "><span class="secn">F</span><span class="secd" lang="de" dir="ltr">Grammatik</span><span class="seca" lang="ar" dir="rtl">القواعد</span></div>
+  <div class="card"><h3 dir="rtl">mein / meine حسب جنس الاسم <small dir="ltr">Possessivartikel mein/meine</small></h3><p dir="rtl" class="bodyar">mein للمذكر والمحايد، meine للمؤنث والجمع. النهاية تتبع الاسم الذي يليها لا المتكلم.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الجنس</th><th lang="ar" dir="rtl">الأداة</th><th lang="ar" dir="rtl">مثال</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">مذكر</td><td lang="de" dir="ltr">mein</td><td lang="de" dir="ltr">mein Vater</td></tr><tr><td lang="ar" dir="rtl" class="ar">محايد</td><td lang="de" dir="ltr">mein</td><td lang="de" dir="ltr">mein Kind</td></tr><tr><td lang="ar" dir="rtl" class="ar">مؤنث</td><td lang="de" dir="ltr">meine</td><td lang="de" dir="ltr">meine Mutter</td></tr><tr><td lang="ar" dir="rtl" class="ar">جمع</td><td lang="de" dir="ltr">meine</td><td lang="de" dir="ltr">meine Eltern</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">خطأ شائع: &quot;mein Mutter&quot; — الصحيح meine Mutter.</p></div></div><div class="card"><h3 dir="rtl">تقديم شخص: Das ist … <small dir="ltr">Personen vorstellen</small></h3><p dir="rtl" class="bodyar">نقدّم الشخص بـ Das ist + الاسم مع الأداة الملكية، ثم جملة ثانية عن العمر أو المهنة بضمير يطابق الجنس.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">التقديم</th><th lang="ar" dir="rtl">الجملة الثانية</th><th lang="ar" dir="rtl">الضمير</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Das ist mein Bruder.</td><td lang="de" dir="ltr">Er ist Student.</td><td lang="de" dir="ltr">er</td></tr><tr><td lang="de" dir="ltr">Das ist meine Schwester.</td><td lang="de" dir="ltr">Sie ist Lehrerin.</td><td lang="de" dir="ltr">sie</td></tr><tr><td lang="de" dir="ltr">Das sind meine Eltern.</td><td lang="de" dir="ltr">Sie wohnen in Kairo.</td><td lang="ar" dir="rtl" class="ar">sie (جمع)</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">مع الجمع نستخدم das sind لا das ist.</p></div></div><div class="card"><h3 dir="rtl">السؤال عن العائلة <small dir="ltr">Fragen zur Familie</small></h3><p dir="rtl" class="bodyar">أسئلة شائعة: Hast du Geschwister? Wie heißt deine Mutter? Wo wohnen deine Eltern? لاحظ تحوّل mein إلى dein/deine في السؤال.</p><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">المعنى</th><th lang="ar" dir="rtl">جواب نموذجي</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Hast du Geschwister?</td><td lang="ar" dir="rtl" class="ar">هل لديك أشقاء؟</td><td lang="de" dir="ltr">Ja, einen Bruder.</td></tr><tr><td lang="de" dir="ltr">Wie heißt deine Mutter?</td><td lang="ar" dir="rtl" class="ar">ما اسم أمك؟</td><td lang="de" dir="ltr">Sie heißt Fatima.</td></tr><tr><td lang="de" dir="ltr">Wo wohnen deine Eltern?</td><td lang="ar" dir="rtl" class="ar">أين يسكن والداك؟</td><td lang="de" dir="ltr">In Kairo.</td></tr></tbody></table></div><div class="note"><b>ملاحظة</b><p dir="rtl">dein للمذكر/المحايد، deine للمؤنث والجمع.</p></div></div>
+
+  <div class="sec "><span class="secn">G</span><span class="secd" lang="de" dir="ltr">Aussprache</span><span class="seca" lang="ar" dir="rtl">النطق</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الحرف</th><th lang="ar" dir="rtl">كيف تُنطق</th><th lang="ar" dir="rtl">تقريب</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Familie</td><td lang="ar" dir="rtl" class="ar">فاميليِه</td><td lang="ar" dir="rtl" class="ar">فامِيلْيِه</td></tr><tr><td lang="de" dir="ltr">Mutter</td><td lang="ar" dir="rtl" class="ar">موتر</td><td lang="ar" dir="rtl" class="ar">مُوتَر</td></tr><tr><td lang="de" dir="ltr">Bruder</td><td lang="ar" dir="rtl" class="ar">برودر</td><td lang="ar" dir="rtl" class="ar">بْرُودَر</td></tr><tr><td lang="de" dir="ltr">Schwester</td><td lang="ar" dir="rtl" class="ar">شفيستر</td><td lang="ar" dir="rtl" class="ar">شڤِيسْتَر</td></tr><tr><td lang="de" dir="ltr">Geschwister</td><td lang="ar" dir="rtl" class="ar">جشفيستر</td><td lang="ar" dir="rtl" class="ar">گِشڤِيسْتَر</td></tr><tr><td lang="de" dir="ltr">Großmutter</td><td lang="ar" dir="rtl" class="ar">جروسموتر</td><td lang="ar" dir="rtl" class="ar">گْرُوسْمُوتَر</td></tr></tbody></table></div>
+  <h3>Shadowing</h3><div class="de" dir="ltr">Das ist meine Mutter.</div><div class="de" dir="ltr">Das ist mein Bruder.</div><div class="de" dir="ltr">Meine Eltern wohnen in Kairo.</div><div class="de" dir="ltr">Hast du Geschwister?</div>
+
+  <div class="sec "><span class="secn">H</span><span class="secd" lang="de" dir="ltr">Hören</span><span class="seca" lang="ar" dir="rtl">الاستماع</span></div>
+  <div class="card"><h3>1. Hörübung 1 — Familienfoto <small dir="ltr">تمارين صوتية داخلية (لا نص فيديو موثّق)</small></h3><p dir="rtl">اسمع الوصف وحدّد عدد أفراد العائلة المذكورين.</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=yI3_cpxetNE" target="_blank" rel="noopener">https://www.youtube.com/watch?v=yI3_cpxetNE</a><ul class="qs"><li dir='rtl'>كم أخًا ذُكر؟</li><li dir='rtl'>أين يسكن الوالدان؟</li></ul></div><div class="card"><h3>2. Hörübung 2 — Fragen <small dir="ltr">تمارين صوتية داخلية</small></h3><p dir="rtl">اسمع الأسئلة الثلاثة واكتب أداة الملكية المستخدمة (mein/dein).</p><a class="link" dir="ltr" href="https://www.youtube.com/watch?v=yI3_cpxetNE" target="_blank" rel="noopener">https://www.youtube.com/watch?v=yI3_cpxetNE</a><ul class="qs"><li dir='rtl'>أي أداة سمعت في السؤال الثاني؟</li></ul></div>
+
+  <div class="sec "><span class="secn">I</span><span class="secd" lang="de" dir="ltr">Lesen</span><span class="seca" lang="ar" dir="rtl">القراءة</span></div>
+  <h3 dir="rtl">القراءة: عائلتي <small dir="ltr">Lesen: Meine Familie</small></h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl" data-bidi="de-ar"><thead><tr><th lang="ar" dir="rtl">المتحدّث</th><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich heiße Sara und bin 22 Jahre alt.</td><td lang="ar" dir="rtl" class="ar">اسمي سارة وعمري 22 سنة.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Meine Familie ist klein: mein Vater, meine Mutter und ich.</td><td lang="ar" dir="rtl" class="ar">عائلتي صغيرة: أبي وأمي وأنا.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Mein Vater ist Arzt, meine Mutter ist Lehrerin.</td><td lang="ar" dir="rtl" class="ar">أبي طبيب وأمي معلّمة.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Ich habe keinen Bruder, aber eine Schwester.</td><td lang="ar" dir="rtl" class="ar">ليس لدي أخ، لكن لدي أخت.</td></tr><tr><td lang="de" dir="ltr">Text</td><td lang="de" dir="ltr">Meine Schwester ist verheiratet und hat zwei Kinder.</td><td lang="ar" dir="rtl" class="ar">أختي متزوجة ولديها طفلان.</td></tr></tbody></table></div>
+  <h3>أسئلة الفهم</h3><div class="qitem"><p dir="rtl" class="qq">كم عمر سارة؟</p><p class="qa" dir="ltr">22 Jahre.</p></div><div class="qitem"><p dir="rtl" class="qq">ما مهنة الأب؟</p><p class="qa" dir="ltr">Arzt.</p></div><div class="qitem"><p dir="rtl" class="qq">هل لديها أخ؟</p><p class="qa" dir="ltr">Nein, sie hat keinen Bruder.</p></div><div class="qitem"><p dir="rtl" class="qq">كم طفلًا لأختها؟</p><p class="qa" dir="ltr">Zwei Kinder.</p></div>
+
+  <div class="sec "><span class="secn">J</span><span class="secd" lang="de" dir="ltr">Sprechen</span><span class="seca" lang="ar" dir="rtl">التحدث</span></div>
+  <h3 dir="rtl">حوار: عائلتي</h3>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">محمد (A)</th><th lang="ar" dir="rtl">أشرف (B)</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Hast du Geschwister?</td><td lang="de" dir="ltr">Ja, einen Bruder und eine Schwester.</td></tr><tr><td lang="de" dir="ltr">Wie heißt dein Bruder?</td><td lang="de" dir="ltr">Er heißt Omar. Er ist 18.</td></tr><tr><td lang="de" dir="ltr">Und deine Schwester?</td><td lang="de" dir="ltr">Sie heißt Lina und ist verheiratet.</td></tr><tr><td lang="de" dir="ltr">Wo wohnen deine Eltern?</td><td lang="de" dir="ltr">In Damaskus. Und deine?</td></tr><tr><td lang="de" dir="ltr">Meine Eltern wohnen in Kairo.</td><td lang="de" dir="ltr">Schön! Familie ist wichtig.</td></tr></tbody></table></div>
+  <h3 dir="rtl">تدريب فردي</h3>
+  <p dir="rtl">قدّم عائلتك في 5 جمل: عدد الأفراد، اسمان، مهنة واحدة، مكان السكن.</p>
+  <ul><li dir="rtl">mein/meine صحيحة مع كل اسم.</li><li dir="rtl">ضمير مناسب بعد التقديم.</li><li dir="rtl">das sind مع الجمع.</li><li dir="rtl">نطق Schwester وGeschwister مقبول.</li></ul>
+
+  <div class="sec "><span class="secn">K</span><span class="secd" lang="de" dir="ltr">Schreiben</span><span class="seca" lang="ar" dir="rtl">الكتابة</span></div>
+  <p dir="rtl">اكتب 6 جمل عن عائلتك.</p><pre class="model">Meine Familie ist klein.
+Mein Vater heißt Ali und ist Ingenieur.
+Meine Mutter heißt Mona.
+Ich habe einen Bruder.
+Mein Bruder ist Student.
+Wir wohnen in Kairo.</pre><p dir="rtl">اكتب سؤالين عن عائلة صديقك.</p><pre class="model">Hast du Geschwister?
+Wo wohnen deine Eltern?</pre><ul><li dir="rtl">mein/meine مطابقة للجنس.</li><li dir="rtl">الأرقام والسنوات صحيحة.</li><li dir="rtl">حرف كبير في بداية الجمل.</li><li dir="rtl">علامة استفهام في السؤالين.</li></ul>
+
+  <div class="sec "><span class="secn">L</span><span class="secd" lang="de" dir="ltr">Übungen</span><span class="seca" lang="ar" dir="rtl">التدريبات</span></div>
+  <div class="card"><h3>E1 · <span dir="rtl">ضع mein أو meine.</span></h3><div class="de" dir="ltr">____ Vater</div><div class="de" dir="ltr">____ Mutter</div><div class="de" dir="ltr">____ Eltern</div><div class="de" dir="ltr">____ Bruder</div></div><div class="card"><h3>E2 · <span dir="rtl">صِل الكلمة بمعناها.</span></h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">العربية</th></tr></thead><tbody><tr><td lang="de" dir="ltr">die Schwester</td><td lang="ar" dir="rtl" class="ar">الأخت</td></tr><tr><td lang="de" dir="ltr">der Bruder</td><td lang="ar" dir="rtl" class="ar">الأخ</td></tr><tr><td lang="de" dir="ltr">die Eltern</td><td lang="ar" dir="rtl" class="ar">الوالدان</td></tr><tr><td lang="de" dir="ltr">die Großmutter</td><td lang="ar" dir="rtl" class="ar">الجدة</td></tr></tbody></table></div></div><div class="card"><h3>E3 · <span dir="rtl">أعد ترتيب الكلمات.</span></h3><div class="de" dir="ltr">ist / Das / meine Mutter</div><div class="de" dir="ltr">wohnen / Meine Eltern / in Kairo</div><div class="de" dir="ltr">du / Hast / Geschwister</div></div><div class="card"><h3>E4 · <span dir="rtl">اختر الصيغة الصحيحة.</span></h3><div class="de" dir="ltr">Das ist ____ Schwester. <span class="opts">[ mein | meine ]</span></div><div class="de" dir="ltr">Das ist ____ Kind. <span class="opts">[ mein | meine ]</span></div><div class="de" dir="ltr">____ Eltern sind alt. <span class="opts">[ Mein | Meine ]</span></div></div>
+
+  <div class="sec "><span class="secn">L.2</span><span class="secd" lang="de" dir="ltr">Lösungen</span><span class="seca" lang="ar" dir="rtl">الحلول</span></div>
+  <h3>E1</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">____ Vater</td><td lang="de" dir="ltr">mein</td></tr><tr><td lang="de" dir="ltr">____ Mutter</td><td lang="de" dir="ltr">meine</td></tr><tr><td lang="de" dir="ltr">____ Eltern</td><td lang="de" dir="ltr">meine</td></tr><tr><td lang="de" dir="ltr">____ Bruder</td><td lang="de" dir="ltr">mein</td></tr></tbody></table></div><h3>E2</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">Deutsch</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">die Schwester</td><td lang="ar" dir="rtl" class="ar">الأخت</td></tr><tr><td lang="de" dir="ltr">der Bruder</td><td lang="ar" dir="rtl" class="ar">الأخ</td></tr><tr><td lang="de" dir="ltr">die Eltern</td><td lang="ar" dir="rtl" class="ar">الوالدان</td></tr><tr><td lang="de" dir="ltr">die Großmutter</td><td lang="ar" dir="rtl" class="ar">الجدة</td></tr></tbody></table></div><h3>E3</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">ist / Das / meine Mutter</td><td lang="de" dir="ltr">Das ist meine Mutter.</td></tr><tr><td lang="de" dir="ltr">wohnen / Meine Eltern / in Kairo</td><td lang="de" dir="ltr">Meine Eltern wohnen in Kairo.</td></tr><tr><td lang="de" dir="ltr">du / Hast / Geschwister</td><td lang="de" dir="ltr">Hast du Geschwister?</td></tr></tbody></table></div><h3>E4</h3><div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">Das ist ____ Schwester.</td><td lang="de" dir="ltr">meine</td></tr><tr><td lang="de" dir="ltr">Das ist ____ Kind.</td><td lang="de" dir="ltr">mein</td></tr><tr><td lang="de" dir="ltr">____ Eltern sind alt.</td><td lang="de" dir="ltr">Meine</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">M</span><span class="secd" lang="de" dir="ltr">Häufige Fehler</span><span class="seca" lang="ar" dir="rtl">أخطاء شائعة</span></div>
+  <div class="mistake"><div class="bad" dir="ltr">❌ mein Mutter</div><div class="good" dir="ltr">✅ meine Mutter</div><p dir="rtl">Mutter مؤنث → meine.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Das ist mein Eltern.</div><div class="good" dir="ltr">✅ Das sind meine Eltern.</div><p dir="rtl">الجمع يحتاج das sind + meine.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Das ist meine Bruder. Sie ist 20.</div><div class="good" dir="ltr">✅ Das ist mein Bruder. Er ist 20.</div><p dir="rtl">Bruder مذكر → mein + er.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Ich habe ein Bruder.</div><div class="good" dir="ltr">✅ Ich habe einen Bruder.</div><p dir="rtl">بعد haben نصب: einen.</p></div><div class="mistake"><div class="bad" dir="ltr">❌ Wie heißt mein Mutter?</div><div class="good" dir="ltr">✅ Wie heißt deine Mutter?</div><p dir="rtl">في السؤال عن المخاطب نستخدم dein/deine.</p></div>
+
+  <div class="sec "><span class="secn">N</span><span class="secd" lang="de" dir="ltr">Assessment</span><span class="seca" lang="ar" dir="rtl">اختبار الجلسة</span></div>
+  <p class="meta" dir="rtl">الدرجة الكاملة: 10 · النجاح: 7/10</p>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="de" dir="ltr">#</th><th lang="ar" dir="rtl">السؤال</th><th lang="ar" dir="rtl">الإجابة</th></tr></thead><tbody><tr><td lang="de" dir="ltr">1</td><td lang="ar" dir="rtl" class="ar">أداة Mutter الملكية؟</td><td lang="de" dir="ltr">meine</td></tr><tr><td lang="de" dir="ltr">2</td><td lang="ar" dir="rtl" class="ar">أداة Vater الملكية؟</td><td lang="de" dir="ltr">mein</td></tr><tr><td lang="de" dir="ltr">3</td><td lang="ar" dir="rtl" class="ar">جمع Eltern مع das؟</td><td lang="de" dir="ltr">Das sind meine Eltern.</td></tr><tr><td lang="de" dir="ltr">4</td><td lang="ar" dir="rtl" class="ar">قل: هذه أختي.</td><td lang="de" dir="ltr">Das ist meine Schwester.</td></tr><tr><td lang="de" dir="ltr">5</td><td lang="ar" dir="rtl" class="ar">قل: هذا أخي، عمره 18.</td><td lang="de" dir="ltr">Das ist mein Bruder. Er ist 18.</td></tr><tr><td lang="de" dir="ltr">6</td><td lang="ar" dir="rtl" class="ar">اسأل: هل لديك أشقاء؟</td><td lang="de" dir="ltr">Hast du Geschwister?</td></tr><tr><td lang="de" dir="ltr">7</td><td lang="ar" dir="rtl" class="ar">اسأل عن اسم أم صديقك.</td><td lang="de" dir="ltr">Wie heißt deine Mutter?</td></tr><tr><td lang="de" dir="ltr">8</td><td lang="ar" dir="rtl" class="ar">انفِ: Ich habe einen Bruder.</td><td lang="de" dir="ltr">Ich habe keinen Bruder.</td></tr><tr><td lang="de" dir="ltr">9</td><td lang="ar" dir="rtl" class="ar">صف جدتك بجملة.</td><td lang="de" dir="ltr">Meine Großmutter ist alt.</td></tr><tr><td lang="de" dir="ltr">10</td><td lang="ar" dir="rtl" class="ar">اكتب جملة عن سكن العائلة.</td><td lang="de" dir="ltr">Meine Familie wohnt in Kairo.</td></tr></tbody></table></div>
+
+  <div class="sec nobreak"><span class="secn">O</span><span class="secd" lang="de" dir="ltr">Wiederholung</span><span class="seca" lang="ar" dir="rtl">خطة المراجعة</span></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl"><thead><tr><th lang="ar" dir="rtl">الموعد</th><th lang="ar" dir="rtl">ما تراجعه</th><th lang="ar" dir="rtl">الدقائق</th></tr></thead><tbody><tr><td lang="ar" dir="rtl" class="ar">+1 يوم</td><td lang="ar" dir="rtl" class="ar">مفردات العائلة + mein/meine.</td><td lang="de" dir="ltr">15</td></tr><tr><td lang="ar" dir="rtl" class="ar">+3 أيام</td><td lang="ar" dir="rtl" class="ar">تقديم شخص بجملتين.</td><td lang="de" dir="ltr">20</td></tr><tr><td lang="ar" dir="rtl" class="ar">+7 أيام</td><td lang="ar" dir="rtl" class="ar">وصف العائلة كاملًا شفهيًا.</td><td lang="de" dir="ltr">25</td></tr></tbody></table></div>
+
+  <div class="sec "><span class="secn">P</span><span class="secd" lang="de" dir="ltr">Notizen &amp; Quellen</span><span class="seca" lang="ar" dir="rtl">ملاحظاتي والمصادر</span></div>
+  <div class="card" style="min-height:160px"><p class="meta" dir="rtl">اكتب هنا ما تلاحظه…</p></div>
+  <div class="tw" tabindex="0" role="region" aria-label="table, scrollable"><div class="hint" dir="ltr">← scroll horizontally · مرّر أفقيًا →</div><table class="tbl src"><colgroup><col style="width:22%"><col style="width:56%"><col style="width:22%"></colgroup><thead><tr><th>التصنيف</th><th>المصدر</th><th>الحالة</th></tr></thead><tbody><tr><td dir="rtl">المنهج الرسمي</td><td dir="rtl">Goethe-Institut, Deutsch Online A1 — Inhalt, Kapitel 13 (Familie und Freunde): Familienmitglieder, Possessivartikel.<div class="src-url" dir="ltr"><a class="link" href="https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html" target="_blank" rel="noopener">https://www.goethe.de/de/spr/kur/pri/stu/deu/a1.html</a></div></td><td dir="rtl">verified_scope_anchor</td></tr><tr><td dir="rtl">الفيديو</td><td dir="rtl">Lektion 3, Teil 1 — رابط المشاهدة الرسمي.<div class="src-url" dir="ltr"><a class="link" href="https://www.youtube.com/watch?v=yI3_cpxetNE" target="_blank" rel="noopener">https://www.youtube.com/watch?v=yI3_cpxetNE</a></div></td><td dir="rtl">linked_not_transcribed</td></tr><tr><td dir="rtl">المحتوى</td><td dir="rtl">شرح وتمارين أصلية؛ لا اقتباس نصي من الفيديو.</td><td dir="rtl">original_content</td></tr></tbody></table></div>
+
+  <div class="foot">
+    <p dir="rtl">German Learning OS · L03-T01 · أُنتج من نموذج محتوى واحد؛ نفس المحتوى يُستخدم في كل الصيغ.</p>
+    <p dir="ltr" class="meta">DOCX · PDF · HTML · Markdown</p>
+  </div>
+  </div>
+</main>
+</body></html>
