@@ -15,7 +15,7 @@
   const start = tg && tg.initDataUnsafe && tg.initDataUnsafe.start_param || '';
   const initialDoc = params.get('lesson') || (/^L\d{2}-(T\d{2}|R)$/.test(start) ? start : '');
   const S = {cat:null, boot:null, summary:null, view:initialDoc?'lesson':params.get('view')||'home',
-    doc:initialDoc, unit:null, tab:hash.get('view')==='quiz'?'quiz':'read', quiz:null, results:null, answers:{}, marks:{}, busy:false};
+    doc:initialDoc, unit:null, tab:params.get('tab')==='quiz'||hash.get('view')==='quiz'?'quiz':'read', quiz:null, results:null, answers:{}, marks:{}, busy:false};
   if (hash.get('view') && hash.get('view')!=='quiz') S.view=hash.get('view');
   const doc = id => S.cat.lessons.find(d => d.doc_id === id);
   const unit = n => S.cat.units.find(u => u.id === Number(n));
