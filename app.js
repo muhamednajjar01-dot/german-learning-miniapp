@@ -38,8 +38,10 @@
   }
   function authenticated() { if (S.boot) return true; toast('افتح البوت واضغط ابدأ الدراسة، أو استخدم /login لربط المتصفح.'); return false; }
   async function refresh() {
-    const loaded=await Promise.all([call('bootstrap'),call('study.summary')]);
-    S.boot=loaded[0]; S.summary=loaded[1];
+    // One request carries the study summary now. The fallback keeps an older
+    // deployed backend usable during a rollout window.
+    const boot=await call('bootstrap',{summary:true});
+    S.boot=boot; S.summary=boot.summary||await call('study.summary');
     $('notice').textContent='';
     $('who').innerHTML='<bdi>'+esc(S.boot.student.name_ar)+'</bdi> · <bdi dir="rtl">'+S.boot.done_count+' من 37</bdi>';
     $('dueCount').textContent=S.summary.due.length||'';
