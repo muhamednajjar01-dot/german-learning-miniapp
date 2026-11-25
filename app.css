@@ -8,3 +8,5 @@
 /* Light surfaces retain the canonical per-lesson accent colors. */
 .unit,.panel,.stat,.resource,.lesson-card{box-shadow:0 5px 22px #33544408}
 .eyebrow{color:#846321}.tabs button.active{color:#234d3b}.btn.primary:hover{background:#edcb85}.unit:hover{background:#fcfefc}.logo{box-shadow:0 3px 12px #a2752920}
+button.resource{width:100%;text-align:right;color:var(--ink);cursor:pointer;font:inherit}
+button.resource:disabled{cursor:progress}

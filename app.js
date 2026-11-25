@@ -26,13 +26,39 @@
   const link = (text, url, cls) => '<a class="btn '+(cls||'')+'" href="'+esc(url)+'" target="_blank" rel="noopener">'+esc(text)+'</a>';
   let toastTimer;
   function toast(text) { $('toast').textContent=text; $('toast').classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>$('toast').classList.remove('show'),3500); }
+  function toastHTML(html, ms) { $('toast').innerHTML=html; $('toast').classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>$('toast').classList.remove('show'),ms||6500); }
+  const BOT='https://t.me/Deutsch099_bot';
+  function newRequestId() { return crypto.randomUUID?crypto.randomUUID():'rq'+Date.now()+Math.random().toString(16).slice(2); }
+  // One file path for bot buttons and dashboard buttons: the server decides the
+  // recipient (signed session) and the Telegram file id (registry).
+  async function requestFile(payload, btn) {
+    if (!authenticated()) return;
+    if (btn && btn.disabled) return;
+    if (btn) { btn.disabled = true; btn.dataset.busy = '1'; }
+    toast('جارٍ إرسال الملف إلى محادثتك مع البوت…');
+    try {
+      const res = await call('study.file.request', Object.assign({request_id:newRequestId()}, payload));
+      toastHTML('<span>تم إرسال الملف إلى محادثتك مع البوت ✓</span> <a href="'+BOT+'" target="_blank" rel="noopener">افتح البوت</a>');
+      if (res && res.duplicate) toast('الملف في الطريق بالفعل.');
+    } catch(e) { toast(e.message); }
+    finally { if (btn && btn.isConnected) { btn.disabled = false; delete btn.dataset.busy; } }
+  }
   async function call(action, body) {
     const abort = new AbortController(), timer = setTimeout(()=>abort.abort(),45000);
     try {
       const response = await fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},
         body:JSON.stringify({initData:tg && tg.initData || '',accessToken:access,action:action,body:body||{}}),signal:abort.signal});
       const result=await response.json();
-      if (!result.ok) throw new Error(result.error==='unauthorized'?'افتح التطبيق من البوت أو استخدم /login لربط المتصفح.':result.error==='busy'?'الخادم مشغول لحظيًا. حاول مرة ثانية.':'تعذّر تنفيذ الطلب. حاول مرة ثانية.');
+      if (!result.ok) throw new Error({
+        unauthorized:'افتح التطبيق من البوت أو استخدم /login لربط المتصفح.',
+        busy:'الخادم مشغول لحظيًا. حاول مرة ثانية.',
+        unknown_action:'التسليم المباشر للملفات قيد التفعيل على الخادم. اطلب الملف الآن من قائمة الدرس في البوت.',
+        unknown_resource:'هذا الملف غير مسجّل في مكتبة المشروع.',
+        no_telegram_link:'حسابك غير مربوط بتيليجرام. أرسل /login للبوت ثم أعد المحاولة.',
+        duplicate_in_flight:'الملف في الطريق بالفعل — انتظر لحظتين.',
+        bot_not_started:'افتح @Deutsch099_bot واضغط Start، ثم أعد طلب الملف.',
+        invalid_request:'طلب غير صالح.'
+      }[result.error]||'تعذّر تنفيذ الطلب. حاول مرة ثانية.');
       return result;
     } finally { clearTimeout(timer); }
   }
@@ -40,7 +66,7 @@
   async function refresh() {
     // One request carries the study summary now. The fallback keeps an older
     // deployed backend usable during a rollout window.
-    const boot=await call('bootstrap',{summary:true});
+    const boot=await call('bootstrap',{summary:true,account:true});
     S.boot=boot; S.summary=boot.summary||await call('study.summary');
     $('notice').textContent='';
     $('who').innerHTML='<bdi>'+esc(S.boot.student.name_ar)+'</bdi> · <bdi dir="rtl">'+S.boot.done_count+' من 37</bdi>';
@@ -83,7 +109,7 @@
   function atlas() { return '<div class="section-title"><h2>خريطة كتابك</h2><span class="muted">12 وحدة · 4 Modules</span></div><div class="atlas"><div class="wheel">'+wheel()+'</div><div class="grid">'+unitCards()+'</div></div>'; }
   function home() {
     const next=S.boot&&doc(S.boot.next_doc_id),done=S.boot?S.boot.done_count:0;
-    let html='<div class="panel hero" style="--accent:'+(next?next.accent:'#b02739')+'"><div><div class="eyebrow">مساحتك للدراسة · A1.1</div><h1>'+(S.boot?'نكمّل من آخر خطوة؟':'أهلًا بك في مساحة الألمانية')+'</h1>';
+    let html='<div class="panel hero" style="--accent:'+(next?next.accent:'#b02739')+'"><div><div class="eyebrow">مساحتك للدراسة · A1.1</div><h1>'+(S.boot?'نكمّل من آخر خطوة؟':S.pending?'بنجهّز مساحتك…':'أهلًا بك في مساحة الألمانية')+'</h1>';
     if(next)html+='<h2 class="de">'+esc(next.title_de)+'</h2><p class="muted">'+esc(next.title_ar)+' · Lektion '+next.lektion+'</p>';
     else html+='<p class="muted">'+(S.boot?'أكملت الجلسات كلها. وقت المراجعة والتثبيت.':'الكتاب، الدروس، الفيديوهات والاختبارات في مكان واحد.')+'</p>';
     html+='<div class="progress"><i style="width:'+Math.round(done/37*100)+'%"></i></div><div class="fraction">'+(S.boot?done+' من 37 جلسة مكتملة':'اربط حسابك لحفظ تقدمك')+'</div></div><div class="row">'+(next?button('استكمل دراستي ←','lesson:'+next.doc_id,'primary'):button('تصفّح الوحدات','view:atlas','primary'))+'</div></div>';
@@ -96,7 +122,8 @@
     return '<div class="panel study-head" style="--accent:'+u.accent+'"><div class="eyebrow">Menschen A1.1 · Modul '+u.modul+' · صفحة '+u.book_page+'</div><h1 class="de">Lektion '+u.id+' · '+esc(u.title_de)+'</h1><p class="muted de">'+esc(u.topic_de)+'</p><p class="muted">اختر جلسة تعليمية أو مراجعة الوحدة.</p></div><div class="lesson-list">'+S.cat.lessons.filter(d=>d.lektion===u.id).map(d=>'<button class="lesson-card" data-doc="'+d.doc_id+'" style="--accent:'+d.accent+'"><span class="swatch"></span><span class="body"><span class="de">'+esc(d.title_de)+'</span><small>'+esc(d.title_ar)+'</small><small dir="ltr">'+d.doc_id+' · '+(d.kind==='review'?'Wiederholung':d.video_ids.length+' video')+'</small></span>'+chip(progress(d.doc_id))+'</button>').join('')+'</div>';
   }
   function books() {
-    return '<div class="panel"><div class="eyebrow">مراجع المستوى</div><h1>الكتاب Menschen A1.1</h1><p class="muted">كتاب الطالب والتدريبات. كل الأجزاء مرتبة وتشمل صفحات الملف كاملًا.</p></div>'+['kursbuch','arbeitsbuch'].map(kind=>'<div class="section-title"><h2>'+(kind==='kursbuch'?'Kursbuch · كتاب الطالب':'Arbeitsbuch · كتاب التدريبات')+'</h2></div><div class="book-parts">'+S.cat.books.filter(b=>b.kind===kind).map(b=>'<a class="resource" href="'+esc(b.url)+'" target="_blank" rel="noopener"><span><strong>صفحات PDF '+b.pages_from+'–'+b.pages_to+'</strong><small> من '+b.total_pages+' صفحة</small></span><span>تنزيل PDF ↗</span></a>').join('')+'</div>').join('')+'<div class="tip">روابط الملفات تفتح رسالتها في مكتبة تيليجرام الخاصة. '+link('ادخل مكتبة الملفات','https://t.me/+rMayz9Xgmq8wMmE0','small')+'</div>';
+    const part = b => '<button class="resource" type="button" data-file=\''+esc(JSON.stringify({book_key:b.key}))+'\'><span><strong>صفحات PDF '+b.pages_from+'–'+b.pages_to+'</strong><small> من '+b.total_pages+' صفحة</small></span><span>أرسله إلى البوت ↗</span></button>';
+    return '<div class="panel"><div class="eyebrow">مراجع المستوى</div><h1>الكتاب Menschen A1.1</h1><p class="muted">كتاب الطالب والتدريبات. كل الأجزاء مرتبة وتشمل صفحات الملف كاملًا.</p></div>'+['kursbuch','arbeitsbuch'].map(kind=>'<div class="section-title"><h2>'+(kind==='kursbuch'?'Kursbuch · كتاب الطالب':'Arbeitsbuch · كتاب التدريبات')+'</h2></div><div class="book-parts">'+S.cat.books.filter(b=>b.kind===kind).map(part).join('')+'</div>').join('')+'<div class="tip">اضغط أي جزء ليصلك الملف في محادثتك مع البوت مباشرة — لا تحتاج فتح مكتبة الملفات.</div>';
   }
   function lessonPage() {
     const d=doc(S.doc); if(!d)return '<div class="empty">الدرس غير موجود.</div>';
@@ -105,7 +132,7 @@
     html+='<div class="lesson-tabs">'+[['read','📖 الشرح'],['videos','▶ الفيديو'],['files','📄 PDF وWord'],['quiz','✍ الاختبار']].map(t=>'<button class="btn '+(S.tab===t[0]?'active':'')+'" data-tab="'+t[0]+'">'+t[1]+'</button>').join('')+'</div><div id="lessonBody">';
     if(S.tab==='read')html+='<div class="reader"><div class="reader-note"><span>الشرح الكامل · '+d.doc_id+'</span><span>للمذاكرة والمقارنة — الاختبار في تبويب مستقل</span></div><iframe title="شرح '+d.doc_id+'" src="'+d.reader+'" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" loading="eager"></iframe></div>';
     if(S.tab==='videos')html+=d.video_ids.length?d.video_ids.map((id,i)=>'<div class="panel video"><h3>فيديو '+(i+1)+' من '+d.video_ids.length+'</h3><iframe title="فيديو '+d.doc_id+' '+(i+1)+'" src="https://www.youtube-nocookie.com/embed/'+id+'" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe><div class="row">'+link('شاهد على YouTube','https://www.youtube.com/watch?v='+id,'primary')+'</div></div>').join(''):'<div class="empty">دي مراجعة للوحدة. فيديوهات الشرح موجودة داخل جلساتها التعليمية.</div>';
-    if(S.tab==='files')html+='<div class="resource-grid">'+d.files.map(f=>'<a class="resource" href="'+esc(f.url)+'" target="_blank" rel="noopener"><strong dir="ltr">'+esc(f.label)+'</strong><span>تنزيل من تيليجرام ↗</span></a>').join('')+'</div><p class="tip">A وC تصميمان لنفس محتوى الدرس. تقدر كمان تستلم الملف مباشرة من قائمة الدرس في البوت.</p>';
+    if(S.tab==='files')html+='<div class="resource-grid">'+d.files.map(f=>'<button class="resource" type="button" data-file=\''+esc(JSON.stringify({doc_id:d.doc_id,variant:f.variant}))+'\'><strong dir="ltr">'+esc(f.label)+'</strong><span>أرسله إلى البوت ↗</span></button>').join('')+'</div><p class="tip">A وC تصميمان لنفس محتوى الدرس. الملف يوصلك في محادثتك مع البوت، والداشبورد يفضل مفتوحًا للدراسة.</p>';
     if(S.tab==='quiz')html+='<div id="quizMount">'+quizHTML()+'</div>';
     return html+'</div>';
   }
@@ -142,7 +169,10 @@
     html+='<div class="section-title"><h2>أحدث نتائج الاختبارات</h2></div>'+(sum.attempts.length?sum.attempts.slice().reverse().map(a=>'<div class="resource"><span><strong dir="ltr">'+a.doc_id+'</strong><small style="display:block">'+a.auto+' آلي + '+a.self+' ذاتي من '+a.total+(a.assessed?' · تقييم محفوظ':' · التقييم الذاتي لم يُحفظ')+'</small></span>'+button('افتح الدرس','lesson:'+a.doc_id,'small')+'</div>').join(''):'<div class="empty">لسه مفيش اختبار متسجل. افتح أي درس وابدأ اختباره.</div>');
     html+='<div class="section-title"><h2>أخطاء أراجعها</h2></div>'+(sum.mistakes.length?sum.mistakes.map(m=>'<div class="q"><h3>'+esc(m.prompt)+'</h3><p class="de error">'+esc(m.given||'—')+'</p><p class="de right">'+esc(m.expected)+'</p>'+button('راجع '+m.doc_id,'lesson:'+m.doc_id,'small')+'</div>').join(''):'<div class="empty">لا توجد أخطاء آلية في أحدث محاولاتك.</div>');
     html+='<div class="section-title"><h2>تقدمي في وحدات الكتاب</h2></div><div class="grid">'+unitCards()+'</div><div class="tip">فتح الدرس أو تنزيل ملفه لا يسجّل إكماله. اضغط «أكملت دراسة الدرس» بعد الانتهاء.</div>';
-    html+='<div class="row">'+link('ربط متصفح آخر — أرسل /login للبوت','https://t.me/Deutsch099_bot','small')+(S.boot.student.id==='mohamed'?link('تفعيل حساب أشرف — أرسل /invite للبوت','https://t.me/Deutsch099_bot','small'):'')+button('خروج من المتصفح','logout','small ghost')+'</div>';
+    const acc=(S.boot&&S.boot.account)||{};
+    const invite=acc.role==='owner'&&acc.invite&&acc.invite.state!=='enrolled'
+      ? link((acc.invite.state==='pending'?'دعوة أشرف معلّقة — أرسل /invite للبوت':'تفعيل حساب أشرف — أرسل /invite للبوت'),BOT,'small') : '';
+    html+='<div class="row">'+link('ربط متصفح آخر — أرسل /login للبوت',BOT,'small')+invite+button('خروج من المتصفح','logout','small ghost')+'</div>';
     return html;
   }
   function render() {
@@ -190,18 +220,34 @@
     document.querySelectorAll('[data-doc]').forEach(b=>b.onclick=()=>go('lesson',b.dataset.doc));
     document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{S.tab=b.dataset.tab;render();if(S.tab==='quiz')loadQuiz();});
     document.querySelectorAll('[data-action]').forEach(b=>b.onclick=()=>action(b.dataset.action,b));
+    document.querySelectorAll('[data-file]').forEach(b=>b.onclick=()=>requestFile(JSON.parse(b.dataset.file),b));
     document.querySelectorAll('[data-qid]').forEach(input=>input.oninput=()=>{S.answers[input.dataset.qid]=input.value;sessionStorage.setItem('draft:'+S.boot.student.id+':'+S.doc,JSON.stringify(S.answers));});
     document.querySelectorAll('[data-mark]').forEach(input=>input.onchange=()=>S.marks[input.dataset.mark]=input.checked);
     document.querySelectorAll('a[href^="https://t.me/"]').forEach(a=>a.onclick=e=>{if(tg&&tg.initData&&tg.openTelegramLink){e.preventDefault();tg.openTelegramLink(a.href);}});
   }
+  function normalizeStart() {
+    if(S.doc&&doc(S.doc)){S.view='lesson';S.unit=doc(S.doc).lektion;}
+    else if(S.view==='unit')S.view='atlas';
+    else if(S.view==='lesson'){S.view='home';S.doc='';}
+  }
   async function init() {
     try {if(tg){tg.ready();tg.expand();tg.setHeaderColor('#f7f5ef');tg.setBackgroundColor('#f7f5ef');}}
     catch(e) { /* older Telegram clients still use the standard viewport */ }
-    try {S.cat=await (await fetch('catalog.json?v=unified-1')).json();}
-    catch(e){$('screen').innerHTML='<div class="empty">تعذّر تحميل الفهرس. أعد فتح التطبيق.</div>';return;}
-    try {await refresh();}
-    catch(e){$('who').textContent='تصفح المكتبة';$('notice').innerHTML='لحفظ تقدمك ونتائجك افتح من <a href="https://t.me/Deutsch099_bot"><b>بوت الألمانية</b></a> واضغط «ابدأ الدراسة». للمتصفح العادي أرسل <b dir="ltr">/login</b> للبوت وافتح الرابط الشخصي.';}
-    if(S.doc&&doc(S.doc)){S.view='lesson';S.unit=doc(S.doc).lektion;}else if(S.view==='unit')S.view='atlas';else if(S.view==='lesson'){S.view='home';S.doc='';}
+    // The catalog is a static CDN file and the bootstrap is a cold Apps Script
+    // call: start both at once and paint the study atlas the moment the catalog
+    // lands, instead of waiting for the slowest request (2.5-4s before).
+    const catalogP = fetch('catalog.json?v=unified-2').then(r=>r.json());
+    const bootP = refresh();
+    S.pending = true;
+    try {S.cat=await catalogP;}
+    catch(e){S.pending=false;$('screen').innerHTML='<div class="empty">تعذّر تحميل الفهرس. أعد فتح التطبيق.</div>';return;}
+    normalizeStart();
+    $('who').textContent='جارٍ التحقق من حسابك…';
+    render();
+    try {await bootP;}
+    catch(e){$('who').textContent='تصفح المكتبة';$('notice').innerHTML='لحفظ تقدمك ونتائجك افتح من <a href="'+BOT+'"><b>بوت الألمانية</b></a> واضغط «ابدأ الدراسة». للمتصفح العادي أرسل <b dir="ltr">/login</b> للبوت وافتح الرابط الشخصي.';}
+    S.pending = false;
+    normalizeStart();
     render();
     if(S.view==='lesson'&&S.tab==='quiz')loadQuiz();
     else if(S.view==='lesson'&&S.boot)markOpened(S.doc);
